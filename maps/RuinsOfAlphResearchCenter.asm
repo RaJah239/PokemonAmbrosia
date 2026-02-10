@@ -6,69 +6,16 @@
 RuinsOfAlphResearchCenter_MapScripts:
 	def_scene_scripts
 	scene_script .DummyScene0 ; SCENE_RUINSOFALPHRESEARCHCENTER_NOTHING
-	scene_script .GetUnownDex ; SCENE_RUINSOFALPHRESEARCHCENTER_GET_UNOWN_DEX
 
 	def_callbacks
-	callback MAPCALLBACK_OBJECTS, .ScientistCallback
 
 .DummyScene0:
-	end
-
-.GetUnownDex:
-	sdefer .GetUnownDexScript
-	end
-
-.ScientistCallback:
-	checkscene
-	ifequal SCENE_RUINSOFALPHRESEARCHCENTER_GET_UNOWN_DEX, .ShowScientist
-	endcallback
-
-.ShowScientist:
-	moveobject RUINSOFALPHRESEARCHCENTER_SCIENTIST3, 3, 7
-	appear RUINSOFALPHRESEARCHCENTER_SCIENTIST3
-	endcallback
-
-.GetUnownDexScript:
-	applymovement RUINSOFALPHRESEARCHCENTER_SCIENTIST3, RuinsOfAlphResearchCenterApproachesComputerMovement
-	playsound SFX_BOOT_PC
-	pause 60
-	playsound SFX_SWITCH_POKEMON
-	pause 30
-	playsound SFX_TALLY
-	pause 30
-	playsound SFX_TRANSACTION
-	pause 30
-	turnobject RUINSOFALPHRESEARCHCENTER_SCIENTIST3, DOWN
-	opentext
-	writetext RuinsOfAlphResearchCenterModifiedDexText
-	waitbutton
-	closetext
-	applymovement RUINSOFALPHRESEARCHCENTER_SCIENTIST3, RuinsOfAlphResearchCenterApproachesPlayerMovement
-	opentext
-	writetext RuinsOfAlphResearchCenterDexUpgradedText
-	playsound SFX_ITEM
-	waitsfx
-	setflag ENGINE_UNOWN_DEX
-	writetext RuinsOfAlphResearchCenterScientist3Text
-	waitbutton
-	closetext
-	applymovement RUINSOFALPHRESEARCHCENTER_SCIENTIST3, RuinsOfAlphResearchCenterLeavesPlayerMovement
-	setscene SCENE_RUINSOFALPHRESEARCHCENTER_NOTHING
-	special RestartMapMusic
 	end
 
 RuinsOfAlphResearchCenterScientist3Script:
 	faceplayer
 	opentext
-	readvar VAR_UNOWNCOUNT
-	ifequal NUM_UNOWN, .PrinterAvailable
 	writetext RuinsOfAlphResearchCenterScientist3Text
-	waitbutton
-	closetext
-	end
-
-.PrinterAvailable:
-	writetext RuinsOfAlphResearchCenterScientist3_PrinterAvailable
 	waitbutton
 	closetext
 	end
@@ -79,92 +26,20 @@ RuinsOfAlphResearchCenterScientist1Script:
 RuinsOfAlphResearchCenterScientist2Script:
 	faceplayer
 	opentext
-	readvar VAR_UNOWNCOUNT
-	ifequal NUM_UNOWN, .GotAllUnown
-	checkevent EVENT_MADE_UNOWN_APPEAR_IN_RUINS
-	iftrue .UnownAppeared
 	writetext RuinsOfAlphResearchCenterScientist2Text
 	waitbutton
 	closetext
 	end
 
-.UnownAppeared:
-	writetext RuinsOfAlphResearchCenterScientist2Text_UnownAppeared
-	waitbutton
-	closetext
-	end
-
-.GotAllUnown:
-	writetext RuinsOfAlphResearchCenterScientist2Text_GotAllUnown
-	waitbutton
-	checkevent EVENT_GOT_UNOWN_AMBROSIA
-	iftrue .end
-	writetext RuinsOfAlphResearchCenterScientist2Text_GiveAmbrosia
-	waitbutton
-	verbosegiveitem AMBROSIA
-	iffalse .end
-	setevent EVENT_GOT_UNOWN_AMBROSIA
-.end
-	closetext
-	end
-
 RuinsOfAlphResearchCenterComputer:
 	opentext
-	checkevent EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
-	iftrue .SkipChecking
-	readvar VAR_UNOWNCOUNT
-	ifequal NUM_UNOWN, .GotAllUnown
-.SkipChecking:
 	writetext RuinsOfAlphResearchCenterComputerText
-	waitbutton
-	closetext
-	end
-
-.GotAllUnown:
-	writetext RuinsOfAlphResearchCenterComputerText_GotAllUnown
 	waitbutton
 	closetext
 	end
 
 RuinsOfAlphResearchCenterBookshelf:
 	jumptext RuinsOfAlphResearchCenterAcademicBooksText
-
-RuinsOfAlphResearchCenterApproachesComputerMovement:
-	step UP
-	step UP
-	step LEFT
-	turn_head UP
-	step_end
-
-RuinsOfAlphResearchCenterApproachesPlayerMovement:
-	step DOWN
-	step_end
-
-RuinsOfAlphResearchCenterLeavesPlayerMovement:
-	step UP
-	step_end
-
-RuinsOfAlphResearchCenterModifiedDexText:
-	text "Done!"
-
-	para "I modified your"
-	line "#dex."
-
-	para "I added an"
-	line "optional #dex"
-
-	para "to store Unown"
-	line "data."
-
-	para "It records them in"
-	line "the sequence that"
-	cont "they were caught."
-	done
-
-RuinsOfAlphResearchCenterDexUpgradedText:
-	text "<PLAYER>'s #dex"
-	line "was upgraded."
-	done
 
 RuinsOfAlphResearchCenterScientist3Text:
 	text "The Unown you"
@@ -176,31 +51,6 @@ RuinsOfAlphResearchCenterScientist3Text:
 	cont "to catch them."
 
 	para "Just a curiosity."
-	done
-
-RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
-	text "You caught all the"
-	line "Unown variations?"
-
-	para "That's amazing"
-
-	para "So what is the"
-	line "secret to their"
-	cont "strength?"
-
-	para "...."
-
-	para "You mean they"
-	line "really are as"
-	cont "weak as they seem."
-
-	para "All that funding"
-	line "wasted..."
-
-	para "Speak to my"
-	line "colleague, his"
-	cont "name can go on the"
-	cont "paper."
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
@@ -267,54 +117,11 @@ RuinsOfAlphResearchCenterScientist2Text:
 	cont "be revealed."
 	done
 
-RuinsOfAlphResearchCenterScientist2Text_UnownAppeared:
-	text "The #mon have"
-	line "appeared in the"
-	cont "ruins."
-	para "They are"
-	line "incredibly weak"
-	cont "but you must catch"
-	cont "them!"
-	para "I'm sure something"
-	line "will happen..."
-	para "Maybe."
-	done
-
-RuinsOfAlphResearchCenterScientist2Text_GotAllUnown:
-	text "You actually went"
-	line "and caught them"
-	cont "all!"
-	para "I don't believe"
-	line "it."
-	para "I'm sure the"
-	line "ancients would be"
-	cont "pleased."
-	done
-
-RuinsOfAlphResearchCenterScientist2Text_GiveAmbrosia:
-	text "Here I want you to"
-	line "have this."
-	para "I found it"
-	line "embedded in the"
-	cont "old Arceus statue,"
-	cont "I don't know what"
-	cont "it is but I think"
-	cont "it might help you."
-	done
-
 RuinsOfAlphResearchCenterComputerText:
 	text "Ruins of Alph"
 
 	para "Exploration"
 	line "Year 10"
-	done
-
-RuinsOfAlphResearchCenterComputerText_GotAllUnown:
-	text "Mystery #mon"
-	line "Name: Unown"
-
-	para "A total of {d:NUM_UNOWN}"
-	line "kinds found."
 	done
 
 RuinsOfAlphResearchCenterPrinterText_DoesntWork:

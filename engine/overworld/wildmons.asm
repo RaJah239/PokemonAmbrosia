@@ -277,12 +277,6 @@ ChooseWildEncounter:
 	jr c, .nowildbattle
 
 	ld a, b ; This is in the wrong place.
-	cp UNOWN
-	jr nz, .done
-
-	ld a, [wUnlockedUnowns]
-	and a
-	jr z, .nowildbattle
 
 .done
 	jr .loadwildmon

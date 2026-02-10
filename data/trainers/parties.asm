@@ -3543,7 +3543,7 @@ PicnickerGroup:
 CamperGroup:
 	; CAMPER (1)
 	db "Roland@", TRAINERTYPE_NORMAL
-	db  20, UNOWN
+	db  15, ABRA
 	db -1 ; end
 
 	; CAMPER (2)

@@ -13,7 +13,6 @@ wStackBottom::
 wStackTop::
 	ds 1
 
-
 SECTION "Audio RAM", WRAM0
 
 ; nonzero if playing
@@ -3326,9 +3325,7 @@ wEndPokedexCaught::
 wPokedexSeen:: flag_array NUM_POKEMON
 wEndPokedexSeen::
 
-wUnownDex:: ds NUM_UNOWN
-wUnlockedUnowns:: db
-wFirstUnownSeen:: db
+ds 28 ; DevNote - wram 28 free spaces
 
 wDayCareMan::
 ; bit 7: active
