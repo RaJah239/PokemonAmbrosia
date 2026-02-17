@@ -1515,8 +1515,9 @@ BaxcaliburEvosAttacks:
 
 ExeggcuteEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, EXEGGUTOR
+	db EVOLVE_ITEM, FIRE_STONE, EXEGGUTOR
 	db 0 ; no more evolutions
-	db 1, CONFUSION
+	db 1, ABSORB
 	db 1, HYPNOSIS
 	db 7, REFLECT
 	db 10, DISABLE
@@ -1525,25 +1526,28 @@ ExeggcuteEvosAttacks:
 	db 25, STUN_SPORE
 	db 31, GIGA_DRAIN
 	db 37, SLEEP_POWDER
-	db 40, PSYCHIC_M
-	db 43, SOLARBEAM
-	db 48, SUNNY_DAY
+	db 40, SOLARBEAM
+	db 45, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONFUSION
+	db 1, ABSORB
+	db 1, HYPNOSIS
+	db 1, TRICK_ROOM
 	db 7, REFLECT
 	db 10, DISABLE
 	db 13, LEECH_SEED
 	db 19, POISONPOWDER
 	db 25, STUN_SPORE
-	db 31, GIGA_DRAIN
+	db 30, GIGA_DRAIN
+	db 30, LAVA_PLUME
 	db 37, SLEEP_POWDER
-	db 40, PSYCHIC_M
-	db 43, SUNNY_DAY
-	db 46, SOLARBEAM
-	db 48, TRICK_ROOM
+	db 40, FLAMETHROWER
+	db 45, SOLARBEAM
+	db 45, FIRE_BLAST
+	db 50, SUNNY_DAY
+	db 55, SYNTHESIS
 	db 0 ; no more level-up moves
 
 MarillEvosAttacks:
@@ -1910,15 +1914,15 @@ MagmarEvosAttacks:
 
 PinsirEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
+	db 1, ROCK_THROW
 	db 1, COUNTER
-	db 10, ROCK_THROW
+	db 10, MAGNITUDE
 	db 15, LEECH_LIFE
 	db 20, SEISMIC_TOSS
-	db 25, SLASH
+	db 25, DIG
 	db 30, X_SCISSOR
 	db 35, ROCK_SLIDE
-	db 40, CLOSE_COMBAT
+	db 40, EARTHQUAKE
     db 45, MEGAHORN
 	db 50, SWORDS_DANCE
 	db 55, GUILLOTINE

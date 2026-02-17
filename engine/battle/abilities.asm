@@ -192,7 +192,6 @@ SolidRockPokemon:
     db METANG
     db METAGROSS
     db RAYQUAZA
-    db EXEGGUTOR
     db -1
 
 IronFistPokemon:

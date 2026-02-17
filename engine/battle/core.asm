@@ -2665,8 +2665,6 @@ Aftermath:
     call GetOpposingMonCore
     cp WEEZING
     jr z, .aftermath
-    cp MAGNEZONE
-    jr z, .aftermath
     cp GENGAR
     jr z, .aftermath
     ret
@@ -4864,6 +4862,8 @@ SwitchInEffects:
     jp z, .spAtkDown
     cp LAPRAS
     jp z, .spAtkDown
+    cp BAXCALIBUR
+    jp z, .spAtkDown
 
     cp AEGISLASH
     jp z, .defenseMode
@@ -4877,7 +4877,9 @@ SwitchInEffects:
     jp z, .spDefUp
     cp SLOWBRO
     jp z, .spDefUp
-    cp BAXCALIBUR
+    cp EXEGGCUTE
+    jp z, .spDefUp
+    cp EXEGGUTOR
     jp z, .spDefUp
 
     cp SNEASEL

@@ -5,6 +5,6 @@
 	next "instant if they"
 	next "separate."
 
-	page "Speed"
-	next "increases in"
-	next "the sun.@"
+	page "Sp.Def boost on"
+	next "switch. Speed"
+	next "boost in Sun.@"

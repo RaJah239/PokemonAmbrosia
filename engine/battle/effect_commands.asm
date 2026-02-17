@@ -1361,6 +1361,8 @@ BattleCommand_Stab:
     jr z, .stab
     cp GRENINJA
     jr z, .stab
+    cp DEOXYS
+    jr z, .stab
 
 	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVarAddr

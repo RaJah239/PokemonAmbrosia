@@ -5,6 +5,6 @@
 	next "breath can"
 	next "freeze lava."
 
-	page "Sp.Def boost on"
-	next "switch. Regens"
+	page "Lowers foes"
+	next "Sp.Atk. Regens"
 	next "HP in Hail.@"
