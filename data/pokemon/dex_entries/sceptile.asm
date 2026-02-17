@@ -5,6 +5,6 @@
 	next "body are a sharp"
 	next "as swords."
 
-	page "High crit damage."
-	next "Heals status on"
-	next "switch.@"
+	page "Boosted crit rate"
+	next "and damage. Heals"
+	next "status on switch.@"

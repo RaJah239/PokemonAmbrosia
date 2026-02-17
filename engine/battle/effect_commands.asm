@@ -1340,6 +1340,7 @@ BattleCommand_Stab:
 
 	ldh a, [hBattleTurn]
 	and a
+	ld a, [wBattleMonSpecies]
 	jr z, .go ; Who Attacks and who Defends
 
 	ld hl, wEnemyMonType1
@@ -1350,8 +1351,17 @@ BattleCommand_Stab:
 	ld a, [hli]
 	ld d, a
 	ld e, [hl]
+	ld a, [wEnemyMonSpecies]
 
 .go
+; DevNote - Greninja always gets STAB
+    cp FROAKIE
+    jr z, .stab
+    cp FROGADIER
+    jr z, .stab
+    cp GRENINJA
+    jr z, .stab
+
 	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVarAddr
 	and TYPE_MASK
@@ -1851,7 +1861,19 @@ BattleCommand_CheckHit:
     call GetCurrentMon
 	cp JYNX
 	ret z
+	cp NINETALES_A
+	ret z
 .notBlizzard
+
+; DevNote - make Stone Edge always hit
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVar
+	cp STONE_EDGE
+	jr nz, .notStoneEdge
+    call GetCurrentMon
+	cp KLEAVOR
+	ret z
+.notStoneEdge
 
 	call .StatModifiers
 
@@ -3203,6 +3225,7 @@ PunchMoves:
     db SHADOW_PUNCH
     db METEOR_MASH
     db IRON_DUKES
+    db CLOSE_COMBAT
     db $FF
 
 BattleCommand_DamageCalc:

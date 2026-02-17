@@ -5,6 +5,6 @@
 	next "out when it"
 	next "sleeps."
 
-	page "Takes no"
-	next "recoil damage"
-	next "from attacks.@"
+	page "Boosted punches."
+	next "Immune to recoil"
+	next "damage.@"

@@ -233,8 +233,8 @@ PokemonPicPointers::
 	dba_pic WeavileBackpic
 	dba_pic RhyperiorFrontpic
 	dba_pic RhyperiorBackpic
-	dba_pic HorseaFrontpic
-	dba_pic HorseaBackpic
+	dba_pic SneaslerFrontpic
+	dba_pic SneaslerBackpic
 	dba_pic SeadraFrontpic
 	dba_pic SeadraBackpic
 	dba_pic MagmortarFrontpic
@@ -357,8 +357,8 @@ PokemonPicPointers::
 	dba_pic TogeticBackpic
 	dba_pic TogekissFrontpic
 	dba_pic TogekissBackpic
-	dba_pic SigilyphFrontpic
-	dba_pic SigilyphBackpic
+	dba_pic NinetalesAFrontpic
+	dba_pic NinetalesABackpic
 	dba_pic MareepFrontpic
 	dba_pic MareepBackpic
 	dba_pic FlaaffyFrontpic
@@ -448,8 +448,8 @@ PokemonPicPointers::
 	dba_pic SwinubBackpic
 	dba_pic PiloswineFrontpic
 	dba_pic PiloswineBackpic
-	dba_pic SpiritombFrontpic
-	dba_pic SpiritombBackpic
+	dba_pic NownFrontpic
+	dba_pic NownBackpic
 	dba_pic LatiosFrontpic
 	dba_pic LatiosBackpic
 	dba_pic PalkiaFrontpic
@@ -478,8 +478,8 @@ PokemonPicPointers::
 	dba_pic SmeargleBackpic
 	dba_pic DialgaFrontpic
 	dba_pic DialgaBackpic
-	dba_pic KlefkiFrontpic
-	dba_pic KlefkiBackpic
+	dba_pic KleavorFrontpic
+	dba_pic KleavorBackpic
 	dba_pic XerneasFrontpic
 	dba_pic XerneasBackpic
 	dba_pic YveltalFrontpic

@@ -117,7 +117,7 @@ KantoMonSpecials:
 	db 105 ; CHANSEY
 	db 100 ; WEAVILE
 	db  40 ; RHYPERIOR
-	db  70 ; HORSEA
+	db  70 ; SNEASLER
 	db  95 ; SEADRA
 	db  50 ; MAGMORTAR
 	db  80 ; HONCHKROW

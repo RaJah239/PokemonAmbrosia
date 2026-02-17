@@ -31,7 +31,6 @@ SniperPokemon:
     db TREECKO
     db GROVYLE
     db SCEPTILE
-    db HORSEA
     db SEADRA
     db GIBLE
     db GABITE
@@ -41,6 +40,9 @@ SniperPokemon:
     db -1
 
 SuperLuckPokemon:
+    db TREECKO
+    db GROVYLE
+    db SCEPTILE
     db MEWTWO
     db ALAKAZAM
     db JOLTEON
@@ -49,6 +51,7 @@ SuperLuckPokemon:
     db BELLSPROUT
     db WEEPINBELL
     db VICTREEBEL
+    db SNEASLER
     db -1
 
 SereneGracePokemon:
@@ -156,7 +159,6 @@ MagicGuardPokemon:
     db ABRA
     db KADABRA
     db ALAKAZAM
-    db SIGILYPH
     db ARCEUS
     db SOLOSIS
     db DUOSION
@@ -201,6 +203,9 @@ IronFistPokemon:
     db CONKELDURR
     db POLIWRATH
     db BRELOOM
+    db CHIMCHAR
+    db MONFERNO
+    db INFERNAPE
     db -1
 
 UberImmunePokemon:

@@ -952,8 +952,6 @@ GetPlayerMovePriority:
     jr z, .prankster
     cp WHIMSICOTT
     jr z, .prankster
-    cp KLEFKI
-    jr z, .prankster
     cp RIOLU
     jr z, .prankster
     cp MURKROW
@@ -1004,8 +1002,6 @@ GetEnemyMovePriority:
     cp COTTONEE
     jr z, .prankster
     cp WHIMSICOTT
-    jr z, .prankster
-    cp KLEFKI
     jr z, .prankster
     cp RIOLU
     jr z, .prankster
@@ -1230,7 +1226,6 @@ Core_MagicGuardPokemon:
     db ABRA
     db KADABRA
     db ALAKAZAM
-    db SIGILYPH
     db ARCEUS
     db SOLOSIS
     db DUOSION
@@ -1253,6 +1248,7 @@ Core_LevitatePokemon:
     db ROTOM
     db UNOWN
     db HYDREIGON
+    db NOWN
     db -1
 
 Core_SpikesImmunePokemon: ; magic guard + levitate
@@ -1279,6 +1275,8 @@ Core_SpikesImmunePokemon: ; magic guard + levitate
     db MEW
     db DEOXYS
     db HYDREIGON
+    db UNOWN
+    db NOWN
     db -1
 
 Core_RegeneratorPokemon:
@@ -2670,8 +2668,6 @@ Aftermath:
     cp MAGNEZONE
     jr z, .aftermath
     cp GENGAR
-    jr z, .aftermath
-    cp SPIRITOMB
     jr z, .aftermath
     ret
 .aftermath
@@ -4797,6 +4793,8 @@ SwitchInEffects:
 
     cp DARKRAI
     jp z, .taunt
+    cp SNEASLER
+    jp z, .taunt
     cp UMBREON
     jp z, .umbreon
     cp MISMAGIUS
@@ -4912,6 +4910,8 @@ SwitchInEffects:
     jp z, .stealthrock
     cp NIDOKING
     jp z, .stealthrock
+    cp KLEAVOR
+    jp z, .stealthrock
 
     cp NIDOQUEEN
     jp z, .toxicspikes
@@ -4931,6 +4931,8 @@ SwitchInEffects:
 
     cp GALLADE
     jp z, .reflect
+    cp NINETALES_A
+    jp z, .reflect
     cp LATIOS
     jp z, .reflect
 
@@ -4942,12 +4944,12 @@ SwitchInEffects:
     jp z, .lightScreen
     cp LATIAS
     jp z, .lightScreen
+    cp NINETALES
+    jp z, .lightScreen
 
     cp MOLTRES
     jp z, .safeguard
-    cp NINETALES
-    jp z, .safeguard
-    cp SIGILYPH
+    cp NOWN
     jp z, .safeguard
     cp POLTEGEIST
     jp z, .safeguard

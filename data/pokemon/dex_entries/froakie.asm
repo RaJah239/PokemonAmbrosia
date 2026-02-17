@@ -5,5 +5,6 @@
 	next "body by covering"
 	next "itself in bubbles"
 
-	page "Has increased"
-	next "Accuracy.@"
+	page "All moves have"
+	next "STAB. Boosted"
+	next "accuracy.@"

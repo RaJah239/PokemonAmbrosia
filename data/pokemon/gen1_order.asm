@@ -78,7 +78,7 @@ Pokered_MonIndices:
 	db DITTO
 	db MEOWTH
 	db FEEBAS
-	db SPIRITOMB ; MISSINGNO.
+	db NOWN ; MISSINGNO.
 	db LATIOS ; MISSINGNO.
 	db PALKIA ; MISSINGNO.
 	db VULPIX
@@ -91,7 +91,7 @@ Pokered_MonIndices:
 	db DRAGONAIR
 	db GARDEVOIR
 	db GALLADE
-	db HORSEA
+	db SNEASLER
 	db SEADRA
 	db SKARMORY ; MISSINGNO.
 	db HOUNDOUR ; MISSINGNO.
@@ -145,7 +145,7 @@ Pokered_MonIndices:
 	db WEEZING
 	db PERSIAN
 	db AZUMARILL
-	db KLEFKI ; MISSINGNO.
+	db KLEAVOR ; MISSINGNO.
 	db HAUNTER
 	db ABRA
 	db ALAKAZAM
@@ -217,7 +217,7 @@ Pokered_MonIndices:
 	db TOGEPI
 	db TOGETIC
 	db TOGEKISS
-	db SIGILYPH
+	db NINETALES_A
 	db MAREEP
 	db FLAAFFY
 	db AMPHAROS

@@ -116,7 +116,7 @@ PokedexDataPointerTable:
 	dw ChanseyPokedexEntry
 	dw WeavilePokedexEntry
 	dw RhyperiorPokedexEntry
-	dw HorseaPokedexEntry
+	dw SneaslerPokedexEntry
 	dw SeadraPokedexEntry
 	dw MagmortarPokedexEntry
 	dw HonchkrowPokedexEntry
@@ -178,7 +178,7 @@ PokedexDataPointerTable:
 	dw TogepiPokedexEntry
 	dw TogeticPokedexEntry
 	dw TogekissPokedexEntry
-	dw SigilyphPokedexEntry
+	dw NinetalesAPokedexEntry
 	dw MareepPokedexEntry
 	dw FlaaffyPokedexEntry
 	dw AmpharosPokedexEntry
@@ -222,7 +222,7 @@ PokedexDataPointerTable:
 	dw DeoxysPokedexEntry
 	dw SwinubPokedexEntry
 	dw PiloswinePokedexEntry
-	dw SpiritombPokedexEntry
+	dw NownPokedexEntry
 	dw LatiosPokedexEntry
 	dw PalkiaPokedexEntry
 	dw KyogrePokedexEntry
@@ -237,7 +237,7 @@ PokedexDataPointerTable:
 	dw RayquazaPokedexEntry
 	dw SmearglePokedexEntry
 	dw DialgaPokedexEntry
-	dw KlefkiPokedexEntry
+	dw KleavorPokedexEntry
 	dw XerneasPokedexEntry
 	dw YveltalPokedexEntry
 	dw GiratinaPokedexEntry

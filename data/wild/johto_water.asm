@@ -75,14 +75,14 @@ JohtoWaterWildMons:
 	def_water_wildmons WHIRL_ISLAND_SW
 	db 4 percent ; encounter rate
 	db 25, POLIWHIRL
-	db 25, HORSEA
+	db 25, SEADRA
 	db 25, SHELLDER
 	end_water_wildmons
 
 	def_water_wildmons WHIRL_ISLAND_B2F
 	db 4 percent ; encounter rate
 	db 25, POLIWHIRL
-	db 25, HORSEA
+	db 25, SEADRA
 	db 25, SHELLDER
 	end_water_wildmons
 
@@ -131,7 +131,7 @@ JohtoWaterWildMons:
 	def_water_wildmons OLIVINE_PORT
 	db 2 percent ; encounter rate
 	db 20, TENTACOOL
-	db 20, HORSEA
+	db 20, SEADRA
 	db 30, TENTACRUEL
 	end_water_wildmons
 

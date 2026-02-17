@@ -111,9 +111,9 @@ Route9FieldMon5Script:
 
 Route9FieldMon6Script:
 	faceplayer
-	cry KLEFKI
+	cry SCIZOR
 	pause 15
-	loadwildmon KLEFKI, 37
+	loadwildmon SCIZOR, 37
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_FIELD_MON_6

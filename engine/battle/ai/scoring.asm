@@ -22,7 +22,6 @@ AI_MagicGuardPokemon:
     db ABRA
     db KADABRA
     db ALAKAZAM
-    db SIGILYPH
     db ARCEUS
     db SOLOSIS
     db DUOSION
@@ -44,6 +43,8 @@ AI_LevitatePokemon:
     db LATIOS
     db ROTOM
     db HYDREIGON
+    db UNOWN
+    db NOWN
     db $FF
 
 AI_WaterAbsorbPokemon:
@@ -576,7 +577,7 @@ AI_Smart_Switch:
 	ret z
 	cp CHANDELURE
 	ret z
-	cp SPIRITOMB
+	cp NOWN
 	ret z
 	cp GIRATINA
 	ret z
@@ -1928,8 +1929,6 @@ AI_Smart_Substitute:
     jr z, .skipSpeedCheck
     cp WHIMSICOTT
     jr z, .skipSpeedCheck
-    cp KLEFKI
-    jr z, .skipSpeedCheck
     cp RIOLU
     jr z, .skipSpeedCheck
     cp MURKROW
@@ -2051,8 +2050,6 @@ AI_Smart_Encore:
     cp COTTONEE
     jr z, .skipSpeedCheck
     cp WHIMSICOTT
-    jr z, .skipSpeedCheck
-    cp KLEFKI
     jr z, .skipSpeedCheck
     cp RIOLU
     jr z, .skipSpeedCheck

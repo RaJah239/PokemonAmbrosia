@@ -132,8 +132,8 @@ NewPokedexOrder:
 	db SOLOSIS
 	db DUOSION
     db REUNICLUS
-	db SIGILYPH
-	db KLEFKI
+	db NINETALES_A
+	db KLEAVOR
 	db TAUROS
 	db MILTANK
 	db MAGMAR
@@ -160,7 +160,7 @@ NewPokedexOrder:
 	db ESPEON
 	db UMBREON
 	db SYLVEON
-	db HORSEA
+	db SNEASLER
 	db SEADRA
 	db KINGDRA
 	db GLIGAR
@@ -208,7 +208,7 @@ NewPokedexOrder:
 	db ARCTOZOLT
 	db DRACOVISH
 	db AERODACTYL
-	db SPIRITOMB
+	db NOWN
 	db SNORLAX
 	db LARVESTA
 	db VOLCARONA

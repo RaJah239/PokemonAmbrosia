@@ -120,7 +120,7 @@ MonMenuIconPals:
 	icon_pals RED,  PURPLE    ; CHANSEY
 	icon_pals BLUE,  GOLD        ; WEAVILE
 	icon_pals BROWN,  GOLD     ; RHYPERIOR
-	icon_pals BLUE,  PURPLE        ; HORSEA
+	icon_pals PURPLE,  GREEN        ; SNEASLER
 	icon_pals BLUE,  PURPLE        ; SEADRA
 	icon_pals RED,  PURPLE  ; MAGMORTAR
 	icon_pals BLUE,  PURPLE       ; HONCHKROW
@@ -182,7 +182,7 @@ MonMenuIconPals:
 	icon_pals SILVER,  BLUE    ; TOGEPI
 	icon_pals SILVER,  BLUE       ; TOGETIC
 	icon_pals SILVER,  BLUE       ; TOGEKISS
-	icon_pals TEAL,  GREEN       ; SIGILYPH
+	icon_pals TEAL,  PURPLE       ; NINETALES_A
 	icon_pals PURPLE,  PURPLE        ; MAREEP
 	icon_pals PURPLE,  PURPLE     ; FLAAFFY
 	icon_pals GOLD,  PURPLE     ; AMPHAROS
@@ -226,7 +226,7 @@ MonMenuIconPals:
 	icon_pals RED,  GOLD  ; DEOXYS
 	icon_pals BROWN,  SILVER      ; SWINUB
 	icon_pals BROWN,  SILVER      ; PILOSWINE
-	icon_pals PURPLE,  BLUE     ; SPIRITOMB
+	icon_pals PURPLE,  BLUE     ; NOWN
 	icon_pals BLUE,  GOLD      ; LATIOS
 	icon_pals PURPLE,  RED     ; PALKIA
 	icon_pals BLUE,  PURPLE      ; KYOGRE
@@ -241,7 +241,7 @@ MonMenuIconPals:
 	icon_pals GREEN,  GOLD      ; RAYQUAZA
 	icon_pals BROWN,  GREEN    ; SMEARGLE
 	icon_pals SILVER,  BLUE     ; DIALGA
-	icon_pals TEAL,  GOLD    ; KLEFKI
+	icon_pals BROWN,  BROWN    ; KLEAVOR
 	icon_pals BLUE,  SILVER     ; XERNEAS
 	icon_pals BLUE,  SILVER       ; YVELTAL
 	icon_pals BROWN,  GREEN      ; GIRATINA

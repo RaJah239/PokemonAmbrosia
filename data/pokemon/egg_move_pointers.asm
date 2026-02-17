@@ -115,7 +115,7 @@ EggMovePointers::
 	dw ChanseyEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw HorseaEggMoves
+	dw SneaslerEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves

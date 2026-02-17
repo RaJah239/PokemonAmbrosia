@@ -117,7 +117,7 @@ EvosAttacksPointers::
 	dw ChanseyEvosAttacks
 	dw WeavileEvosAttacks
 	dw RhyperiorEvosAttacks
-	dw HorseaEvosAttacks
+	dw SneaslerEvosAttacks
 	dw SeadraEvosAttacks
 	dw MagmortarEvosAttacks
 	dw HonchkrowEvosAttacks
@@ -179,7 +179,7 @@ EvosAttacksPointers::
 	dw TogepiEvosAttacks
 	dw TogeticEvosAttacks
 	dw TogekissEvosAttacks
-	dw SigilyphEvosAttacks
+	dw NinetalesAEvosAttacks
 	dw MareepEvosAttacks
 	dw FlaaffyEvosAttacks
 	dw AmpharosEvosAttacks
@@ -223,7 +223,7 @@ EvosAttacksPointers::
 	dw DeoxysEvosAttacks
 	dw SwinubEvosAttacks
 	dw PiloswineEvosAttacks
-	dw SpiritombEvosAttacks
+	dw NownEvosAttacks
 	dw LatiosEvosAttacks
 	dw PalkiaEvosAttacks
 	dw KyogreEvosAttacks
@@ -238,7 +238,7 @@ EvosAttacksPointers::
 	dw RayquazaEvosAttacks
 	dw SmeargleEvosAttacks
 	dw DialgaEvosAttacks
-	dw KlefkiEvosAttacks
+	dw KleavorEvosAttacks
 	dw XerneasEvosAttacks
 	dw YveltalEvosAttacks
 	dw GiratinaEvosAttacks

@@ -33,8 +33,8 @@ gfx/pokegear/pokegear.2bpp.lz: LZFLAGS = --compressor null --method 1 --align 1
 gfx/pokegear/pokegear_sprites.2bpp.lz: LZFLAGS += --align 4
 gfx/pokegear/town_map.2bpp.lz: LZFLAGS = --compressor null --method 1 --align 1
 
-gfx/pokemon/spiritomb/front.animated.2bpp.lz: LZFLAGS += --method 4
-gfx/pokemon/klefki/back.2bpp.lz: LZFLAGS += --method 4
+gfx/pokemon/nown/front.animated.2bpp.lz: LZFLAGS += --method 4
+gfx/pokemon/kleavor/back.2bpp.lz: LZFLAGS += --method 4
 gfx/pokemon/nidoran_f/front.animated.2bpp.lz: LZFLAGS += --method 4
 gfx/pokemon/breloom/front.animated.2bpp.lz: LZFLAGS += --method 4
 gfx/pokemon/scyther/front.animated.2bpp.lz: LZFLAGS += --method 4

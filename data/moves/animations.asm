@@ -123,7 +123,7 @@ BattleAnimations::
 	dw BattleAnim_LavaPlume
 	dw BattleAnim_Selfdestruct
 	dw BattleAnim_BraveBird
-	dw BattleAnim_Lick
+	dw BattleAnim_OminousWind
 	dw BattleAnim_EarthPower
 	dw BattleAnim_Sludge
 	dw BattleAnim_CloseCombat
@@ -4158,6 +4158,7 @@ BattleAnim_Crunch:
 	anim_wait 8
 	anim_ret
 
+BattleAnim_OminousWind:
 BattleAnim_Moonlight:
 	anim_1gfx ANIM_GFX_SHINE
 	anim_bgp $1b

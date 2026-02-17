@@ -742,7 +742,7 @@ Route32UnionCaveSignText:
 	done
 	
 Route32FieldMon1Script:
-	trainer SIGILYPH, FIELD_MON, EVENT_FIELD_MON_1, Route32PokemonAttacksText, 24, 0, .script
+	trainer CROBAT, FIELD_MON, EVENT_FIELD_MON_1, Route32PokemonAttacksText, 24, 0, .script
 .script
     disappear ROUTE32_FIELDMON_1
     end
@@ -766,9 +766,9 @@ Route32PokemonAttacksText:
 	
 Route32FieldMon4Script:
 	faceplayer
-	cry HORSEA
+	cry SEADRA
 	pause 15
-	loadwildmon HORSEA, 14
+	loadwildmon SEADRA, 15
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_FIELD_MON_4

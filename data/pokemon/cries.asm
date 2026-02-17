@@ -121,7 +121,7 @@ PokemonCries::
 	mon_cry CRY_PIDGEOTTO,    10,  320 ; CHANSEY
 	mon_cry CRY_WOOPER,       120, 220 ; WEAVILE
 	mon_cry CRY_RHYDON,     -250,  300 ; RHYPERIOR
-	mon_cry CRY_CLEFAIRY,    153,  144 ; HORSEA
+	mon_cry CRY_WOOPER,       20,  200 ; SNEASLER
 	mon_cry CRY_CLEFAIRY,     60,  129 ; SEADRA
 	mon_cry CRY_CHARMANDER,  200,  200 ; MAGMORTAR
 	mon_cry CRY_MARILL,     -100,  400 ; HONCHCROW
@@ -183,7 +183,7 @@ PokemonCries::
 	mon_cry CRY_TOGEPI,       16,  256 ; TOGEPI
 	mon_cry CRY_TOGETIC,      59,   56 ; TOGETIC
 	mon_cry CRY_TOGETIC,     150,  150 ; TOGEKISS
-	mon_cry CRY_NATU,       -167,  360 ; SIGILYPH
+	mon_cry CRY_VULPIX,      236,  224 ; NINETALES_A
 	mon_cry CRY_MAREEP,       34,  216 ; MAREEP
 	mon_cry CRY_MAREEP,       -7,  384 ; FLAAFFY
 	mon_cry CRY_AMPHAROS,   -124,  232 ; AMPHAROS
@@ -206,7 +206,7 @@ PokemonCries::
 	mon_cry CRY_MARILL,      -31,  384 ; MURKROW
 	mon_cry CRY_SLOWKING,   -200,  600 ; MELMETAL
 	mon_cry CRY_HOOTHOOT,    304,  232 ; MISDREAVUS
-	mon_cry CRY_SLOWKING,    400,  400 ; UNOWN
+	mon_cry CRY_HOOTHOOT,    354,  256 ; UNOWN
 	mon_cry CRY_SLOWKING,    400,  400 ; MELTAN
 	mon_cry CRY_GIRAFARIG,  -100,  512 ; BAGON
 	mon_cry CRY_SLOWKING,    128,  256 ; SHELGON
@@ -227,7 +227,7 @@ PokemonCries::
 	mon_cry CRY_DEOXYS,        0,  300 ; DEOXYS
 	mon_cry CRY_CYNDAQUIL,   510,  320 ; SWINUB
 	mon_cry CRY_DEOXYS,     -265,  256 ; PILOSWINE
-	mon_cry CRY_DEOXYS,      161,  232 ; SPIRITOMB
+	mon_cry CRY_HOOTHOOT,    100,  300 ; NOWN
 	mon_cry CRY_SLUGMA,     -200,  320 ; LATIOS
 	mon_cry CRY_TOTODILE,      0,  384 ; PALKIA
 	mon_cry CRY_TEDDIURSA,  -100,  106 ; KYOGRE
@@ -242,7 +242,7 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   250,  500 ; RAYQUAZA
 	mon_cry CRY_PICHU,      -538,  496 ; SMEARGLE
 	mon_cry CRY_AIPOM,      -100,  264 ; DIALGA
-	mon_cry CRY_SLUGMA,        0,  256 ; KLEFKI
+	mon_cry CRY_CATERPIE,   -100,  256 ; KLEAVOR
 	mon_cry CRY_MARILL,      104,  256 ; XERNEAS
 	mon_cry CRY_SUNFLORA,   -728,  350 ; YVELTAL
 	mon_cry CRY_DEOXYS,     -250,  350 ; GIRATINA

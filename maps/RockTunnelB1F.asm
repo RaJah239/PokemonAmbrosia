@@ -94,7 +94,7 @@ RockTunnelB1FFieldMon4Script:
     end
 
 RockTunnelB1FFieldMon5Script:
-	trainer SPIRITOMB, FIELD_MON, EVENT_FIELD_MON_5, RockTunnelB1FPokemonAttacksText, 70, 0, .script
+	trainer NOWN, FIELD_MON, EVENT_FIELD_MON_5, RockTunnelB1FPokemonAttacksText, 70, 0, .script
 .script
     disappear ROCKTUNNELB1F_FIELDMON_5
     end

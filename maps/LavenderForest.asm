@@ -110,7 +110,7 @@ LavenderForestFieldMon9Script:
     end
 
 LavenderForestFieldMon10Script:
-	trainer SPIRITOMB, FIELD_MON, EVENT_FIELD_MON_10, LavenderForestPokemonAttacksText, 77, 0, .script
+	trainer NOWN, FIELD_MON, EVENT_FIELD_MON_10, LavenderForestPokemonAttacksText, 77, 0, .script
 .script
     disappear LAVENDERFOREST_FIELDMON_10
     end

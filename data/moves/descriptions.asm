@@ -122,7 +122,7 @@ MoveDescriptions::
 	dw LavaPlumeDescription
 	dw SelfdestructDescription
 	dw BraveBirdDescription
-	dw LickDescription
+	dw OminousWindDescription
 	dw EarthPowerDescription
 	dw SludgeDescription
 	dw CloseCombatDescription
@@ -762,9 +762,9 @@ BraveBirdDescription:
 	db   "A attack that also"
 	line "hurts the user.@"
 
-LickDescription:
+OminousWindDescription:
 	db   "An attack that may"
-	line "cause paralysis.@"
+	line "raise all stats.@"
 
 EarthPowerDescription:
 	db   "A powerful wave"

@@ -9,20 +9,7 @@ HiddenPowerDamage:
 .got_dvs
 
 ; Power:
-; DevNote -Unown has 140 bp hidden power
-	ldh a, [hBattleTurn]
-	and a
-	ld a, [wEnemyMonSpecies]
-	jr nz, .gotUserSpecies
-	ld a, [wBattleMonSpecies]
-.gotUserSpecies
-    cp UNOWN
-    jr z, .unown
-    ld a, 70 ; 70 power usually
-    jr .gotPower
-.unown
-    ld a, 140 ; 140 power for UNOWN
-.gotPower
+    ld a, 70
     ld d, a
 
 

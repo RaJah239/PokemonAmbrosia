@@ -117,7 +117,7 @@ IconPointers:
 	dw ChanseyIcon
 	dw WeavileIcon
 	dw RhyperiorIcon
-	dw HorseaIcon
+	dw SneaslerIcon
 	dw SeadraIcon
 	dw MagmortarIcon
 	dw HonchkrowIcon
@@ -179,7 +179,7 @@ IconPointers:
 	dw TogepiIcon
 	dw TogeticIcon
 	dw TogekissIcon
-	dw SigilyphIcon
+	dw NinetalesAIcon
 	dw MareepIcon
 	dw FlaaffyIcon
 	dw AmpharosIcon
@@ -223,7 +223,7 @@ IconPointers:
 	dw DeoxysIcon
 	dw SwinubIcon
 	dw PiloswineIcon
-	dw SpiritombIcon
+	dw NownIcon
 	dw LatiosIcon
 	dw PalkiaIcon
 	dw KyogreIcon
@@ -238,7 +238,7 @@ IconPointers:
 	dw RayquazaIcon
 	dw SmeargleIcon
 	dw DialgaIcon
-	dw KlefkiIcon
+	dw KleavorIcon
 	dw XerneasIcon
 	dw YveltalIcon
 	dw GiratinaIcon

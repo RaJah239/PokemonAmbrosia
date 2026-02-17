@@ -5,6 +5,5 @@
 	next "It can climb"
 	next "vertical walls."
 
-	page "Deals extra"
-	next "critical hit"
-	next "damage.@"
+	page "Boosted crit rate"
+	next "and damage.@"

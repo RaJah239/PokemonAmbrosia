@@ -1,9 +1,9 @@
 	db UNOWN ; 201
 
-	db  48,  72,  48,  48,  72,  48
+	db  72,  48,  48,  48,  72,  48
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
+	db GHOST, GHOST ; type
 	db 225 ; catch rate
 	db 61 ; base exp
 	db NO_ITEM, NO_ITEM ; items

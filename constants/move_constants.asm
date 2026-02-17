@@ -127,7 +127,7 @@
 	const LAVA_PLUME   ; 77
 	const SELFDESTRUCT ; 78
 	const BRAVE_BIRD   ; 79
-	const LICK         ; 7a
+	const OMINOUS_WIND ; 7a
 	const EARTH_POWER  ; 7b
 	const SLUDGE       ; 7c
 	const CLOSE_COMBAT ; 7d

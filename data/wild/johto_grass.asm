@@ -1115,7 +1115,7 @@ JohtoGrassWildMons:
 	; nite
 	db 70, GENGAR
 	db 70, WEAVILE
-	db 72, SPIRITOMB
+	db 72, NOWN
 	db 72, AEGISLASH
 	db 75, GLISCOR
 	db 75, MAMOSWINE
@@ -1129,7 +1129,7 @@ JohtoGrassWildMons:
 	db 70, HAWLUCHA
 	db 72, HERACROSS
 	db 72, CONKELDURR
-	db 75, KLEFKI
+	db 75, KLEAVOR
 	db 75, MELMETAL
 	db 80, SNORLAX
 	; day
@@ -1137,7 +1137,7 @@ JohtoGrassWildMons:
 	db 70, GARDEVOIR
 	db 72, HERACROSS
 	db 72, CONKELDURR
-	db 75, KLEFKI
+	db 75, KLEAVOR
 	db 75, TOGEKISS
 	db 80, SNORLAX
 	; nite
@@ -1241,7 +1241,7 @@ JohtoGrassWildMons:
 	db 41, WEAVILE
 	db 42, HOUNDOOM
 	db 44, BISHARP
-	db 46, SPIRITOMB
+	db 46, NOWN
 	db 54, TYRANITAR
 	db 61, HYDREIGON
 	; day
@@ -1249,7 +1249,7 @@ JohtoGrassWildMons:
 	db 41, WEAVILE
 	db 42, HOUNDOOM
 	db 44, BISHARP
-	db 46, SPIRITOMB
+	db 46, NOWN
 	db 54, TYRANITAR
 	db 61, HYDREIGON
 	; nite
@@ -1257,7 +1257,7 @@ JohtoGrassWildMons:
 	db 41, WEAVILE
 	db 42, HOUNDOOM
 	db 44, BISHARP
-	db 46, SPIRITOMB
+	db 46, NOWN
 	db 54, TYRANITAR
 	db 61, HYDREIGON
 	end_grass_wildmons
@@ -1355,7 +1355,7 @@ JohtoGrassWildMons:
 	db 11, SOLOSIS
 	db 11, ABRA
 	db 11, MUDKIP
-	db 15, SIGILYPH
+	db 15, MELTAN
 	; day
 	db 7, MAREEP
 	db 9, BELLSPROUT
@@ -1363,7 +1363,7 @@ JohtoGrassWildMons:
 	db 11, SOLOSIS
 	db 11, ABRA
 	db 11, MUDKIP
-	db 15, SIGILYPH
+	db 15, MELTAN
 	; nite
 	db 7, POLIWAG
 	db 9, CLEFAIRY
@@ -1371,7 +1371,7 @@ JohtoGrassWildMons:
 	db 11, SOLOSIS
 	db 11, ABRA
 	db 11, MUDKIP
-	db 15, SIGILYPH
+	db 15, MELTAN
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_33
@@ -1521,7 +1521,7 @@ JohtoGrassWildMons:
 	db 24, FERROSEED
 	db 23, MILTANK
 	db 26, TAUROS
-	db 26, KLEFKI
+	db 26, MELTAN
 	db 26, METANG
 	db 36, MAGNETON
 	; day
@@ -1529,7 +1529,7 @@ JohtoGrassWildMons:
 	db 24, FERROSEED
 	db 23, MILTANK
 	db 26, TAUROS
-	db 26, KLEFKI
+	db 26, MELTAN
 	db 26, METANG
 	db 36, MAGNETON
 	; nite
@@ -1537,7 +1537,7 @@ JohtoGrassWildMons:
 	db 24, FERROSEED
 	db 23, MILTANK
 	db 26, TAUROS
-	db 26, KLEFKI
+	db 26, MELTAN
 	db 26, METANG
 	db 36, MAGNETON
 	end_grass_wildmons
@@ -1547,25 +1547,25 @@ JohtoGrassWildMons:
 	; morn
 	db 22, MAGNEMITE
 	db 23, FERROSEED
-	db 23, KLEFKI
+	db 23, SKARMORY
 	db 26, ELECTABUZZ
-	db 26, SKARMORY
+	db 26, MELTAN
 	db 26, METANG
 	db 36, ELECTABUZZ
 	; day
 	db 22, MAGNEMITE
 	db 23, FERROSEED
-	db 23, KLEFKI
+	db 23, SKARMORY
 	db 26, ELECTABUZZ
-	db 26, SKARMORY
+	db 26, MELTAN
 	db 26, METANG
 	db 36, ELECTABUZZ
 	; nite
 	db 22, MAGNEMITE
 	db 23, FERROSEED
-	db 23, KLEFKI
+	db 23, SKARMORY
 	db 26, ELECTABUZZ
-	db 26, SKARMORY
+	db 26, MELTAN
 	db 26, METANG
 	db 36, ELECTABUZZ
 	end_grass_wildmons
@@ -1854,7 +1854,7 @@ JohtoGrassWildMons:
 	; morn
 	db 55, LUCARIO
 	db 55, VENUSAUR
-	db 58, SIGILYPH
+	db 58, ESPEON
 	db 58, REUNICLUS
 	db 75, CHARIZARD
 	db 75, SNORLAX
@@ -1862,7 +1862,7 @@ JohtoGrassWildMons:
 	; day
 	db 55, LUCARIO
 	db 55, VENUSAUR
-	db 58, SIGILYPH
+	db 58, ESPEON
 	db 58, REUNICLUS
 	db 75, CHARIZARD
 	db 75, SNORLAX
@@ -1870,7 +1870,7 @@ JohtoGrassWildMons:
 	; nite
 	db 55, LUCARIO
 	db 55, VENUSAUR
-	db 58, SIGILYPH
+	db 58, ESPEON
 	db 58, REUNICLUS
 	db 75, CHARIZARD
 	db 75, SNORLAX
@@ -1880,7 +1880,7 @@ JohtoGrassWildMons:
     def_grass_wildmons ANCIENT_TEMPLE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 71, SIGILYPH
+	db 71, NOWN
 	db 71, CROBAT
 	db 73, RHYPERIOR
 	db 73, METAGROSS
@@ -1888,7 +1888,7 @@ JohtoGrassWildMons:
 	db 75, GARCHOMP
 	db 75, GENESECT
 	; day
-	db 71, SIGILYPH
+	db 71, NOWN
 	db 71, CROBAT
 	db 73, RHYPERIOR
 	db 73, METAGROSS
@@ -1896,7 +1896,7 @@ JohtoGrassWildMons:
 	db 75, GARCHOMP
 	db 75, GENESECT
 	; nite
-	db 71, SIGILYPH
+	db 71, NOWN
 	db 71, CROBAT
 	db 73, RHYPERIOR
 	db 73, METAGROSS
@@ -1908,7 +1908,7 @@ JohtoGrassWildMons:
     def_grass_wildmons ABYSS
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 66, SPIRITOMB
+	db 66, NOWN
 	db 67, CHANDELURE
 	db 68, UMBREON
 	db 70, KINGAMBIT
@@ -1916,7 +1916,7 @@ JohtoGrassWildMons:
 	db 73, TYRANITAR
 	db 75, HYDREIGON
 	; day
-	db 66, SPIRITOMB
+	db 66, NOWN
 	db 67, CHANDELURE
 	db 68, UMBREON
 	db 70, KINGAMBIT
@@ -1924,7 +1924,7 @@ JohtoGrassWildMons:
 	db 73, TYRANITAR
 	db 75, HYDREIGON
 	; nite
-	db 66, SPIRITOMB
+	db 66, NOWN
 	db 67, CHANDELURE
 	db 68, UMBREON
 	db 70, KINGAMBIT

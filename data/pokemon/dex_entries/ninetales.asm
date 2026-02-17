@@ -1,4 +1,4 @@
-	db "FOX@" ; species name
+	db "Fox@" ; species name
 	dw 307, 440 ; height, weight
 
 	db   "It's said to live"
@@ -7,4 +7,4 @@
 
 	page "Immune to"
 	next "Fire and raises"
-	next "Safeguard.@"
+	next "Light Screen.@"

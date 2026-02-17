@@ -64,7 +64,6 @@ MoveGrammar:
 	db TOXIC
 	db SCREECH
 	db METRONOME
-	db LICK
 	db CLAMP
 	db POISON_GAS
 	db SLASH

@@ -5,5 +5,6 @@
 	next "unmatched. it can"
 	next "scale buildings."
 
-	page "Has increased"
-	next "Accuracy.@"
+	page "All moves have"
+	next "STAB. Boosted"
+	next "accuracy.@"

@@ -5,5 +5,6 @@
 	next "a ninja, leaving"
 	next "defeated foes."
 
-	page "Has increased"
-	next "Accuracy.@"
+	page "All moves have"
+	next "STAB. Boosted"
+	next "accuracy.@"

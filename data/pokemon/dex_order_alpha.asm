@@ -96,7 +96,7 @@ AlphabeticalPokedexOrder:
 	db HONCHKROW
 	db HONEDGE
 	db HOOTHOOT
-	db HORSEA
+	db SNEASLER
 	db HOUNDOOM
 	db HOUNDOUR
 	db INFERNAPE
@@ -108,7 +108,7 @@ AlphabeticalPokedexOrder:
 	db KINGAMBIT
 	db KINGDRA
 	db KIRLIA
-	db KLEFKI
+	db KLEAVOR
 	db ZWEILOUS
 	db KYOGRE
 	db LAMPENT
@@ -200,7 +200,7 @@ AlphabeticalPokedexOrder:
     db SHELGON
 	db SHELLDER
 	db SHROOMISH
-	db SIGILYPH
+	db NINETALES_A
 	db SKARMORY
 	db SLOWBRO
 	db MELMETAL
@@ -210,7 +210,7 @@ AlphabeticalPokedexOrder:
 	db SNORLAX
 	db SNOVER
 	db SOLOSIS
-	db SPIRITOMB
+	db NOWN
 	db SQUIRTLE
 	db STARAPTOR
 	db STARAVIA

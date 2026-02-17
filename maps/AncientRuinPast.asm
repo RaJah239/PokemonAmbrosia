@@ -96,9 +96,9 @@ AncientRuinPastFieldMon2Script:
 
 AncientRuinPastFieldMon3Script:
 	faceplayer
-	cry SIGILYPH
+	cry ESPEON
 	pause 15
-	loadwildmon SIGILYPH, 63
+	loadwildmon ESPEON, 63
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_FIELD_MON_3

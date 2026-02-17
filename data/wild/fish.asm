@@ -102,10 +102,10 @@ FishGroups:
 .Garchomp_Swarm_Old:
 	db  70 percent + 1, MAGIKARP,   15
 	db  85 percent + 1, MAGIKARP,   15
-	db 100 percent,     HORSEA,   15
+	db 100 percent,     SEADRA,   15
 .Garchomp_Swarm_Good:
-	db  35 percent,     HORSEA,   20
-	db  70 percent,     HORSEA,   20
+	db  35 percent,     SEADRA,   20
+	db  70 percent,     SEADRA,   20
 	db  90 percent + 1, SEADRA,   30
 	db 100 percent,     time_group 10
 .Garchomp_Swarm_Super:
@@ -219,7 +219,7 @@ TimeFishGroups:
 	db POLIWHIRL,    40,  POLIWHIRL,    40 ; 7
 	db DRATINI,    20,  DRATINI,    20 ; 8
 	db DRAGONAIR,    40,  DRAGONAIR,    40 ; 9
-	db HORSEA,   20,  HORSEA,   20 ; 10
+	db SEADRA,   20,  SEADRA,   20 ; 10
 	db SEADRA,   40,  SEADRA,   40 ; 11
 	db FEEBAS,   20,  FEEBAS,   20 ; 12
 	db MILOTIC,   40,  MILOTIC,   40 ; 13

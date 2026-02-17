@@ -3079,7 +3079,7 @@ BattleTowerMons:
     bigdw 150
 	db "RANTA-N@@@@"
 
-	db SIGILYPH
+	db NINETALES_A
 	db LEFTOVERS
 	db AIR_SLASH, EARTH_POWER, CALM_MIND, ROOST
 	dw 0 ; OT ID

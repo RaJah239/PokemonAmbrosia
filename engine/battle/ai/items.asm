@@ -665,7 +665,7 @@ AI_TrySwitch:
 	ld a, [wBattleMonSpecies]
 	cp CHANDELURE
 	ret z
-	cp SPIRITOMB
+	cp NOWN
 	ret z
 	cp GIRATINA
 	ret z

@@ -281,7 +281,7 @@ RhyperiorEggMoves:
 	db DISABLE
 	db -1 ; end
 
-HorseaEggMoves:
+SneaslerEggMoves:
 	db AURORA_BEAM
 	db DRAGON_DANCE
 	db DISABLE
@@ -338,7 +338,7 @@ AerodactylEggMoves:
 	db -1 ; end
 
 SnorlaxEggMoves:
-	db LICK
+	db LOVELY_KISS
 	db -1 ; end
 
 DratiniEggMoves:

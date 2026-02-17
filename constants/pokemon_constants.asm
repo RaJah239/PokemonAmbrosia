@@ -134,7 +134,7 @@
 	const CHANSEY    ; 71
 	const WEAVILE    ; 72
 	const RHYPERIOR  ; 73
-	const HORSEA     ; 74
+	const SNEASLER     ; 74
 	const SEADRA     ; 75
 	const MAGMORTAR  ; 76
 	const HONCHKROW  ; 77
@@ -197,7 +197,7 @@ JOHTO_POKEMON EQU const_value
 	const TOGEPI     ; af
 	const TOGETIC    ; b0
 	const TOGEKISS   ; b1
-	const SIGILYPH   ; b2
+	const NINETALES_A   ; b2
 	const MAREEP     ; b3
 	const FLAAFFY    ; b4
 	const AMPHAROS   ; b5
@@ -241,7 +241,7 @@ JOHTO_POKEMON EQU const_value
 	const DEOXYS     ; db
 	const SWINUB     ; dc
 	const PILOSWINE  ; dd
-	const SPIRITOMB  ; de
+	const NOWN  ; de
 	const LATIOS     ; df
 	const PALKIA     ; e0
 	const KYOGRE     ; e1
@@ -256,7 +256,7 @@ JOHTO_POKEMON EQU const_value
 	const RAYQUAZA   ; ea
 	const SMEARGLE   ; eb
 	const DIALGA     ; ec
-	const KLEFKI     ; ed
+	const KLEAVOR     ; ed
 	const XERNEAS    ; ee
 	const YVELTAL    ; ef
 	const GIRATINA   ; f0

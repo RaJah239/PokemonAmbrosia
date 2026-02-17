@@ -795,7 +795,7 @@ ShadowTag:
     jr z, .trap
     cp GIRATINA
     jr z, .trap
-    cp SPIRITOMB
+    cp NOWN
     jr z, .trap
     ret
 .trap

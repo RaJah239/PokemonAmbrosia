@@ -602,7 +602,7 @@ CooltrainerfCaraAfterBattleText:
 	cont "at the same time."
 
 	para "We were both"
-	line "given a Horsea"
+	line "given a Seadra"
 	cont "as our first"
 	cont "#mon."
 

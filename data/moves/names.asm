@@ -121,7 +121,7 @@ MoveNames::
     li "Lava Plume"
     li "Selfdestruct"
     li "Brave Bird"
-    li "Lick"
+    li "Ominous Wind"
     li "Earth Power"
     li "Sludge"
     li "Close Combat"

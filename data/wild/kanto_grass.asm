@@ -369,29 +369,29 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 35, SIGILYPH
-	db 36, KADABRA
-	db 37, EXEGGCUTE
-	db 38, DUOSION
-	db 42, GARDEVOIR
+	db 35, KADABRA
+	db 36, DUOSION
+	db 37, GARDEVOIR
+	db 38, GALLADE
 	db 42, ALAKAZAM
-	db 46, ESPEON
+	db 42, ESPEON
+	db 50, METAGROSS
 	; day
-	db 35, SIGILYPH
-	db 36, KADABRA
-	db 37, EXEGGCUTE
-	db 38, DUOSION
-	db 42, GARDEVOIR
+	db 35, KADABRA
+	db 36, DUOSION
+	db 37, GARDEVOIR
+	db 38, GALLADE
 	db 42, ALAKAZAM
-	db 46, ESPEON
+	db 42, ESPEON
+	db 50, METAGROSS
 	; nite
-	db 35, SIGILYPH
-	db 36, KADABRA
-	db 37, EXEGGCUTE
-	db 38, DUOSION
-	db 42, GARDEVOIR
+	db 35, KADABRA
+	db 36, DUOSION
+	db 37, GARDEVOIR
+	db 38, GALLADE
 	db 42, ALAKAZAM
-	db 46, ESPEON
+	db 42, ESPEON
+	db 50, METAGROSS
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_9
@@ -399,7 +399,7 @@ KantoGrassWildMons:
 	; morn
 	db 34, METANG
 	db 36, GALVANTULA
-	db 36, KLEFKI
+	db 36, SCIZOR
 	db 37, SKARMORY
 	db 40, BISHARP
 	db 40, MAGNEZONE
@@ -407,7 +407,7 @@ KantoGrassWildMons:
 	; day
 	db 34, METANG
 	db 36, GALVANTULA
-	db 36, KLEFKI
+	db 36, SCIZOR
 	db 37, SKARMORY
 	db 40, BISHARP
 	db 40, MAGNEZONE
@@ -415,7 +415,7 @@ KantoGrassWildMons:
 	; nite
 	db 34, METANG
 	db 36, ROTOM
-	db 36, KLEFKI
+	db 36, SCIZOR
 	db 37, SKARMORY
 	db 40, BISHARP
 	db 40, MAGNEZONE

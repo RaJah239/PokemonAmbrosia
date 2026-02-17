@@ -440,7 +440,7 @@ RotomEvosAttacks:
 PoltegeistEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, MEGA_DRAIN
-	db 10, LICK
+	db 20, OMINOUS_WIND
 	db 30, SHADOW_BALL
 	db 35, GIGA_DRAIN
 	db 45, NASTY_PLOT
@@ -548,6 +548,7 @@ ClefableEvosAttacks:
 
 VulpixEvosAttacks:
 	db EVOLVE_ITEM, FIRE_STONE, NINETALES
+	db EVOLVE_ITEM, MOON_STONE, NINETALES_A
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, EMBER
@@ -575,6 +576,7 @@ NinetalesEvosAttacks:
 	db 36, FLAMETHROWER
 	db 40, MOON_BLAST
 	db 45, FIRE_BLAST
+	db 50, NASTY_PLOT
 	db 0 ; no more level-up moves
 
 MawileEvosAttacks:
@@ -1370,7 +1372,6 @@ GastlyEvosAttacks:
 	db EVOLVE_LEVEL, 25, HAUNTER
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
-	db 1, LICK
 	db 1, ACID
 	db 1, CONFUSE_RAY
 	db 10, DISABLE
@@ -1388,7 +1389,6 @@ HaunterEvosAttacks:
 	db EVOLVE_LEVEL, 40, GENGAR
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
-	db 1, LICK
 	db 1, ACID
 	db 1, CONFUSE_RAY
 	db 10, DISABLE
@@ -1405,7 +1405,6 @@ HaunterEvosAttacks:
 GengarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
-	db 1, LICK
 	db 1, ACID
 	db 1, CONFUSE_RAY
 	db 10, DISABLE
@@ -1730,19 +1729,20 @@ RhyperiorEvosAttacks:
 	db 55, DRAGON_DANCE
 	db 0 ; no more level-up moves
 
-HorseaEvosAttacks:
-	db EVOLVE_LEVEL, 25, SEADRA
+SneaslerEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
-	db 8, SMOKESCREEN
-	db 10, AQUA_JET
-	db 20, BUBBLEBEAM
-	db 25, RAIN_DANCE
-	db 31, WATERFALL
-	db 40, DRAGON_PULSE
-	db 45, DRAGON_CLAW
-	db 50, HYDRO_PUMP
-	db 55, DRAGON_DANCE
+	db 1, QUICK_ATTACK
+	db 1, POISON_STING
+	db 1, FOCUS_ENERGY
+	db 15, KARATE_CHOP
+	db 22, SLASH
+	db 25, TAUNT
+	db 30, NIGHT_SLASH
+	db 33, DRAIN_PUNCH
+	db 36, CROSS_POISON
+	db 40, CLOSE_COMBAT
+	db 45, HI_JUMP_KICK
+	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
@@ -1847,7 +1847,8 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
-	db EVOLVE_LEVEL, 30, SCIZOR
+	db EVOLVE_ITEM, SUN_STONE, SCIZOR
+	db EVOLVE_ITEM, MOON_STONE, KLEAVOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
@@ -1864,7 +1865,6 @@ ScytherEvosAttacks:
 JynxEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
-	db 1, LICK
 	db 9, LOVELY_KISS
 	db 13, POWDER_SNOW
 	db 18, BODY_SLAM
@@ -2625,7 +2625,6 @@ LitwickEvosAttacks:
     db EVOLVE_LEVEL, 30, LAMPENT
 	db 0 ; no more evolutions
 	db 1, EMBER
-	db 1, LICK
 	db 12, CONFUSE_RAY
 	db 18, WILL_O_WISP
 	db 24, NIGHT_SHADE
@@ -2639,7 +2638,6 @@ LampentEvosAttacks:
     db EVOLVE_LEVEL, 40, CHANDELURE
 	db 0 ; no more evolutions
 	db 1, EMBER
-	db 1, LICK
 	db 12, CONFUSE_RAY
 	db 18, WILL_O_WISP
 	db 24, NIGHT_SHADE
@@ -2652,7 +2650,6 @@ LampentEvosAttacks:
 ChandelureEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, EMBER
-	db 1, LICK
 	db 12, CONFUSE_RAY
 	db 18, WILL_O_WISP
 	db 24, NIGHT_SHADE
@@ -2713,19 +2710,20 @@ TogekissEvosAttacks:
 	db 55, CALM_MIND
 	db 0 ; no more level-up moves
 
-SigilyphEvosAttacks:
+NinetalesAEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, GUST
-	db 1, CONFUSION
-	db 1, DISABLE
-	db 10, HYPNOSIS
+	db 1, QUICK_ATTACK
+	db 1, POWDER_SNOW
+	db 10, CONFUSE_RAY
+	db 14, DRAIN_KISS
 	db 20, PSYBEAM
-	db 25, DREAM_EATER
-	db 30, AIR_SLASH
-	db 35, DEFOG
-	db 36, PSYCHIC_M
-	db 40, RECOVER
-	db 50, CALM_MIND
+	db 25, HYPNOSIS
+	db 25, ICY_WIND
+	db 30, HAIL
+	db 36, ICE_BEAM
+	db 40, MOON_BLAST
+	db 45, BLIZZARD
+	db 50, NASTY_PLOT
 	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
@@ -2779,12 +2777,11 @@ SylveonEvosAttacks:
 MismagiusEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, DISABLE
-	db 6, LICK
-	db 10, CONFUSION
+	db 6, CONFUSION
 	db 12, CONFUSE_RAY
 	db 14, MEAN_LOOK
 	db 16, HYPNOSIS
-	db 20, PSYBEAM
+	db 20, OMINOUS_WIND
     db 22, WILL_O_WISP
 	db 25, PAIN_SPLIT
 	db 30, SHADOW_BALL
@@ -3041,12 +3038,11 @@ MisdreavusEvosAttacks:
     db EVOLVE_ITEM, MOON_STONE, MISMAGIUS
 	db 0 ; no more evolutions
 	db 1, DISABLE
-	db 6, LICK
-	db 10, CONFUSION
+	db 6, CONFUSION
 	db 12, CONFUSE_RAY
 	db 14, MEAN_LOOK
 	db 16, HYPNOSIS
-	db 20, PSYBEAM
+	db 20, OMINOUS_WIND
     db 22, WILL_O_WISP
 	db 25, PAIN_SPLIT
 	db 30, SHADOW_BALL
@@ -3055,8 +3051,19 @@ MisdreavusEvosAttacks:
 	db 0 ; no more level-up moves
 
 UnownEvosAttacks:
+    db EVOLVE_LEVEL, 30, NOWN
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
+	db 6, GLARE
+	db 12, OMINOUS_WIND
+	db 18, WILL_O_WISP
+	db 24, DESTINY_BOND
+	db 31, SHADOW_BALL
+	db 36, AURA_SPHERE
+	db 42, RECOVER
+	db 48, ANCIENTPOWER
+	db 54, CALM_MIND
+	db 60, SHADOW_FORCE
 	db 0 ; no more level-up moves
 
 MeltanEvosAttacks:
@@ -3258,6 +3265,7 @@ HeracrossEvosAttacks:
 
 SneaselEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, WEAVILE
+	db EVOLVE_ITEM, SUN_STONE, SNEASLER
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, SCRATCH
@@ -3278,7 +3286,7 @@ TeddiursaEvosAttacks:
 	db EVOLVE_LEVEL, 30, URSARING
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 8, LICK
+	db 10, BITE
 	db 15, HEADBUTT
 	db 22, REST
 	db 26, CRUNCH
@@ -3292,7 +3300,6 @@ UrsaringEvosAttacks:
     db EVOLVE_ITEM, MOON_STONE, URSALUNA_B
     db EVOLVE_ITEM, SUN_STONE, URSALUNA
 	db 0 ; no more evolutions
-	db 8, LICK
 	db 15, HEADBUTT
 	db 22, REST
 	db 26, CRUNCH
@@ -3360,20 +3367,19 @@ PiloswineEvosAttacks:
 	db 50, AVALANCHE
 	db 0 ; no more level-up moves
 
-SpiritombEvosAttacks:
+NownEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, NIGHT_SHADE
-	db 1, DESTINY_BOND
-	db 1, HYPNOSIS
-	db 1, DREAM_EATER
-	db 30, SHADOW_BALL
-	db 30, DARK_PULSE
-	db 35, WILL_O_WISP
-	db 40, SUCKER_PUNCH
-	db 45, PAIN_SPLIT
-	db 48, TRICK_ROOM
-	db 50, NASTY_PLOT
-	db 50, DARK_PULSE
+	db 1, HIDDEN_POWER
+	db 6, GLARE
+	db 12, OMINOUS_WIND
+	db 18, WILL_O_WISP
+	db 24, DESTINY_BOND
+	db 31, SHADOW_BALL
+	db 36, AURA_SPHERE
+	db 42, RECOVER
+	db 48, ANCIENTPOWER
+	db 54, CALM_MIND
+	db 60, SHADOW_FORCE
 	db 0 ; no more level-up moves
 
 LatiosEvosAttacks:
@@ -3578,19 +3584,20 @@ DialgaEvosAttacks:
 	db 70, METEOR_MASH
 	db 0 ; no more level-up moves
 
-KlefkiEvosAttacks:
+KleavorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 12, SCREECH
-	db 16, REFLECT
-	db 18, LIGHT_SCREEN
-	db 20, DRAIN_KISS
-	db 24, CONFUSE_RAY
-	db 30, IRON_HEAD
-	db 33, SPIKES
-	db 33, STEALTH_ROCK
-	db 37, FLASH_CANNON
-	db 40, MOON_BLAST
+	db 1, QUICK_ATTACK
+	db 1, STEALTH_ROCK
+	db 6, FOCUS_ENERGY
+	db 12, FEINT_ATTACK
+	db 15, FALSE_SWIPE
+	db 18, SLASH
+	db 24, WING_ATTACK
+    db 30, X_SCISSOR
+    db 35, NIGHT_SLASH
+    db 40, STONE_EDGE
+    db 45, MEGAHORN
+	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 XerneasEvosAttacks:
@@ -3619,7 +3626,7 @@ YveltalEvosAttacks:
 GiratinaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCARY_FACE
-	db 1, SHADOW_PUNCH
+	db 1, OMINOUS_WIND
 	db 1, ANCIENTPOWER
 	db 30, DRAGON_CLAW
 	db 35, WILL_O_WISP
