@@ -1853,6 +1853,8 @@ BattleCommand_CheckHit:
 	ret z
 	cp VOLCARONA
 	ret z
+	cp NINETALES
+	ret z
 .notFireBlast
 
 ; DevNote - make Blizzard always hit for Jynx

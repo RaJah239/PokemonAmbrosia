@@ -5,6 +5,6 @@
 	next "a thousand years"
 	next "for each tail."
 
-	page "Immune to"
-	next "Fire and raises"
+	page "Fire Blast will"
+	next "hit. Raises"
 	next "Light Screen.@"

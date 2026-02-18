@@ -14,8 +14,11 @@ GoldenrodPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
 GoldenrodPokecenter1F_GSBallSceneLeft:
+    checkevent EVENT_GOT_UNOWN_GIFT
+    iftrue .end
     checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .gsball
+.end
 	end
 
 .gsball
@@ -45,8 +48,11 @@ GoldenrodPokecenter1F_GSBallSceneLeft:
 	end
 
 GoldenrodPokecenter1F_GSBallSceneRight:
+    checkevent EVENT_GOT_UNOWN_GIFT
+    iftrue .end
     checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .gsball
+.end
 	end
 
 .gsball

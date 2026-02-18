@@ -97,7 +97,7 @@ RuinsOfAlphResearchCenterScientist2Script:
 .GotAllUnown:
 	writetext RuinsOfAlphResearchCenterScientist2Text_GotAllUnown
 	waitbutton
-	checkevent EVENT_GOT_UNOWN_AMBROSIA
+	checkevent EVENT_GOT_UNOWN_GIFT
 	iftrue .end
 	writetext RuinsOfAlphResearchCenterScientist2Text_GiveAmbrosia
 	waitbutton
@@ -105,12 +105,12 @@ RuinsOfAlphResearchCenterScientist2Script:
 	iftrue .ambrosia
 	verbosegiveitem GS_BALL
 	iffalse .end
-	setevent EVENT_GOT_UNOWN_AMBROSIA
+	setevent EVENT_GOT_UNOWN_GIFT
 	sjump .end
 .ambrosia
 	verbosegiveitem GS_BALL
 	iffalse .end
-	setevent EVENT_GOT_UNOWN_AMBROSIA
+	setevent EVENT_GOT_UNOWN_GIFT
 .end
 	closetext
 	end

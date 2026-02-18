@@ -66,7 +66,7 @@ SpriteMons:
 	db NOCTOWL
 	db HERACROSS
 	db MILTANK
-	db STEELIX
+	db NOWN
 	db LATIAS
 	db ALAKAZAM
 	db MACHAMP

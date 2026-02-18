@@ -181,7 +181,28 @@ IlexForestShrineScript:
 	turnobject PLAYER, DOWN
 	pause 20
 	special CelebiShrineEvent
-	loadwildmon CELEBI, 60
+	checkevent EVENT_BEAT_PRYCE
+	iffalse .smallLevel
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iffalse .lowerLevel
+	checkevent EVENT_BEAT_WALLACE
+	iffalse .midLevel
+	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT
+	loadwildmon CELEBI, 80
+    sjump .begin
+.midLevel
+	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT
+	loadwildmon CELEBI, 70
+    sjump .begin
+.lowerLevel
+	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT
+	loadwildmon CELEBI, 50
+	sjump .begin
+.smallLevel
+	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT
+	loadwildmon CELEBI, 40
+	sjump .begin
+.begin
 	startbattle
 	reloadmapafterbattle
 	pause 20

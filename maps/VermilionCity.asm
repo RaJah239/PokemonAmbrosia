@@ -93,7 +93,7 @@ VermilionSnorlax:
     sjump .begin
 .lowerLevel
 	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT
-	loadwildmon SNORLAX, 60
+	loadwildmon SNORLAX, 50
 	sjump .begin
 .smallLevel
 	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT

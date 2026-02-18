@@ -177,7 +177,7 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_NOCTOWL    ; af
 	const SPRITE_HERACROSS  ; b0
 	const SPRITE_MILTANK    ; b1
-	const SPRITE_STEELIX    ; b2
+	const SPRITE_NOWN       ; b2
 	const SPRITE_LATIAS     ; b3
 	const SPRITE_ALAKAZAM   ; b4
 	const SPRITE_MACHAMP    ; b5

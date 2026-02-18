@@ -5,6 +5,7 @@
     const DARKCAVEBLACKTHORNENTRANCE_FIELDMON_2
     const DARKCAVEBLACKTHORNENTRANCE_FIELDMON_3
     const DARKCAVEBLACKTHORNENTRANCE_XEHANORT
+    const DARKCAVEBLACKTHORNENTRANCE_FIELDMON_4
 
 DarkCaveBlackthornEntrance_MapScripts:
 	def_scene_scripts
@@ -42,6 +43,12 @@ DarkCaveBlackthornEntranceFieldMon3Script:
 	trainer HYDREIGON, FIELD_MON, EVENT_FIELD_MON_3, DarkCaveBlackthornEntrancePokemonAttacksText, 64, 0, .script
 .script
     disappear DARKCAVEBLACKTHORNENTRANCE_FIELDMON_3
+    end
+
+DarkCaveBlackthornEntranceFieldMon4Script:
+	trainer NOWN, FIELD_MON, EVENT_FIELD_MON_4, DarkCaveBlackthornEntrancePokemonAttacksText, 66, 0, .script
+.script
+    disappear DARKCAVEBLACKTHORNENTRANCE_FIELDMON_4
     end
 
 DarkCaveBlackthornEntrancePokemonAttacksText:
@@ -195,3 +202,4 @@ DarkCaveBlackthornEntrance_MapEvents:
 	object_event 40,  5, SPRITE_HYDREIGON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, DarkCaveBlackthornEntranceFieldMon3Script, EVENT_FIELD_MON_3
 	object_event  5,  5, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, DarkCaveXehanortScript, -1
 	object_event  7,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_GOLD, OBJECTTYPE_ITEMBALL, 0, DarkCaveBlackthornEntranceAmbrosia, EVENT_DARK_CAVE_BLACKTHORN_ENTRANCE_AMBROSIA
+	object_event 17, 13, SPRITE_NOWN, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 0, DarkCaveBlackthornEntranceFieldMon4Script, EVENT_FIELD_MON_4

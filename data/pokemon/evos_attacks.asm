@@ -1532,7 +1532,7 @@ ExeggcuteEvosAttacks:
 
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, ABSORB
+	db 1, ANCIENTPOWER
 	db 1, HYPNOSIS
 	db 1, TRICK_ROOM
 	db 7, REFLECT
@@ -1856,7 +1856,7 @@ ScytherEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
-	db 6, FOCUS_ENERGY
+	db 6, AGILITY
 	db 12, FEINT_ATTACK
 	db 15, FALSE_SWIPE
 	db 18, SLASH
@@ -3078,7 +3078,7 @@ MeltanEvosAttacks:
 	db 8, THUNDERSHOCK
 	db 12, BULLET_PUNCH
 	db 20, THUNDER_WAVE
-	db 25, DRAIN_PUNCH
+	db 25, THUNDERPUNCH
 	db 30, IRON_HEAD
 	db 40, FLASH_CANNON
 	db 51, IRON_DUKES
@@ -3592,11 +3592,12 @@ KleavorEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, STEALTH_ROCK
-	db 6, FOCUS_ENERGY
+	db 6, LEECH_LIFE
+	db 10, AGILITY
 	db 12, FEINT_ATTACK
 	db 15, FALSE_SWIPE
-	db 18, SLASH
-	db 24, WING_ATTACK
+	db 18, ROCK_THROW
+	db 26, ROCK_SLIDE
     db 30, X_SCISSOR
     db 35, NIGHT_SLASH
     db 40, STONE_EDGE
