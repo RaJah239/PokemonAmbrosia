@@ -735,7 +735,7 @@ JohtoGrassWildMons:
 	; morn
 	db 31, SNEASEL
 	db 31, SWINUB
-	db 32, CLOYSTER
+	db 32, NINETALES_A
 	db 32, ARCTIBAX
 	db 38, JYNX
 	db 42, ABOMASNOW
@@ -743,7 +743,7 @@ JohtoGrassWildMons:
 	; day
 	db 31, SNEASEL
 	db 31, SWINUB
-	db 32, CLOYSTER
+	db 32, NINETALES_A
 	db 32, ARCTIBAX
 	db 38, JYNX
 	db 42, ABOMASNOW
@@ -751,7 +751,7 @@ JohtoGrassWildMons:
 	; nite
 	db 31, SNEASEL
 	db 31, SWINUB
-	db 32, CLOYSTER
+	db 32, NINETALES_A
 	db 32, ARCTIBAX
 	db 38, JYNX
 	db 42, ABOMASNOW
@@ -763,7 +763,7 @@ JohtoGrassWildMons:
 	; morn
 	db 31, SNEASEL
 	db 31, SWINUB
-	db 32, CLOYSTER
+	db 32, NINETALES_A
 	db 32, ARCTIBAX
 	db 38, JYNX
 	db 42, ABOMASNOW
@@ -771,7 +771,7 @@ JohtoGrassWildMons:
 	; day
 	db 31, SNEASEL
 	db 31, SWINUB
-	db 32, CLOYSTER
+	db 32, NINETALES_A
 	db 32, ARCTIBAX
 	db 38, JYNX
 	db 42, ABOMASNOW
@@ -779,7 +779,7 @@ JohtoGrassWildMons:
 	; nite
 	db 31, SNEASEL
 	db 31, SWINUB
-	db 32, CLOYSTER
+	db 32, NINETALES_A
 	db 32, ARCTIBAX
 	db 38, JYNX
 	db 42, ABOMASNOW
@@ -1657,25 +1657,25 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_45
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 30, DRAGONAIR
 	db 30, GABITE
-	db 30, SHELGON
+	db 30, KLEAVOR
+	db 30, GRAVELER
 	db 41, FERROTHORN
 	db 42, EXCADRILL
 	db 43, GLISCOR
 	db 60, DRAGONITE
 	; day
-	db 30, DRAGONAIR
 	db 30, GABITE
-	db 30, SHELGON
+	db 30, KLEAVOR
+	db 30, GRAVELER
 	db 41, FERROTHORN
 	db 42, EXCADRILL
 	db 43, GLISCOR
 	db 60, DRAGONITE
 	; nite
-	db 30, DRAGONAIR
-	db 30, GABITE
-	db 30, SHELGON
+	db 30, ZWEILOUS
+	db 30, KLEAVOR
+	db 30, GRAVELER
 	db 41, FERROTHORN
 	db 42, EXCADRILL
 	db 43, GLISCOR

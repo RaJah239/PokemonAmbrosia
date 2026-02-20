@@ -514,7 +514,7 @@ KantoGrassWildMons:
 	db 40, VICTREEBEL
 	db 40, POLIWRATH
 	db 43, CHANSEY
-	db 43, TAUROS
+	db 43, SNEASLER
 	db 56, TAUROS
 	; day
 	db 38, STARAPTOR
@@ -522,7 +522,7 @@ KantoGrassWildMons:
 	db 40, VICTREEBEL
 	db 40, POLIWRATH
 	db 43, CHANSEY
-	db 43, TAUROS
+	db 43, SNEASLER
 	db 56, TAUROS
 	; nite
 	db 38, HONCHKROW
@@ -530,7 +530,7 @@ KantoGrassWildMons:
 	db 40, POLIWRATH
 	db 40, POLITOED
 	db 43, CLEFABLE
-	db 43, GENGAR
+	db 43, SNEASLER
 	db 56, TAUROS
 	end_grass_wildmons
 
@@ -539,23 +539,23 @@ KantoGrassWildMons:
 	; morn
 	db 42, NIDOKING
 	db 42, NIDOQUEEN
-	db 45, STARMIE
-	db 45, VENUSAUR
+	db 45, KLEAVOR
+	db 45, EXEGGUTOR
 	db 48, INFERNAPE
 	db 48, ARCANINE
 	db 64, VOLCARONA
 	; day
 	db 42, NIDOKING
 	db 42, NIDOQUEEN
-	db 45, STARMIE
-	db 45, VENUSAUR
+	db 45, KLEAVOR
+	db 45, EXEGGUTOR
 	db 48, INFERNAPE
 	db 48, ARCANINE
 	db 64, VOLCARONA
 	; nite
 	db 42, NIDOKING
 	db 42, NIDOQUEEN
-	db 45, GRENINJA
+	db 45, KLEAVOR
 	db 45, EXEGGUTOR
 	db 48, AEGISLASH
 	db 48, HOUNDOOM
