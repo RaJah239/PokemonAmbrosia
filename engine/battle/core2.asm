@@ -236,6 +236,10 @@ LeechSeedSwitch:
     callfar BattleCommand_LeechSeed
 	ret
 
+SubSwitch:
+    callfar BattleCommand_Substitute
+	ret
+
 AnyFieldEffectPresent:
     ld a, [wFieldWeather]
     cp WEATHER_NONE

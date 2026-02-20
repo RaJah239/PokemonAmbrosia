@@ -1017,7 +1017,7 @@ MachampEvosAttacks:
 	db 0 ; no more level-up moves
 
 BellsproutEvosAttacks:
-	db EVOLVE_LEVEL, 21, WEEPINBELL
+	db EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
 	db 0 ; no more evolutions
 	db 1, VINE_WHIP
 	db 1, ACID
@@ -1033,21 +1033,17 @@ BellsproutEvosAttacks:
 	db 40, LEAF_BLADE
 	db 0 ; no more level-up moves
 
-WeepinbellEvosAttacks:
-	db EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
+MimikyuEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, VINE_WHIP
-	db 1, ACID
-	db 6, GROWTH
-	db 11, POISON_STING
-	db 15, RAZOR_LEAF
-	db 18, SLEEP_POWDER
-	db 21, SLUDGE
-	db 24, SLASH
-	db 26, STUN_SPORE
-	db 30, CROSS_POISON
-	db 35, SLUDGE_BOMB
-	db 40, LEAF_BLADE
+	db 1, PAIN_SPLIT
+	db 10, OMINOUS_WIND
+	db 15, DRAIN_KISS
+	db 20, CHARM
+	db 25, NIGHT_SLASH
+	db 30, SUCKER_PUNCH
+	db 35, SHADOW_PUNCH
+	db 40, PLAY_ROUGH
+	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 VictreebelEvosAttacks:

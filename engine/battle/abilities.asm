@@ -49,7 +49,6 @@ SuperLuckPokemon:
     db HONCHKROW
     db WEAVILE
     db BELLSPROUT
-    db WEEPINBELL
     db VICTREEBEL
     db SNEASLER
     db -1

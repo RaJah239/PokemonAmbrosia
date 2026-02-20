@@ -119,6 +119,13 @@ SproutTower1FGrannyText:
 	para "People say that it"
 	line "became the center"
 	cont "pillar here."
+
+	para "Bellsprout evolves"
+	line "with a Leaf Stone."
+
+	para "That Bellsprout"
+	line "would need a"
+	next "big Leaf Stone."
 	done
 
 SproutTower1FTeacherText:

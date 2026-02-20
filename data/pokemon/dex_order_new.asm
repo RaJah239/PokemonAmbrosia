@@ -71,7 +71,7 @@ NewPokedexOrder:
 	db ONIX
 	db STEELIX
 	db BELLSPROUT
-	db WEEPINBELL
+	db MIMIKYU
 	db VICTREEBEL
 	db HAWLUCHA
 	db POLIWAG

@@ -71,7 +71,7 @@ IconPointers:
 	dw MachokeIcon
 	dw MachampIcon
 	dw BellsproutIcon
-	dw WeepinbellIcon
+	dw MimikyuIcon
 	dw VictreebelIcon
 	dw TentacoolIcon
 	dw TentacruelIcon

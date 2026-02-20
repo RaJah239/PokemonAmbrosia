@@ -74,7 +74,7 @@ MonMenuIconPals:
 	icon_pals BLUE,  GREEN      ; MACHOKE
 	icon_pals BLUE,  GREEN      ; MACHAMP
 	icon_pals GREEN,  TEAL       ; BELLSPROUT
-	icon_pals GREEN,  TEAL      ; WEEPINBELL
+	icon_pals GREEN,  TEAL      ; MIMIKYU
 	icon_pals GREEN,  TEAL     ; VICTREEBEL
 	icon_pals BLUE,  TEAL   ; TENTACOOL
 	icon_pals BLUE,  TEAL  ; TENTACRUEL

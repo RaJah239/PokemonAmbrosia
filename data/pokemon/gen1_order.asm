@@ -188,7 +188,7 @@ Pokered_MonIndices:
 	db BISHARP
 	db REGIGIGAS
 	db BELLSPROUT
-	db WEEPINBELL
+	db MIMIKYU
 	db VICTREEBEL
 	assert_table_length 190 ; gen 1 mon indexes
 	db TREECKO

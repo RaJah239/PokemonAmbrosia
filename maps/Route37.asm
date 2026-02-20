@@ -296,7 +296,7 @@ Route37FieldMon3Script:
     end
 
 Route37FieldMon4Script:
-	trainer NOWN, FIELD_MON, EVENT_FIELD_MON_4, Route37PokemonAttacksText, 33, 3, .script
+	trainer MIMIKYU, FIELD_MON, EVENT_FIELD_MON_4, Route37PokemonAttacksText, 28, 3, .script
 .script
     disappear ROUTE37_FIELDMON_4
     end

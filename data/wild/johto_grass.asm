@@ -1495,7 +1495,7 @@ JohtoGrassWildMons:
 	db 23, LITWICK
 	db 24, ROTOM
 	db 24, POLTEGEIST
-	db 38, GENGAR
+	db 38, MIMIKYU
 	; day
 	db 20, GASTLY
 	db 21, MISDREAVUS
@@ -1503,7 +1503,7 @@ JohtoGrassWildMons:
 	db 23, LITWICK
 	db 24, ROTOM
 	db 24, POLTEGEIST
-	db 38, GENGAR
+	db 38, MIMIKYU
 	; nite
 	db 20, GASTLY
 	db 21, MISDREAVUS
@@ -1511,7 +1511,7 @@ JohtoGrassWildMons:
 	db 23, LITWICK
 	db 24, ROTOM
 	db 24, POLTEGEIST
-	db 38, GENGAR
+	db 38, MIMIKYU
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_38

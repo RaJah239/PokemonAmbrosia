@@ -4816,6 +4816,9 @@ SwitchInEffects:
     cp BLASTOISE
     jp z, .defUp
 
+    cp MIMIKYU
+    jp z, .subSwitch
+
     cp RAIKOU
     jp z, .spdUp
     cp YANMA
@@ -5090,6 +5093,9 @@ SwitchInEffects:
     farcall BattleCommand_SpecialDefenseUp2
 	ld hl, DefenseModeText
 	jp StdBattleTextbox
+    ret
+.subSwitch
+    farcall SubSwitch
     ret
 
 ;PursuitSwitch:

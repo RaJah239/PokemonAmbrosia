@@ -69,7 +69,7 @@ PokemonNames::
     db "Machoke@@@"
     db "Machamp@@@"
     db "Bellsprout"
-    db "Weepinbell"
+    db "Mimikyu@@@"
     db "Victreebel"
     db "Tentacool@"
     db "Tentacruel"

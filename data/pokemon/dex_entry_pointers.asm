@@ -70,7 +70,7 @@ PokedexDataPointerTable:
 	dw MachokePokedexEntry
 	dw MachampPokedexEntry
 	dw BellsproutPokedexEntry
-	dw WeepinbellPokedexEntry
+	dw MimikyuPokedexEntry
 	dw VictreebelPokedexEntry
 	dw TentacoolPokedexEntry
 	dw TentacruelPokedexEntry

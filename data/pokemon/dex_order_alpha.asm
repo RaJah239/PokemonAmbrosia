@@ -244,7 +244,7 @@ AlphabeticalPokedexOrder:
 	db VULPIX
 	db WARTORTLE
 	db WEAVILE
-	db WEEPINBELL
+	db MIMIKYU
 	db WEEZING
 	db WHIMSICOTT
 	db MELTAN

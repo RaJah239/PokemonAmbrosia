@@ -92,7 +92,7 @@ LavenderForestFieldMon6Script:
     end
 
 LavenderForestFieldMon7Script:
-	trainer AEGISLASH, FIELD_MON, EVENT_FIELD_MON_7, LavenderForestPokemonAttacksText, 63, 0, .script
+	trainer MIMIKYU, FIELD_MON, EVENT_FIELD_MON_7, LavenderForestPokemonAttacksText, 63, 0, .script
 .script
     disappear LAVENDERFOREST_FIELDMON_7
     end

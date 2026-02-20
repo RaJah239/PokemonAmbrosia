@@ -5836,11 +5836,11 @@ BattleTowerMons:
 	db 0, 0 ; Status
 	bigdw 393
 	bigdw 393
-	bigdw 288
+	bigdw 248
 	bigdw 268
 	bigdw 208
 	bigdw 348
-	bigdw 248
+	bigdw 288
 	db "RANTA-N@@@@"
 
 	db REUNICLUS
