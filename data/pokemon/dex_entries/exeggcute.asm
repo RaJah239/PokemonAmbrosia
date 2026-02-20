@@ -5,6 +5,6 @@
 	next "instant if they"
 	next "separate."
 
-	page "Sp.Def boost on"
-	next "switch. Speed"
-	next "boost in Sun.@"
+	page "Speed boost in"
+	next "Sun. Resists"
+	next "Fire and Ice.@"

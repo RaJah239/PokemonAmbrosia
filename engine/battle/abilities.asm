@@ -130,6 +130,8 @@ ThickFatPokemon:
     db MAMOSWINE
     db PALKIA
     db RATICATE
+    db EXEGGCUTE
+    db EXEGGUTOR
     db -1
 
 TechnicianPokemon:

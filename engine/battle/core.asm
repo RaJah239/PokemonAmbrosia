@@ -4877,10 +4877,6 @@ SwitchInEffects:
     jp z, .spDefUp
     cp SLOWBRO
     jp z, .spDefUp
-    cp EXEGGCUTE
-    jp z, .spDefUp
-    cp EXEGGUTOR
-    jp z, .spDefUp
 
     cp SNEASEL
     jp z, .evasionUp
@@ -4930,6 +4926,8 @@ SwitchInEffects:
     jp z, .screenBreak
     cp DEOXYS
     jp z, .screenBreak
+    cp NOWN
+    jp z, .screenBreak
 
     cp GALLADE
     jp z, .reflect
@@ -4950,8 +4948,6 @@ SwitchInEffects:
     jp z, .lightScreen
 
     cp MOLTRES
-    jp z, .safeguard
-    cp NOWN
     jp z, .safeguard
     cp POLTEGEIST
     jp z, .safeguard

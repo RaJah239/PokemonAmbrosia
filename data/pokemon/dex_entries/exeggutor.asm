@@ -5,6 +5,6 @@
 	next "environment makes"
 	next "it grow heads."
 
-	page "Sp.Def boost on"
-	next "switch. Speed"
-	next "boost in Sun.@"
+	page "Speed boost in"
+	next "Sun. Resists"
+	next "Fire and Ice.@"

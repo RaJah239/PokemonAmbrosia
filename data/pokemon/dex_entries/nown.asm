@@ -5,6 +5,6 @@
 	next "a keystone for"
 	next "their misdeeds."
 
-	page "Raises Safeguard."
+	page "Breaks screens."
 	next "Traps foe. Immune"
 	next "to Ground.@"
