@@ -10,6 +10,12 @@ IcePathB2FMahoganySide_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, .Weather
+
+.Weather:
+	setval WEATHER_HAIL
+	writemem wFieldWeather
+	endcallback
 
 IcePathB2FMahoganySideBoulder:
 	jumptext IcePathB2FMahoganySideBoulderText

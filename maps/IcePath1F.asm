@@ -13,6 +13,8 @@ IcePath1F_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .IcePath1FFieldMon
 
 .IcePath1FFieldMon:
+	setval WEATHER_HAIL
+	writemem wFieldWeather
 ; Pokemon which always appear
     appear ICEPATH1F_FIELDMON_1
     appear ICEPATH1F_FIELDMON_2

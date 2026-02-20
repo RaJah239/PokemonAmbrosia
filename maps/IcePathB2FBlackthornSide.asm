@@ -5,6 +5,12 @@ IcePathB2FBlackthornSide_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, .Weather
+
+.Weather:
+	setval WEATHER_HAIL
+	writemem wFieldWeather
+	endcallback
 
 IcePathB2FBlackthornSideTMRest:
 	itemball TM_REST

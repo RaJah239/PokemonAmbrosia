@@ -23,9 +23,16 @@ Route45_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .Weather
 
 .Weather:
+    random 2
+    ifequal 1,.sand
+	setval WEATHER_HAIL
+	writemem wFieldWeather
+	sjump .spawn
+.sand
 	setval WEATHER_SANDSTORM
 	writemem wFieldWeather
 
+.spawn
 ; Pokemon which always appear
     appear ROUTE45_FIELDMON_1
     appear ROUTE45_FIELDMON_2

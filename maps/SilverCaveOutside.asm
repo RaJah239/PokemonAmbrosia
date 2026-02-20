@@ -25,10 +25,20 @@ SilverCaveOutside_MapScripts:
 
 .Objects:
     checkevent EVENT_BEAT_CRYSTAL_7
-    iftrue .skipWeather
+    iffalse .noWeather
+    random 2
+    ifequal 1,.sand
+	setval WEATHER_HAIL
+	writemem wFieldWeather
+	sjump .spawn
+.sand
+	setval WEATHER_SANDSTORM
+	writemem wFieldWeather
+	sjump .spawn
+.noWeather
 	setval WEATHER_NONE
 	writemem wFieldWeather
-.skipWeather
+.spawn
     disappear SILVERCAVEOUTSIDE_SILVER
     disappear SILVERCAVEOUTSIDE_CRYSTAL
 	appear SILVERCAVEOUTSIDE_FIELDMON_1

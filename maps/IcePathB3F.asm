@@ -12,6 +12,8 @@ IcePathB3F_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .IcePathB3FFieldMon
 
 .IcePathB3FFieldMon:
+	setval WEATHER_HAIL
+	writemem wFieldWeather
 ; Pokemon which always appear
     appear ICEPATHB3F_FIELDMON_1
     appear ICEPATHB3F_FIELDMON_2

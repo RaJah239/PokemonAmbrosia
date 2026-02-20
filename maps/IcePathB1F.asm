@@ -16,6 +16,8 @@ IcePathB1F_MapScripts:
 
 .SetUpStoneTable:
 	usestonetable .StoneTable
+	setval WEATHER_HAIL
+	writemem wFieldWeather
 	appear ICEPATHB1F_FIELDMON_1
     appear ICEPATHB1F_FIELDMON_2
     appear ICEPATHB1F_FIELDMON_3
