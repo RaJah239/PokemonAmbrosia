@@ -5740,7 +5740,7 @@ BattleTowerMons:
 	db "RANTA-N@@@@"
 
 	db NINETALES_A
-	db NEVERMETICE
+	db NEVERMELTICE
 	db BLIZZARD, MOON_BLAST, AURA_SPHERE, NASTY_PLOT
 	dw 0 ; OT ID
 	dt 0 ; Exp
