@@ -366,10 +366,10 @@ DeinoEvosAttacks:
 	db EVOLVE_LEVEL, 30, ZWEILOUS
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 10, FEINT_ATTACK
-	db 15, HEADBUTT
-	db 20, BITE
-	db 25, TAUNT
+	db 6, FEINT_ATTACK
+	db 12, HEADBUTT
+	db 18, BITE
+	db 23, TAUNT
 	db 31, CRUNCH
 	db 35, DRAGON_CLAW
 	db 40, DARK_PULSE

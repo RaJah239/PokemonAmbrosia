@@ -2047,7 +2047,7 @@ SabrinaGroup:
 BugCatcherGroup:
 	; BUG_CATCHER (1)
 	db "Don@", TRAINERTYPE_NORMAL
-	db  10, SCOLIPEDE
+	db  10, VENIPEDE
 	db -1 ; end
 
 	; BUG_CATCHER (2)
