@@ -1,6 +1,6 @@
 	db NOWN ; 222
 
-	db  120, 48, 96, 48, 120, 96
+	db  96, 48, 96, 48, 120, 96
 	;   hp  atk  def  spd  sat  sdf
 
     db GHOST, GHOST ; type
