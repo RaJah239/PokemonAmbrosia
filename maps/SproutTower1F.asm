@@ -125,7 +125,7 @@ SproutTower1FGrannyText:
 
 	para "That Bellsprout"
 	line "would need a"
-	next "big Leaf Stone."
+	cont "big Leaf Stone."
 	done
 
 SproutTower1FTeacherText:

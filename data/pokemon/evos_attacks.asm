@@ -365,15 +365,15 @@ LopunnyEvosAttacks:
 DeinoEvosAttacks:
 	db EVOLVE_LEVEL, 30, ZWEILOUS
 	db 0 ; no more evolutions
-	db 1, TACKLE
+	db 1, EMBER
 	db 6, FEINT_ATTACK
-	db 12, HEADBUTT
-	db 18, BITE
+	db 12, OMINOUS_WIND
+	db 18, CRUNCH
 	db 23, TAUNT
-	db 31, CRUNCH
+	db 31, DARK_PULSE
 	db 35, DRAGON_CLAW
-	db 40, DARK_PULSE
-	db 45, DRAGON_PULSE
+	db 40, DRAGON_PULSE
+	db 45, FIRE_BLAST
 	db 50, NASTY_PLOT
 	db 70, DRACO_METEOR
 	db 0 ; no more level-up moves
@@ -1497,10 +1497,9 @@ MudkipEvosAttacks:
 
 BaxcaliburEvosAttacks:
 	db 0 ; no more evolutions
-	db 15, HAIL
-	db 20, BITE
+	db 20, HAIL
 	db 25, DRAGON_PULSE
-	db 30, ICE_PUNCH
+	db 31, ICE_PUNCH
 	db 35, DRAGON_CLAW
 	db 40, CRUNCH
 	db 45, ICE_BEAM
@@ -1622,16 +1621,16 @@ ReuniclusEvosAttacks:
 ZweilousEvosAttacks:
 	db EVOLVE_LEVEL, 50, HYDREIGON
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 10, FEINT_ATTACK
-	db 15, HEADBUTT
-	db 20, BITE
-	db 25, TAUNT
-	db 31, CRUNCH
+	db 1, EMBER
+	db 6, FEINT_ATTACK
+	db 12, OMINOUS_WIND
+	db 18, CRUNCH
+	db 23, TAUNT
+	db 30, DARK_PULSE
 	db 35, DRAGON_CLAW
-	db 40, DARK_PULSE
-	db 45, DRAGON_PULSE
-	db 50, NASTY_PLOT
+	db 40, DRAGON_PULSE
+	db 45, FIRE_BLAST
+	db 51, NASTY_PLOT
 	db 70, DRACO_METEOR
 	db 0 ; no more level-up moves
 
@@ -1739,7 +1738,7 @@ SneaslerEvosAttacks:
 	db 25, TAUNT
 	db 30, NIGHT_SLASH
 	db 33, DRAIN_PUNCH
-	db 36, CROSS_POISON
+	db 35, CROSS_POISON
 	db 40, CLOSE_COMBAT
 	db 45, HI_JUMP_KICK
 	db 50, SWORDS_DANCE
@@ -2590,9 +2589,10 @@ FrigibaxEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POWDER_SNOW
 	db 1, SCRATCH
-	db 10, ICY_WIND
-	db 15, HAIL
-	db 20, BITE
+	db 8, ICY_WIND
+	db 12, SLASH
+	db 15, BITE
+	db 20, HAIL
 	db 25, DRAGON_PULSE
 	db 31, ICE_PUNCH
 	db 35, DRAGON_CLAW
@@ -2608,9 +2608,10 @@ ArctibaxEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POWDER_SNOW
 	db 1, SCRATCH
-	db 10, ICY_WIND
-	db 15, HAIL
-	db 20, BITE
+	db 8, ICY_WIND
+	db 12, SLASH
+	db 15, BITE
+	db 20, HAIL
 	db 25, DRAGON_PULSE
 	db 30, ICE_PUNCH
 	db 35, DRAGON_CLAW
@@ -2716,9 +2717,9 @@ NinetalesAEvosAttacks:
 	db 1, POWDER_SNOW
 	db 10, CONFUSE_RAY
 	db 14, DRAIN_KISS
-	db 20, PSYBEAM
+	db 20, ICY_WIND
 	db 25, HYPNOSIS
-	db 25, ICY_WIND
+	db 25, AURORA_BEAM
 	db 30, HAIL
 	db 36, ICE_BEAM
 	db 40, MOON_BLAST
@@ -3054,8 +3055,8 @@ UnownEvosAttacks:
     db EVOLVE_LEVEL, 30, NOWN
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
-	db 6, GLARE
-	db 12, OMINOUS_WIND
+	db 6, OMINOUS_WIND
+	db 12, GLARE
 	db 18, WILL_O_WISP
 	db 24, DESTINY_BOND
 	db 31, SHADOW_BALL
@@ -3130,15 +3131,15 @@ SalamenceEvosAttacks:
 
 HydreigonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 10, FEINT_ATTACK
-	db 15, HEADBUTT
-	db 20, BITE
-	db 25, TAUNT
-	db 31, CRUNCH
+	db 1, EMBER
+	db 6, FEINT_ATTACK
+	db 12, OMINOUS_WIND
+	db 18, CRUNCH
+	db 23, TAUNT
+	db 31, DARK_PULSE
 	db 35, DRAGON_CLAW
-	db 40, DARK_PULSE
-	db 45, DRAGON_PULSE
+	db 40, DRAGON_PULSE
+	db 45, FIRE_BLAST
 	db 50, NASTY_PLOT
 	db 70, DRACO_METEOR
 	db 0 ; no more level-up moves
@@ -3586,13 +3587,13 @@ DialgaEvosAttacks:
 
 KleavorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, QUICK_ATTACK
+	db 1, ROCK_THROW
 	db 1, STEALTH_ROCK
 	db 6, LEECH_LIFE
 	db 10, AGILITY
 	db 12, FEINT_ATTACK
 	db 15, FALSE_SWIPE
-	db 18, ROCK_THROW
+	db 18, LEECH_LIFE
 	db 26, ROCK_SLIDE
     db 30, X_SCISSOR
     db 35, NIGHT_SLASH

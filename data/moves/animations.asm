@@ -3496,6 +3496,7 @@ BattleAnim_PerishSong:
 	anim_wait 112
 	anim_ret
 
+BattleAnim_OminousWind:
 BattleAnim_IcyWind:
 	anim_1gfx ANIM_GFX_SPEED
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
@@ -4158,7 +4159,6 @@ BattleAnim_Crunch:
 	anim_wait 8
 	anim_ret
 
-BattleAnim_OminousWind:
 BattleAnim_Moonlight:
 	anim_1gfx ANIM_GFX_SHINE
 	anim_bgp $1b
