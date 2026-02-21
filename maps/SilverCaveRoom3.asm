@@ -9,7 +9,6 @@
     const SILVERCAVEROOM3_FIELDMON_4
     const SILVERCAVEROOM3_FIELDMON_5
     const SILVERCAVEROOM3_FIELDMON_6
-    const SILVERCAVEROOM3_FIELDMON_7
 
 SilverCaveRoom3_MapScripts:
 	def_scene_scripts
@@ -96,18 +95,6 @@ SilverCaveRoom3FieldMon6Script:
 	reloadmapafterbattle
 	setevent EVENT_FIELD_MON_6
 	disappear SILVERCAVEROOM3_FIELDMON_6
-	end
-
-SilverCaveRoom3FieldMon7Script:
-	faceplayer
-	cry BAXCALIBUR
-	pause 15
-	loadwildmon BAXCALIBUR, 80
-	loadvar VAR_BATTLETYPE, BATTLETYPE_PERFECT_ESCAPE
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_FIELD_MON_7
-	disappear SILVERCAVEROOM3_FIELDMON_7
 	end
 
 Red:
@@ -518,4 +505,3 @@ SilverCaveRoom3_MapEvents:
 	object_event  8, 31, SPRITE_HYDREIGON, SPRITEMOVEDATA_POKEMON, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SilverCaveRoom3FieldMon6Script, EVENT_FIELD_MON_6
 	object_event  7, 10, SPRITE_MEWTWO, SPRITEMOVEDATA_POKEMON, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SilverCaveRoom3MewtwoScript, -1
 	object_event 12, 10, SPRITE_HO_OH, SPRITEMOVEDATA_POKEMON, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SilverCaveRoom3HoohScript, -1
-	object_event  9, 33, SPRITE_BAXCALIBUR, SPRITEMOVEDATA_POKEMON, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SilverCaveRoom3FieldMon7Script, -1
