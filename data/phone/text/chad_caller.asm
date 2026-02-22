@@ -153,6 +153,7 @@ ChadDaisyTeaGossipText:
 	cont "past her."
 	para "Sure sign of"
 	line "attraction."
+	done
 
 ChadProfOakTravelingGossipText:
 	text "I aspire to be"
