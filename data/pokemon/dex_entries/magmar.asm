@@ -1,4 +1,4 @@
-	db "SPITFIRE@" ; species name
+	db "Spitfire@" ; species name
 	dw 403, 980 ; height, weight
 
 	db   "It heals itself"
@@ -8,3 +8,4 @@
 	page "Fire Blast won't"
 	next "miss. Immune"
 	next "to Fire.@"
+

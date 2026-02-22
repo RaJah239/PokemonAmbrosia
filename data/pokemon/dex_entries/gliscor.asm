@@ -1,4 +1,4 @@
-	db "SCORPION@" ; species name
+	db "Scorpion@" ; species name
 	dw 607, 937 ; height, weight
 
 	db   "Its flight is"
@@ -8,3 +8,4 @@
 	page "Sandstorm upon"
 	next "switch in. Regen"
 	next "HP in sand.@"
+

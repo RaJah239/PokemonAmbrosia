@@ -1,4 +1,4 @@
-	db "HAPPINESS@" ; species name
+	db "Happiness@" ; species name
 	dw 200, 70 ; height, weight
 
 	db   "It can stay in"
@@ -8,3 +8,4 @@
 	page "Move effects"
 	next "are more likely"
 	next "to occur.@"
+

@@ -7,3 +7,4 @@
 
 	page "Sp.Atk boost on"
 	next "defeating foe.@"
+

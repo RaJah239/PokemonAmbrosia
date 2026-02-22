@@ -1,4 +1,4 @@
-	db "COBRA@" ; species name
+	db "Cobra@" ; species name
 	dw 1106, 1430 ; height, weight
 
 	db   "To intimidate"
@@ -8,3 +8,4 @@
 	page "Armoured at"
 	next "max HP. Lowers"
 	next "foes Attack.@"
+

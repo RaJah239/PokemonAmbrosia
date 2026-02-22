@@ -1,4 +1,4 @@
-	db "DRAGON@" ; species name
+	db "Dragon@" ; species name
 	dw 311, 550 ; height, weight
 
 	db   "The male births"
@@ -8,3 +8,4 @@
 	page "Deals extra"
 	next "critical hit"
 	next "damage.@"
+

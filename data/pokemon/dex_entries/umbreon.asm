@@ -1,4 +1,4 @@
-	db "MOONLIGHT@" ; species name
+	db "Moonlight@" ; species name
 	dw 303, 600 ; height, weight
 
 	db   "On the night of a"
@@ -8,3 +8,4 @@
 	page "Taunts foe and"
 	next "boosts Sp.Def"
 	next "on switch.@"
+

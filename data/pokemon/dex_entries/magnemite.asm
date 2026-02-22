@@ -1,4 +1,4 @@
-	db "MAGNET@" ; species name
+	db "Magnet@" ; species name
 	dw 100, 130 ; height, weight
 
 	db   "The electricity"
@@ -7,3 +7,4 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+

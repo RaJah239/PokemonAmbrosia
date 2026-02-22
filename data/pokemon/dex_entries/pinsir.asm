@@ -1,4 +1,4 @@
-	db "STAGBEETLE@" ; species name
+	db "Stagbeetle@" ; species name
 	dw 411, 1210 ; height, weight
 
 	db   "Uses its lethal"
@@ -7,3 +7,4 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+

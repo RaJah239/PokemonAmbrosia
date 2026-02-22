@@ -1,4 +1,4 @@
-	db "TENDER@" ; species name
+	db "Tender@" ; species name
 	dw 1200, 14605 ; height, weight
 
 	db   "Calm and"
@@ -7,3 +7,4 @@
 
 	page "Gains armour"
 	next "when at full HP.@"
+

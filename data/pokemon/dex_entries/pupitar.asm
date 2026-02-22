@@ -1,4 +1,4 @@
-	db "HARD SHELL@" ; species name
+	db "Hard Shell@" ; species name
 	dw 311, 3350 ; height, weight
 
 	db   "It will not stay"
@@ -7,3 +7,4 @@
 
 	page "Attack boost on"
 	next "defeating foe.@"
+

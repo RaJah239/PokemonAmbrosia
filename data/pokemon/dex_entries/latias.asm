@@ -1,4 +1,4 @@
-	db "EON@" ; species name
+	db "Eon@" ; species name
 	dw 507, 1223 ; height, weight
 
 	db   "A caring creature"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Ground and sets"
 	next "Light Screen.@"
+

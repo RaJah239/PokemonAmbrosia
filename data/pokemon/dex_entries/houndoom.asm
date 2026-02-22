@@ -1,4 +1,4 @@
-	db "DARK@" ; species name
+	db "Dark@" ; species name
 	dw 407, 770 ; height, weight
 
 	db   "Its dark flames"
@@ -8,3 +8,4 @@
 	page "Boosted Special"
 	next "Attack. Immune"
 	next "to Fire.@"
+

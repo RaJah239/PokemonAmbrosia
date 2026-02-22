@@ -1,4 +1,4 @@
-	db "STARSHAPE@" ; species name
+	db "Starshape@" ; species name
 	dw 207, 760 ; height, weight
 
 	db   "When the stars"
@@ -7,3 +7,4 @@
 
 	page "Has increased"
 	next "Accuracy.@"
+

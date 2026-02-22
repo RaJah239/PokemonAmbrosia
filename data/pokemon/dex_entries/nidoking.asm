@@ -1,4 +1,4 @@
-	db "DRILL@" ; species name
+	db "Drill@" ; species name
 	dw 607, 2370 ; height, weight
 
 	db   "It uses its thick"
@@ -8,3 +8,4 @@
 	page "Extra damage on"
 	next "females. Lays"
 	next "Stealth Rock.@"
+

@@ -1,4 +1,4 @@
-	db "WRESTLING@" ; species name
+	db "Wrestling@" ; species name
 	dw 407, 950 ; height, weight
 
 	db   "Master of aerial"
@@ -8,3 +8,4 @@
 	page "Takes no"
 	next "recoil damage"
 	next "from attacks.@"
+

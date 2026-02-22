@@ -1,4 +1,4 @@
-	db "ATROCIOUS@" ; species name
+	db "Atrocious@" ; species name
 	dw 2104, 34605 ; height, weight
 
 	db   "It appears when-"
@@ -8,3 +8,4 @@
 	page "Attack boost"
 	next "on defeating"
 	next "opponent.@"
+

@@ -1,4 +1,4 @@
-	db "GAS@" ; species name
+	db "Gas@" ; species name
 	dw 503, 2 ; height, weight
 
 	db   "It hides in the"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Ground type"
 	next "moves.@"
+

@@ -1,4 +1,4 @@
-	db "FLYSCORPIO@" ; species name
+	db "Scorpio@" ; species name
 	dw 307, 1430 ; height, weight
 
 	db   "It builds nests"
@@ -7,3 +7,4 @@
 	page "Regenerates HP"
 	next "when in a"
 	next "sandstorm.@"
+

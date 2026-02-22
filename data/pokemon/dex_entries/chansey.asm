@@ -1,4 +1,4 @@
-	db "EGG@" ; species name
+	db "Egg@" ; species name
 	dw 307, 760 ; height, weight
 
 	db   "People try to"
@@ -8,3 +8,4 @@
 	page "Move effects are"
 	next "more likely. Heals"
 	next "status on switch.@"
+

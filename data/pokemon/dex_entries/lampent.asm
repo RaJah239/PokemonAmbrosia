@@ -1,4 +1,4 @@
-	db "LAMP@" ; species name
+	db "Lamp@" ; species name
 	dw 200, 287 ; height, weight
 
 	db   "It arrives the"
@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Fire attacks.@"
+

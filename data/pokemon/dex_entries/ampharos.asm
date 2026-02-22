@@ -1,4 +1,4 @@
-	db "LIGHT@" ; species name
+	db "Light@" ; species name
 	dw 407, 1360 ; height, weight
 
 	db   "In the darkness"
@@ -8,3 +8,4 @@
 	page "Raises Light"
 	next "Screen and immune"
 	next "to Electric.@"
+

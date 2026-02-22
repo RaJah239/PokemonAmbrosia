@@ -1,4 +1,4 @@
-	db "HUMANSHAPE@" ; species name
+	db "Humanshape@" ; species name
 	dw 407, 900 ; height, weight
 
 	db   "It has several"
@@ -8,3 +8,4 @@
 	page "Blizzard hits."
 	next "Lowers Sp.Atk"
 	next "on switch.@"
+

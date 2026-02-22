@@ -1,4 +1,4 @@
-	db "LEGENDARY@" ; species name
+	db "Legendary@" ; species name
 	dw 603, 3420 ; height, weight
 
 	db   "Ancient people"
@@ -8,3 +8,4 @@
 	page "Immune to recoil"
 	next "damage. Lowers"
 	next "foes Attack.@"
+

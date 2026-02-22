@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Ground moves.@"
+

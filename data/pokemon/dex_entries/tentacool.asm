@@ -1,4 +1,4 @@
-	db "JELLYFISH@" ; species name
+	db "Jellyfish@" ; species name
 	dw 211, 500 ; height, weight
 
 	db   "It floats along"
@@ -8,3 +8,4 @@
 	page "Regens HP."
 	next "Immune to"
 	next "stat drops.@"
+

@@ -1,4 +1,4 @@
-	db "AURORA@" ; species name
+	db "Aurora@" ; species name
 	dw 607, 4120 ; height, weight
 
 	db   "This divine"
@@ -8,3 +8,4 @@
 	page "Defense"
 	next "increases upon"
 	next "entering battle.@"
+

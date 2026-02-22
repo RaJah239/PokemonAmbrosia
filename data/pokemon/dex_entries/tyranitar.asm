@@ -1,4 +1,4 @@
-	db "ARMOR@" ; species name
+	db "Armor@" ; species name
 	dw 607, 14450 ; height, weight
 
 	db   "Just one of its"
@@ -8,3 +8,4 @@
 	page "Summons Sandstorm"
 	next "on switch. Attack"
 	next "boost on KO.@"
+

@@ -1,4 +1,4 @@
-	db "HERMITCRAB@" ; species name
+	db "Hermitcrab@" ; species name
 	dw 503, 1730 ; height, weight
 
 	db   "An attached"
@@ -8,3 +8,4 @@
 	page "Special Defense"
 	next "increases upon"
 	next "entering battle.@"
+

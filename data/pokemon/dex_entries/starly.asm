@@ -1,4 +1,4 @@
-	db "STARLING@" ; species name
+	db "Starling@" ; species name
 	dw 100, 44 ; height, weight
 
 	db   "It rapidly flaps"
@@ -8,3 +8,4 @@
 	page "Boosted damage"
 	next "when afflicted by"
 	next "a status.@"
+

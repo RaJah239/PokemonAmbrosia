@@ -1,4 +1,4 @@
-	db "SUPERPOWER@" ; species name
+	db "Superpower@" ; species name
 	dw 600, 3870 ; height, weight
 
 	db   "Its four arms"
@@ -8,3 +8,4 @@
 	page "Status boosts"
 	next "Attack. Dynamic"
 	next "Punch hits.@"
+

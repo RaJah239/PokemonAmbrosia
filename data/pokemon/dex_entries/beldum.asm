@@ -1,4 +1,4 @@
-	db "IRON BALL@" ; species name
+	db "Iron Ball@" ; species name
 	dw 200, 2500 ; height, weight
 
 	db   "It is used as"
@@ -8,3 +8,4 @@
 	page "Immune to stat"
 	next "drops. Resists"
 	next "type weaknesses.@"
+

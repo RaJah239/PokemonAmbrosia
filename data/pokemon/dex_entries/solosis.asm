@@ -1,4 +1,4 @@
-	db "CELL@" ; species name
+	db "Cell@" ; species name
 	dw 100, 22 ; height, weight
 
 	db   "The liquid around"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "all passive"
 	next "damage.@"
+

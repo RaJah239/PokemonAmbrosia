@@ -1,4 +1,4 @@
-	db "NIGHTMARE@" ; species name
+	db "Nightmare@" ; species name
 	dw 511, 1111 ; height, weight
 
 	db   "It sends its"
@@ -8,3 +8,4 @@
 	page "Taunts foe on"
 	next "switch. Gives"
 	next "nightmares.@"
+

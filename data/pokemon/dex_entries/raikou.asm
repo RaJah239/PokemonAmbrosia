@@ -1,4 +1,4 @@
-	db "THUNDER@" ; species name
+	db "Thunder@" ; species name
 	dw 603, 3920 ; height, weight
 
 	db   "This fast #mon"
@@ -8,3 +8,4 @@
 	page "Speed boost on"
 	next "switch. Sp.Atk"
 	next "boost on KO.@"
+

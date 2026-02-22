@@ -1,4 +1,4 @@
-	db "SWORD@" ; species name
+	db "Sword@" ; species name
 	dw 207, 44 ; height, weight
 
 	db   "Born when a soul"
@@ -7,3 +7,4 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+

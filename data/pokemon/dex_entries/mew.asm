@@ -1,4 +1,4 @@
-	db "NEW SPECIE@" ; species name
+	db "New Specie@" ; species name
 	dw 104, 90 ; height, weight
 
 	db   "May be the origin"
@@ -8,3 +8,4 @@
 	page "Regenerates HP."
 	next "Heals status on"
 	next "switch in.@"
+

@@ -1,4 +1,4 @@
-	db "TEA@" ; species name
+	db "Tea@" ; species name
 	dw 008, 10 ; height, weight
 
 	db   "A ghost that"
@@ -8,3 +8,4 @@
 	page "Raises"
 	next "Safeguard upon"
 	next "entering battle.@"
+

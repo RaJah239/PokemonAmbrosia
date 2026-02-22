@@ -1,4 +1,4 @@
-	db "MITOSIS@" ; species name
+	db "Mitosis@" ; species name
 	dw 200, 176 ; height, weight
 
 	db   "Its brain has"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "all passive"
 	next "damage.@"
+

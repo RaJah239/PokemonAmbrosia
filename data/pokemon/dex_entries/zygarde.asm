@@ -1,4 +1,4 @@
-	db "ORDER@" ; species name
+	db "Order@" ; species name
 	dw 3000, 65535 ; height, weight
 
 	db   "Protector of the"
@@ -7,3 +7,4 @@
 
 	page "Regenerates"
 	next "HP every turn.@"
+

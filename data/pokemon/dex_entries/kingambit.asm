@@ -1,4 +1,4 @@
-	db "BIG BLADE@" ; species name
+	db "Big Blade@" ; species name
 	dw 607, 2646 ; height, weight
 
 	db   "The final form"
@@ -7,3 +7,4 @@
 
 	page "Boosts Attack"
 	next "and weak moves.@"
+

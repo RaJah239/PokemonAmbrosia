@@ -8,3 +8,4 @@
 	page "Stealth Rock on"
 	next "switch. Stone"
 	next "Edge won't miss.@"
+

@@ -1,4 +1,4 @@
-	db "DRILL@" ; species name
+	db "Drill@" ; species name
 	dw 810, 43605 ; height, weight
 
 	db   "Its armour is"
@@ -8,3 +8,4 @@
 	page "Lays Stealth"
 	next "Rock. Has reduced"
 	next "weaknesses.@"
+

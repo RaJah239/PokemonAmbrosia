@@ -1,4 +1,4 @@
-	db "FLOWER@" ; species name
+	db "Flower@" ; species name
 	dw 204, 90 ; height, weight
 
 	db   "Flings its vines"
@@ -7,3 +7,4 @@
 
 	page "Gets critical"
 	next "hits often.@"
+

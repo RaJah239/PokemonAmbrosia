@@ -1,4 +1,4 @@
-	db "ROCK@" ; species name
+	db "Rock@" ; species name
 	dw 104, 440 ; height, weight
 
 	db   "Proud of their"
@@ -7,3 +7,4 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+

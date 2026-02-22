@@ -1,4 +1,4 @@
-	db "WILD BULL@" ; species name
+	db "Wild Bull@" ; species name
 	dw 507, 8950 ; height, weight
 
 	db   "A violent beast"
@@ -7,3 +7,4 @@
 	page "lowers foes"
 	next "Attack. Attack"
 	next "boost on KO.@"
+

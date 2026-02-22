@@ -1,4 +1,4 @@
-	db "FLAME@" ; species name
+	db "Flame@" ; species name
 	dw 311, 1213 ; height, weight
 
 	db   "Will savagely"
@@ -8,3 +8,4 @@
 	page "Boosted punches."
 	next "Immune to recoil"
 	next "damage.@"
+

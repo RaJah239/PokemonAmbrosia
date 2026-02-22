@@ -1,4 +1,4 @@
-	db "LURING@" ; species name
+	db "Luring@" ; species name
 	dw 303, 756 ; height, weight
 
 	db   "It burns the soul"
@@ -8,3 +8,4 @@
 	page "Blocks switching."
 	next "Sp.Atk boost on"
 	next "KO.@"
+

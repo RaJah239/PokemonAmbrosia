@@ -1,4 +1,4 @@
-	db "CHIMP@" ; species name
+	db "Chimp@" ; species name
 	dw 108, 137 ; height, weight
 
 	db   "It puts its fire"
@@ -8,3 +8,4 @@
 	page "Boosted punches."
 	next "Immune to recoil"
 	next "damage.@"
+

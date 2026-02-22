@@ -1,4 +1,4 @@
-	db "SINGLEHORN@" ; species name
+	db "Singlehorn@" ; species name
 	dw 411, 1190 ; height, weight
 
 	db   "With Herculean"
@@ -8,3 +8,4 @@
 	page "Attack boost on"
 	next "status. Attack"
 	next "boost on KO.@"
+

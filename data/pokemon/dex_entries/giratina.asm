@@ -1,4 +1,4 @@
-	db "SATANIC@" ; species name
+	db "Satanic@" ; species name
 	dw 1409, 40000 ; height, weight
 
 	db   "Banished by"
@@ -8,3 +8,4 @@
 	page "Prevents enemy"
 	next "switching. Sp.Atk"
 	next "boost on KO.@"
+

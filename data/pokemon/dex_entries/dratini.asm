@@ -1,4 +1,4 @@
-	db "DRAGON@" ; species name
+	db "Dragon@" ; species name
 	dw 511, 70 ; height, weight
 
 	db   "It sheds layers"
@@ -7,3 +7,4 @@
 
 	page "Gains armour"
 	next "when at full HP.@"
+

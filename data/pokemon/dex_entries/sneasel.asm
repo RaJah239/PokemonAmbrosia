@@ -1,4 +1,4 @@
-	db "SHARP CLAW@" ; species name
+	db "Sharp Claw@" ; species name
 	dw 211, 620 ; height, weight
 
 	db   "This cunning"
@@ -8,3 +8,4 @@
 	page "Evasion"
 	next "increases upon"
 	next "entering battle.@"
+

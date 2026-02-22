@@ -1,4 +1,4 @@
-	db "FOSSIL@" ; species name
+	db "Fossil@" ; species name
 	dw 707, 4740 ; height, weight
 
 	db   "A prehistoric"
@@ -7,3 +7,4 @@
 
 	page "Attack boost on"
 	next "defeating foe.@"
+

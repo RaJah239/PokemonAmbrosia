@@ -1,4 +1,4 @@
-	db "BAT@" ; species name
+	db "Bat@" ; species name
 	dw 503, 1210 ; height, weight
 
 	db   "It seeks blood."
@@ -8,3 +8,4 @@
 	page "Evasion"
 	next "increases upon"
 	next "entering battle.@"
+

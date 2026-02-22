@@ -1,4 +1,4 @@
-	db "FAIRY@" ; species name
+	db "Fairy@" ; species name
 	dw 200, 170 ; height, weight
 
 	db   "Rarely seen and"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "all passive"
 	next "damage.@"
+

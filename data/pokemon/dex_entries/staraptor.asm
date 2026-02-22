@@ -1,4 +1,4 @@
-	db "PREDATOR@" ; species name
+	db "Predator@" ; species name
 	dw 411, 870 ; height, weight
 
 	db   "A savage and"

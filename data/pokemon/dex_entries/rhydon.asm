@@ -1,4 +1,4 @@
-	db "DRILL@" ; species name
+	db "Drill@" ; species name
 	dw 603, 26506 ; height, weight
 
 	db   "Its drill can"
@@ -8,3 +8,4 @@
 	page "Takes reduced"
 	next "damage from super"
 	next "effective moves.@"
+

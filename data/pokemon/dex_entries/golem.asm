@@ -1,4 +1,4 @@
-	db "MEGATON@" ; species name
+	db "Megaton@" ; species name
 	dw 407, 6620 ; height, weight
 
 	db   "So sturdy that"
@@ -8,3 +8,4 @@
 	page "Speed"
 	next "increases in"
 	next "a sandstorm.@"
+

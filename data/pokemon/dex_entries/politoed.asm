@@ -1,4 +1,4 @@
-	db "FROG@" ; species name
+	db "Frog@" ; species name
 	dw 307, 750 ; height, weight
 
 	db   "It expands its"
@@ -8,3 +8,4 @@
 	page "Summons rain"
 	next "and Sp.Def boost"
 	next "on switch.@"
+

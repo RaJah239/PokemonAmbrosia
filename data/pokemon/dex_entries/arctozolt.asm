@@ -1,4 +1,4 @@
-	db "FOSSIL@" ; species name
+	db "Fossil@" ; species name
 	dw 707, 4307 ; height, weight
 
 	db   "A prehistoric"
@@ -8,3 +8,4 @@
 	page "Speed boost in"
 	next "Hail. Immune to"
 	next "Electric.@"
+

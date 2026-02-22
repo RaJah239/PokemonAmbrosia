@@ -1,4 +1,4 @@
-	db "AQUARABBIT@" ; species name
+	db "Aquarabbit@" ; species name
 	dw 207, 630 ; height, weight
 
 	db   "Has adapted for"
@@ -8,3 +8,4 @@
 	page "Has double"
 	next "Attack. Boosts"
 	next "weaker moves.@"
+

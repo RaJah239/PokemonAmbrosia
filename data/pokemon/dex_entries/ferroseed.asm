@@ -1,4 +1,4 @@
-	db "THORN SEED@" ; species name
+	db "Thorn Seed@" ; species name
 	dw 200, 414 ; height, weight
 
 	db   "It absorbs iron"
@@ -7,5 +7,6 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+
 
 

@@ -1,4 +1,4 @@
-	db "SUN@" ; species name
+	db "Sun@" ; species name
 	dw 503, 1014 ; height, weight
 
 	db   "The grossly"
@@ -8,3 +8,4 @@
 	page "Fire Blast won't"
 	next "miss. Immune"
 	next "to Fire.@"
+

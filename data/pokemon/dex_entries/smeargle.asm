@@ -1,4 +1,4 @@
-	db "PAINTER@" ; species name
+	db "Painter@" ; species name
 	dw 311, 1280 ; height, weight
 
 	db   "Can copy any move"
@@ -8,3 +8,4 @@
 	page "Random stat"
 	next "boosts. Raises"
 	next "Safeguard.@"
+

@@ -1,4 +1,4 @@
-	db "SPIKE BALL@" ; species name
+	db "Spike Ball@" ; species name
 	dw 100, 30 ; height, weight
 
 	db   "It is considered"
@@ -8,3 +8,4 @@
 	page "Move effects"
 	next "are more likely"
 	next "to occur.@"
+

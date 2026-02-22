@@ -1,4 +1,4 @@
-	db "FLAME@" ; species name
+	db "Flame@" ; species name
 	dw 307, 420 ; height, weight
 
 	db   "If it becomes"
@@ -7,3 +7,4 @@
 
 	page "Sp.Atk boost on"
 	next "defeating foe.@"
+

@@ -1,4 +1,4 @@
-	db "BLADE@" ; species name
+	db "Blade@" ; species name
 	dw 603, 1752 ; height, weight
 
 	db   "Master swordsman"
@@ -8,3 +8,4 @@
 	page "Raises"
 	next "Reflect upon"
 	next "entering battle.@"
+

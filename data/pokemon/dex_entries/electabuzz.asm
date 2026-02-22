@@ -1,4 +1,4 @@
-	db "ELECTRIC@" ; species name
+	db "Electric@" ; species name
 	dw 307, 660 ; height, weight
 
 	db   "When two"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Electric and"
 	next "recoil.@"
+

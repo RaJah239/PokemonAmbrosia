@@ -1,4 +1,4 @@
-	db "TERMINATOR@" ; species name
+	db "Terminator@" ; species name
 	dw 511, 3638 ; height, weight
 
 	db   "Ancient predator"
@@ -8,3 +8,4 @@
 	page "Special Attack"
 	next "increases upon"
 	next "entering battle.@"
+

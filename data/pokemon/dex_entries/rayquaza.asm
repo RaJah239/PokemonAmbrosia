@@ -1,4 +1,4 @@
-	db "SKY LORD@" ; species name
+	db "Sky Lord@" ; species name
 	dw 7000, 50000 ; height, weight
 
 	db   "The great dragon."
@@ -8,3 +8,4 @@
 	page "Resists type"
 	next "weaknesses."
 	next "Clears field.@"
+

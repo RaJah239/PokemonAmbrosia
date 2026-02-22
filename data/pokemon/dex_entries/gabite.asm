@@ -1,4 +1,4 @@
-	db "FAIRY@" ; species name
+	db "Fairy@" ; species name
 	dw 407, 1070 ; height, weight
 
 	db   "It can make most"
@@ -8,3 +8,4 @@
 	page "Deals extra"
 	next "critical hit"
 	next "damage.@"
+

@@ -1,4 +1,4 @@
-	db "IRON SNAKE@" ; species name
+	db "Iron Snake@" ; species name
 	dw 3002, 58200 ; height, weight
 
 	db   "An indestructible"
@@ -8,3 +8,4 @@
 	page "Lays Spikes"
 	next "and can't be"
 	next "KOd at full HP.@"
+

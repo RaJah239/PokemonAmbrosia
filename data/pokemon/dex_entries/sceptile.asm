@@ -1,4 +1,4 @@
-	db "FOREST@" ; species name
+	db "Forest@" ; species name
 	dw 603, 1850 ; height, weight
 
 	db   "The leaves on its"
@@ -8,3 +8,4 @@
 	page "Boosted crit rate"
 	next "and damage. Heals"
 	next "status on switch.@"
+

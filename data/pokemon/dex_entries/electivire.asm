@@ -1,4 +1,4 @@
-	db "THUNERBOLT@" ; species name
+	db "Thunerbolt@" ; species name
 	dw 607, 3806 ; height, weight
 
 	db   "Can release over"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Electric and"
 	next "recoil.@"
+

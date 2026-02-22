@@ -1,4 +1,4 @@
-	db "THORN POD@" ; species name
+	db "Thorn Pod@" ; species name
 	dw 303, 2425 ; height, weight
 
 	db   "It spreads iron"
@@ -8,3 +8,4 @@
 	page "Lays Spikes"
 	next "and can't be"
 	next "KOd at full HP.@"
+

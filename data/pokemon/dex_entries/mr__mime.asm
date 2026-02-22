@@ -1,4 +1,4 @@
-	db "BARRIER@" ; species name
+	db "Barrier@" ; species name
 	dw 403, 1200 ; height, weight
 
 	db   "It uses the"
@@ -8,3 +8,4 @@
 	page "Raises Reflect"
 	next "and Light Screen"
 	next "upon switch in.@"
+

@@ -1,4 +1,4 @@
-	db "DRAGON@" ; species name
+	db "Dragon@" ; species name
 	dw 703, 4630 ; height, weight
 
 	db   "An extremely"
@@ -8,3 +8,4 @@
 	page "Armoured at"
 	next "full HP. Can use"
 	next "Outrage freely.@"
+

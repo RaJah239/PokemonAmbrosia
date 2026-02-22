@@ -1,4 +1,4 @@
-	db "SWINE@" ; species name
+	db "Swine@" ; species name
 	dw 507, 5230 ; height, weight
 
 	db   "Although its legs"
@@ -8,3 +8,4 @@
 	page "Takes half"
 	next "damage from Fire"
 	next "and Ice moves.@"
+

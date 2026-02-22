@@ -7,3 +7,4 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+

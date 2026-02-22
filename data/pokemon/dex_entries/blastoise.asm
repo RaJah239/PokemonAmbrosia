@@ -1,4 +1,4 @@
-	db "SHELLFISH@" ; species name
+	db "Shellfish@" ; species name
 	dw 503, 4890 ; height, weight
 
 	db   "Used as powerful"
@@ -8,3 +8,4 @@
 	page "Defense boost on"
 	next "switch. Can't be"
 	next "KOed from max HP.@"
+

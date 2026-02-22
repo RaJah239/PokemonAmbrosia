@@ -1,4 +1,4 @@
-	db "MUSHROOM@" ; species name
+	db "Mushroom@" ; species name
 	dw 311, 864 ; height, weight
 
 	db   "A mighty mushroom"
@@ -8,3 +8,4 @@
 	page "Boosts weaker"
 	next "moves. Boosted"
 	next "punches.@"
+

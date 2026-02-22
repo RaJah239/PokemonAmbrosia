@@ -1,4 +1,4 @@
-	db "SPATIAL@" ; species name
+	db "Spatial@" ; species name
 	dw 1309, 21000 ; height, weight
 
 	db   "Has control"
@@ -8,3 +8,4 @@
 	page "Resists Fire/"
 	next "Ice and raises"
 	next "Safeguard.@"
+

@@ -1,4 +1,4 @@
-	db "GRATITUDE@" ; species name
+	db "Gratitude@" ; species name
 	dw 200, 450 ; height, weight
 
 	db   "A confident and"
@@ -8,3 +8,4 @@
 	page "Move effects are"
 	next "more likely. Heals"
 	next "status on switch.@"
+

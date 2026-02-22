@@ -1,4 +1,4 @@
-	db "DIVING@" ; species name
+	db "Diving@" ; species name
 	dw 1701, 27600 ; height, weight
 
 	db   "The mother of the"

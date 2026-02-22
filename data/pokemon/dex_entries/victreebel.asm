@@ -1,4 +1,4 @@
-	db "FLYCATCHER@" ; species name
+	db "Flycatcher@" ; species name
 	dw 507, 340 ; height, weight
 
 	db   "Able to ingest"
@@ -8,3 +8,4 @@
 	page "Boosted critical"
 	next "hit ratio and"
 	next "damage.@"
+

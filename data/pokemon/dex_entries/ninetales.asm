@@ -8,3 +8,4 @@
 	page "Fire Blast will"
 	next "hit. Raises"
 	next "Light Screen.@"
+

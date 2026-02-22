@@ -1,4 +1,4 @@
-	db "WOOD GECKO@" ; species name
+	db "Wood Gecko@" ; species name
 	dw 311, 650 ; height, weight
 
 	db   "Strong thighs let"
@@ -7,3 +7,4 @@
 
 	page "Boosted crit rate"
 	next "and damage.@"
+

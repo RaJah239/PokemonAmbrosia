@@ -1,4 +1,4 @@
-	db "SPIKES@" ; species name
+	db "Spikes@" ; species name
 	dw 303, 8234 ; height, weight
 
 	db   "It can remember"
@@ -8,3 +8,4 @@
 	page "Takes reduced"
 	next "damage from super"
 	next "effective moves.@"
+

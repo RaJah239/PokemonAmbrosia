@@ -1,4 +1,4 @@
-	db "SCOUT@" ; species name
+	db "Scout@" ; species name
 	dw 204, 445 ; height, weight
 
 	db   "Uses aura to"
@@ -8,3 +8,4 @@
 	page "Status moves"
 	next "always land"
 	next "first.@"
+

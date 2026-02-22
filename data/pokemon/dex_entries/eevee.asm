@@ -1,4 +1,4 @@
-	db "EVOLUTION@" ; species name
+	db "Evolution@" ; species name
 	dw 100, 140 ; height, weight
 
 	db   "Evolves via any"
@@ -8,3 +8,4 @@
 	page "Random stat"
 	next "increase upon"
 	next "entering battle.@"
+

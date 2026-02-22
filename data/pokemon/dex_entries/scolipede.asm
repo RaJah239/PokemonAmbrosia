@@ -8,3 +8,4 @@
 	page "Speed boost and"
 	next "Toxic Spikes"
 	next "on switch.@"
+

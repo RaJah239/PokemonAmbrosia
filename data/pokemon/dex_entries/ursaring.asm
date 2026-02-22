@@ -1,4 +1,4 @@
-	db "HIBERNANT@" ; species name
+	db "Hibernant@" ; species name
 	dw 511, 6770 ; height, weight
 
 	db   "Able to crush its"
@@ -8,3 +8,4 @@
 	page "Boosted damage"
 	next "when afflicted by"
 	next "a status.@"
+

@@ -1,4 +1,4 @@
-	db "CANDLE@" ; species name
+	db "Candle@" ; species name
 	dw 100, 68 ; height, weight
 
 	db   "It absorbs the"
@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Fire attacks.@"
+

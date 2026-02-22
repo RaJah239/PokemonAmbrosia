@@ -1,4 +1,4 @@
-	db "TIMETRAVEL@" ; species name
+	db "Timetravel@" ; species name
 	dw 200, 110 ; height, weight
 
 	db   "Revered as a"
@@ -8,3 +8,4 @@
 	page "Uses Leech Seed"
 	next "and heals status"
 	next "on switch.@"
+

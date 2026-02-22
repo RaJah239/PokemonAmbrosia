@@ -1,4 +1,4 @@
-	db "PLAYFUL@" ; species name
+	db "Playful@" ; species name
 	dw 211, 485 ; height, weight
 
 	db   "Its social rank"
@@ -8,3 +8,4 @@
 	page "Boosted punches."
 	next "Immune to recoil"
 	next "damage.@"
+

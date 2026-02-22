@@ -1,4 +1,4 @@
-	db "TWIN TUSK@" ; species name
+	db "Twin Tusk@" ; species name
 	dw 1102, 42307 ; height, weight
 
 	db   "An ancient and"
@@ -8,3 +8,4 @@
 	page "Resists Fire"
 	next "and Ice. HP"
 	next "regen in Hail.@"
+

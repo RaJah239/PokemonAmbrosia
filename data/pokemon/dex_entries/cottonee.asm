@@ -1,4 +1,4 @@
-	db "COTTON PUFF@" ; species name
+	db "Cotton Puff@" ; species name
 	dw 100, 13 ; height, weight
 
 	db   "They stick to"
@@ -8,3 +8,4 @@
 	page "Status moves"
 	next "always land"
 	next "first.@"
+

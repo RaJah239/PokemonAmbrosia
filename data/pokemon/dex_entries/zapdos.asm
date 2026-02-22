@@ -1,4 +1,4 @@
-	db "ELECTRIC@" ; species name
+	db "Electric@" ; species name
 	dw 503, 1160 ; height, weight
 
 	db   "Legendary bird"
@@ -8,3 +8,4 @@
 	page "Raises Light"
 	next "Screen and immune"
 	next "to Electric.@"
+

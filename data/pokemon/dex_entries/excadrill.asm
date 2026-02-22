@@ -1,4 +1,4 @@
-	db "SUBTERRENE@" ; species name
+	db "Subterrene@" ; species name
 	dw 404, 1833 ; height, weight
 
 	db   "Its claws and"
@@ -8,3 +8,4 @@
 	page "Boosts weaker"
 	next "moves. Speed"
 	next "boost in sand.@"
+

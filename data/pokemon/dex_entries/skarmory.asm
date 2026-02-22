@@ -1,4 +1,4 @@
-	db "ARMOR BIRD@" ; species name
+	db "Armor Bird@" ; species name
 	dw 507, 1110 ; height, weight
 
 	db   "The feathers that"
@@ -8,3 +8,4 @@
 	page "Lays Spikes"
 	next "and can't be"
 	next "KOd at full HP.@"
+

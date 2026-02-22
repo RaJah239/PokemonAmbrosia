@@ -1,4 +1,4 @@
-	db "BUBBLE FROG@" ; species name
+	db "Bubble Frog@" ; species name
 	dw 200, 350 ; height, weight
 
 	db   "Its swiftness is"
@@ -8,3 +8,4 @@
 	page "All moves have"
 	next "STAB. Boosted"
 	next "accuracy.@"
+

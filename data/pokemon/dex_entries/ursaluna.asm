@@ -1,4 +1,4 @@
-	db "FERAL BEAR@" ; species name
+	db "Feral Bear@" ; species name
 	dw 710, 11341 ; height, weight
 
 	db   "A mighty and"
@@ -8,3 +8,4 @@
 	page "Attack boost on"
 	next "status. Immune"
 	next "to recoil.@"
+

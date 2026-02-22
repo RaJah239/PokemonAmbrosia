@@ -1,4 +1,4 @@
-	db "MAGNET@" ; species name
+	db "Magnet@" ; species name
 	dw 303, 1320 ; height, weight
 
 	db   "Many Magneton can"
@@ -8,3 +8,4 @@
 	page "Zap Cannon"
 	next "hits. Immune"
 	next "to OHKO.@"
+

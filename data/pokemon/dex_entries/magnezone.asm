@@ -1,4 +1,4 @@
-	db "MAGNET AREA@" ; species name
+	db "Magnet Area@" ; species name
 	dw 311, 3968 ; height, weight
 
 	db   "Three magnetic"
@@ -8,3 +8,4 @@
 	page "Zap Cannon"
 	next "hits. Has a"
 	next "final attack.@"
+

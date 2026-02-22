@@ -1,4 +1,4 @@
-	db "MUSCULAR@" ; species name
+	db "Muscular@" ; species name
 	dw 507, 3218 ; height, weight
 
 	db   "Fights with two"
@@ -8,3 +8,4 @@
 	page "Boosted punches."
 	next "Status boosts"
 	next "Attack.@"
+

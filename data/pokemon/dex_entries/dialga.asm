@@ -1,4 +1,4 @@
-	db "TEMPORAL@" ; species name
+	db "Temporal@" ; species name
 	dw 1709, 50000 ; height, weight
 
 	db   "Has total control"
@@ -8,3 +8,4 @@
 	page "Lays Stealth"
 	next "Rock. Immune to"
 	next "stat drops.@"
+

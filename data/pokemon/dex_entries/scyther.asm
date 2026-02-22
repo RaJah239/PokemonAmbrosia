@@ -1,4 +1,4 @@
-	db "MANTIS@" ; species name
+	db "Mantis@" ; species name
 	dw 411, 1230 ; height, weight
 
 	db   "It's very proud of"
@@ -7,3 +7,4 @@
 
 	page "Makes weaker"
 	next "moves stronger.@"
+

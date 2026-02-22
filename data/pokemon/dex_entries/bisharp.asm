@@ -1,4 +1,4 @@
-	db "SWORD BLADE@" ; species name
+	db "Sword Blade@" ; species name
 	dw 503, 2543 ; height, weight
 
 	db   "Leader of the"
@@ -7,3 +7,4 @@
 
 	page "Makes weaker"
 	next "moves stronger.@"
+

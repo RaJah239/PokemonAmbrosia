@@ -1,4 +1,4 @@
-	db "LIFE@" ; species name
+	db "Life@" ; species name
 	dw 910, 6666 ; height, weight
 
 	db   "It can share"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "all passive"
 	next "damage.@"
+

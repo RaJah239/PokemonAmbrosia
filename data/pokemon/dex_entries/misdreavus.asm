@@ -1,4 +1,4 @@
-	db "SCREECH@" ; species name
+	db "Screech@" ; species name
 	dw 204, 20 ; height, weight
 
 	db   "It appears all of"
@@ -8,4 +8,5 @@
 	page "Immune to"
 	next "Ground type"
 	next "moves.@"
+
 

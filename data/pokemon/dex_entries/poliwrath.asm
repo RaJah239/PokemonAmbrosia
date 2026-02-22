@@ -1,4 +1,4 @@
-	db "TADPOLE@" ; species name
+	db "Tadpole@" ; species name
 	dw 403, 1190 ; height, weight
 
 	db   "It can use its"
@@ -8,3 +8,4 @@
 	page "Speed boost in"
 	next "rain. Attack"
 	next "boost on status.@"
+

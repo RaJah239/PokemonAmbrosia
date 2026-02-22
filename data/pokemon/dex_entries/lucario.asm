@@ -1,4 +1,4 @@
-	db "AURA@" ; species name
+	db "Aura@" ; species name
 	dw 403, 1190 ; height, weight
 
 	db   "It can detect"
@@ -8,3 +8,4 @@
 	page "Attack"
 	next "increases upon"
 	next "entering battle.@"
+

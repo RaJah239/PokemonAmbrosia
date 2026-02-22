@@ -1,4 +1,4 @@
-	db "SUPERPOWER@" ; species name
+	db "Superpower@" ; species name
 	dw 511, 2550 ; height, weight
 
 	db   "A tough #mon"
@@ -8,3 +8,4 @@
 	page "Status boosts"
 	next "Attack. Dynamic"
 	next "Punch hits.@"
+

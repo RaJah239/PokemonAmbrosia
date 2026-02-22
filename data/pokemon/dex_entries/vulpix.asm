@@ -1,4 +1,4 @@
-	db "FOX@" ; species name
+	db "Fox@" ; species name
 	dw 200, 220 ; height, weight
 
 	db   "As its grows"
@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Fire attacks.@"
+

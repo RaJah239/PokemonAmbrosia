@@ -1,4 +1,4 @@
-	db "RIBBON@" ; species name
+	db "Ribbon@" ; species name
 	dw 303, 518 ; height, weight
 
 	db   "It can read its"
@@ -8,3 +8,4 @@
 	page "Is immune"
 	next "to all status"
 	next "changes.@"
+

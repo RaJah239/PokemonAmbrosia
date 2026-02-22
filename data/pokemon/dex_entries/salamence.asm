@@ -1,4 +1,4 @@
-	db "DRAKE@" ; species name
+	db "Drake@" ; species name
 	dw 511, 3262 ; height, weight
 
 	db   "Easily angered"
@@ -8,3 +8,4 @@
 	page "lowers foes"
 	next "Attack upon"
 	next "switch in.@"
+

@@ -1,4 +1,4 @@
-	db "SCISSORS@" ; species name
+	db "Scissors@" ; species name
 	dw 511, 2600 ; height, weight
 
 	db   "This #mon's"
@@ -7,3 +7,4 @@
 
 	page "Makes weaker"
 	next "moves stronger.@"
+

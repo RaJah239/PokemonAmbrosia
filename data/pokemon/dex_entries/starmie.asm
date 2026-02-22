@@ -1,4 +1,4 @@
-	db "MYSTERIOUS@" ; species name
+	db "Mysterious@" ; species name
 	dw 307, 1760 ; height, weight
 
 	db   "It uses its core"
@@ -8,3 +8,4 @@
 	page "Has increased"
 	next "Accuracy. Heals"
 	next "status on switch.@"
+

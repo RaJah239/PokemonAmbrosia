@@ -1,4 +1,4 @@
-	db "VOLCANO@" ; species name
+	db "Volcano@" ; species name
 	dw 607, 4370 ; height, weight
 
 	db   "This brawny"
@@ -8,3 +8,4 @@
 	page "Attack"
 	next "increases upon"
 	next "entering battle.@"
+

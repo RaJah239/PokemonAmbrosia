@@ -1,4 +1,4 @@
-	db "JELLYFISH@" ; species name
+	db "Jellyfish@" ; species name
 	dw 503, 1210 ; height, weight
 
 	db   "Able to bring"
@@ -7,3 +7,4 @@
 
 	page "Regens HP. Lays"
 	next "Toxic Spikes.@"
+

@@ -1,4 +1,4 @@
-	db "RAT@" ; species name
+	db "Rat@" ; species name
 	dw 100, 80 ; height, weight
 
 	db   "This #mon's"
@@ -8,3 +8,4 @@
 	page "Boosted damage"
 	next "when afflicted by"
 	next "a status.@"
+

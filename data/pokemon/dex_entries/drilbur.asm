@@ -1,4 +1,4 @@
-	db "MOLE@" ; species name
+	db "Mole@" ; species name
 	dw 100, 200 ; height, weight
 
 	db   "It can spin like"
@@ -8,3 +8,4 @@
 	page "Boosts weaker"
 	next "moves. Speed"
 	next "boost in sand.@"
+

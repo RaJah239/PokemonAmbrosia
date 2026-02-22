@@ -1,4 +1,4 @@
-	db "IRON LEG@" ; species name
+	db "Iron Leg@" ; species name
 	dw 503, 12125 ; height, weight
 
 	db   "An advanced war"
@@ -8,3 +8,4 @@
 	page "Immune to stat"
 	next "drops. Resists"
 	next "type weaknesses.@"
+

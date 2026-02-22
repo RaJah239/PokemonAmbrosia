@@ -1,4 +1,4 @@
-	db "PLASMA@" ; species name
+	db "Plasma@" ; species name
 	dw 300, 1500 ; height, weight
 
 	db   "A ghost that"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Electric and"
 	next "Ground moves.@"
+

@@ -1,4 +1,4 @@
-	db "TARANTULA@" ; species name
+	db "Tarantula@" ; species name
 	dw 207, 315 ; height, weight
 
 	db   "Stuns prey with"
@@ -7,3 +7,4 @@
 
 	page "Thunder will"
 	next "always hit.@"
+

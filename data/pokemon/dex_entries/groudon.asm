@@ -1,4 +1,4 @@
-	db "CONTINENT@" ; species name
+	db "Continent@" ; species name
 	dw 2000, 55000 ; height, weight
 
 	db   "Ruler of the"
@@ -8,3 +8,4 @@
 	page "Summons"
 	next "Sun and resists"
 	next "Water.@"
+

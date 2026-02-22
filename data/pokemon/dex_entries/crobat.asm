@@ -1,4 +1,4 @@
-	db "BAT@" ; species name
+	db "Bat@" ; species name
 	dw 511, 1650 ; height, weight
 
 	db   "Extra wings let"
@@ -8,3 +8,4 @@
 	page "Evasion boost"
 	next "on switch. Has"
 	next "boosted crits.@"
+

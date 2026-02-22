@@ -8,3 +8,4 @@
 	page "Taunts foe. Has"
 	next "boosted critical"
 	next "hit rate.@"
+

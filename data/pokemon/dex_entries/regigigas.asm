@@ -1,4 +1,4 @@
-	db "COLOSSAL@" ; species name
+	db "Colossal@" ; species name
 	dw 2500, 50000 ; height, weight
 
 	db   "Strong enough to"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "stat drops and"
 	next "recoil.@"
+

@@ -1,4 +1,4 @@
-	db "MILK COW@" ; species name
+	db "Milk Cow@" ; species name
 	dw 311, 1660 ; height, weight
 
 	db   "Produces a rich"
@@ -8,3 +8,4 @@
 	page "Extra damage on"
 	next "males. Lowers"
 	next "foes SP Attack.@"
+

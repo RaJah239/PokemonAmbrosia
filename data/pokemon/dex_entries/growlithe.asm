@@ -1,4 +1,4 @@
-	db "PUPPY@" ; species name
+	db "Puppy@" ; species name
 	dw 204, 420 ; height, weight
 
 	db   "It controls its"
@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Fire attacks.@"
+

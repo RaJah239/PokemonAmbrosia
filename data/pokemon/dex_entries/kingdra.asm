@@ -1,4 +1,4 @@
-	db "DRAGON@" ; species name
+	db "Dragon@" ; species name
 	dw 511, 3350 ; height, weight
 
 	db   "It stores energy"
@@ -8,3 +8,4 @@
 	page "Speed boost in"
 	next "rain. Sp.Atk"
 	next "boost on KO.@"
+

@@ -1,4 +1,4 @@
-	db "NINJA@" ; species name
+	db "Ninja@" ; species name
 	dw 510, 980 ; height, weight
 
 	db   "It vanishes like"
@@ -8,3 +8,4 @@
 	page "All moves have"
 	next "STAB. Boosted"
 	next "accuracy.@"
+

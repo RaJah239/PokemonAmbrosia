@@ -1,4 +1,4 @@
-	db "TRANSFORM@" ; species name
+	db "Transform@" ; species name
 	dw 100, 90 ; height, weight
 
 	db   "Can copy almost"
@@ -8,3 +8,4 @@
 	page "TRANSFORMS into"
 	next "the enemy upon"
 	next "switching in.@"
+

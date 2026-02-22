@@ -1,4 +1,4 @@
-	db "RABBIT@" ; species name
+	db "Rabbit@" ; species name
 	dw 311, 734 ; height, weight
 
 	db   "It is soft and"
@@ -8,3 +8,4 @@
 	page "Attack boost on"
 	next "status. Immune to"
 	next "passive damage.@"
+

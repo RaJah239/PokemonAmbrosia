@@ -1,4 +1,4 @@
-	db "FLAME@" ; species name
+	db "Flame@" ; species name
 	dw 211, 550 ; height, weight
 
 	db   "Its body temp"
@@ -8,3 +8,4 @@
 	page "Boosted effect"
 	next "chance. Lowers"
 	next "foes SP Attack.@"
+

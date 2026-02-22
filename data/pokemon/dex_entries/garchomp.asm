@@ -1,4 +1,4 @@
-	db "MACH@" ; species name
+	db "Mach@" ; species name
 	dw 603, 4094 ; height, weight
 
 	db   "It can fly at"
@@ -8,3 +8,4 @@
 	page "Regenerates HP"
 	next "in Sandstorm and"
 	next "boosted crits.@"
+

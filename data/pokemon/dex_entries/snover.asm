@@ -1,4 +1,4 @@
-	db "FROST TREE@" ; species name
+	db "Frost Tree@" ; species name
 	dw 303, 1113 ; height, weight
 
 	db   "Lives on snow"
@@ -7,3 +7,4 @@
 
 	page "Blizzard will"
 	next "always hit.@"
+

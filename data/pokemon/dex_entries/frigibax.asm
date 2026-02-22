@@ -6,3 +6,4 @@
 
 	page "Regenerates"
 	next "HP in Hail.@"
+

@@ -1,4 +1,4 @@
-	db "DECEIVER@" ; species name
+	db "Deceiver@" ; species name
 	dw 200, 254 ; height, weight
 
 	db   "Looks cute but"
@@ -8,3 +8,4 @@
 	page "Has double"
 	next "Attack and"
 	next "lowers foes.@"
+

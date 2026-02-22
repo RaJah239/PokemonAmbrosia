@@ -1,4 +1,4 @@
-	db "WOOL@" ; species name
+	db "Wool@" ; species name
 	dw 207, 290 ; height, weight
 
 	db   "It can store lots"
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Electric"
 	next "attacks.@"
+

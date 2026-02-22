@@ -1,4 +1,4 @@
-	db "SWORD@" ; species name
+	db "Sword@" ; species name
 	dw 207, 99 ; height, weight
 
 	db   "Attacks with deft"
@@ -7,3 +7,4 @@
 
 	page "Can not be KOd"
 	next "from full HP.@"
+

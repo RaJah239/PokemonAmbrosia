@@ -1,4 +1,4 @@
-	db "TADPOLE@" ; species name
+	db "Tadpole@" ; species name
 	dw 303, 440 ; height, weight
 
 	db   "It likes to live"
@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Water attacks.@"
+

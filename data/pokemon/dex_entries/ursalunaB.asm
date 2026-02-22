@@ -1,4 +1,4 @@
-	db "MYSTIC BEAR@" ; species name
+	db "Mystic Bear@" ; species name
 	dw 810, 9393 ; height, weight
 
 	db   "Preternatural"
@@ -8,3 +8,4 @@
 	page "Hyper Beam"
 	next "does not need"
 	next "to recharge.@"
+

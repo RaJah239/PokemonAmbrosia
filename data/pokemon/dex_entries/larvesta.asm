@@ -1,4 +1,4 @@
-	db "TORCH@" ; species name
+	db "Torch@" ; species name
 	dw 307, 635 ; height, weight
 
 	db   "Evolves from a"
@@ -6,3 +6,4 @@
 
 	page "Immune to"
 	next "Fire attacks.@"
+

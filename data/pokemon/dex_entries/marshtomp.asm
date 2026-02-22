@@ -1,4 +1,4 @@
-	db "MUD FISH@" ; species name
+	db "Mud Fish@" ; species name
 	dw 204, 617 ; height, weight
 
 	db   "Its sturdy legs"
@@ -7,3 +7,4 @@
 
 	page "Immune to"
 	next "Water attacks.@"
+

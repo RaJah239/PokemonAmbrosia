@@ -1,4 +1,4 @@
-	db "EMOTION@" ; species name
+	db "Emotion@" ; species name
 	dw 307, 645 ; height, weight
 
 	db   "It gains strength"
@@ -8,3 +8,4 @@
 	page "Boosted damage"
 	next "against opposite"
 	next "gender foes.@"
+

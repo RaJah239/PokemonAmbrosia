@@ -1,4 +1,4 @@
-	db "ROYAL SWORD@" ; species name
+	db "Royal Sword@" ; species name
 	dw 507, 1168 ; height, weight
 
 	db   "A peerless knight"
@@ -8,3 +8,4 @@
 	page "Switch between"
 	next "attack and defense"
 	next "stance.@"
+

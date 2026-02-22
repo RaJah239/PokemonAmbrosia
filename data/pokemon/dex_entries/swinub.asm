@@ -1,4 +1,4 @@
-	db "PIG@" ; species name
+	db "Pig@" ; species name
 	dw 104, 140 ; height, weight
 
 	db   "It wiggles"
@@ -8,3 +8,4 @@
 	page "Takes half"
 	next "damage from Fire"
 	next "and Ice moves.@"
+

@@ -1,4 +1,4 @@
-	db "DRILL@" ; species name
+	db "Drill@" ; species name
 	dw 603, 2320 ; height, weight
 
 	db   "Hard scales cover"
@@ -8,3 +8,4 @@
 	page "Extra damage on"
 	next "males. Lays"
 	next "Toxic Spikes.@"
+

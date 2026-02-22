@@ -1,4 +1,4 @@
-	db "FLAME@" ; species name
+	db "Flame@" ; species name
 	dw 607, 1320 ; height, weight
 
 	db   "Legendary bird"
@@ -8,3 +8,4 @@
 	page "Immune to Fire"
 	next "and Recoil. Sets"
 	next "Safeguard.@"
+

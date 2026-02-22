@@ -1,4 +1,4 @@
-	db "OWL@" ; species name
+	db "Owl@" ; species name
 	dw 503, 900 ; height, weight
 
 	db   "It's very soft"
@@ -8,3 +8,4 @@
 	page "Defense boost on"
 	next "switch. Boosted"
 	next "accuracy.@"
+

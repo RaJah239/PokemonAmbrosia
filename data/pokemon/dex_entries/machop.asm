@@ -1,4 +1,4 @@
-	db "SUPERPOWER@" ; species name
+	db "Superpower@" ; species name
 	dw 207, 430 ; height, weight
 
 	db   "It trains by"
@@ -8,3 +8,4 @@
 	page "Boosted damage"
 	next "when afflicted by"
 	next "a status.@"
+

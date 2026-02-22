@@ -1,4 +1,4 @@
-	db "DARKNESS@" ; species name
+	db "Darkness@" ; species name
 	dw 108, 50 ; height, weight
 
 	db   "It hides shiny"
@@ -8,3 +8,4 @@
 	page "Status moves"
 	next "always land"
 	next "first.@"
+

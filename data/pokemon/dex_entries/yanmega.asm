@@ -1,4 +1,4 @@
-	db "DRAGONFLY@" ; species name
+	db "Dragonfly@" ; species name
 	dw 603, 1135 ; height, weight
 
 	db   "It can fly fast"
@@ -7,3 +7,4 @@
 
 	page "Boosted Speed"
 	next "and Accuracy.@"
+

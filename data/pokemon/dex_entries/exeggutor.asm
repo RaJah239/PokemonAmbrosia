@@ -1,4 +1,4 @@
-	db "COCONUT@" ; species name
+	db "Tropical@" ; species name
 	dw 607, 2650 ; height, weight
 
 	db   "Living in a good"
@@ -8,3 +8,4 @@
 	page "Speed boost in"
 	next "Sun. Resists"
 	next "Fire and Ice.@"
+

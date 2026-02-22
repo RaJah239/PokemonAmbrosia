@@ -1,4 +1,4 @@
-	db "FISH@" ; species name
+	db "Fish@" ; species name
 	dw 211, 220 ; height, weight
 
 	db   "This weak and"
@@ -8,3 +8,4 @@
 	page "Uses SPLASH"
 	next "with true and"
 	next "honest vigor.@"
+

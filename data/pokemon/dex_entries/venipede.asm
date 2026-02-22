@@ -8,3 +8,4 @@
 	page "Speed"
 	next "increases upon"
 	next "entering battle.@"
+

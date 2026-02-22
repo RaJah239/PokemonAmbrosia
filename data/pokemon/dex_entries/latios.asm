@@ -1,4 +1,4 @@
-	db "JET@" ; species name
+	db "Jet@" ; species name
 	dw 607, 1323 ; height, weight
 
 	db   "As fast as a Jet."
@@ -8,3 +8,4 @@
 	page "Immune to"
 	next "Ground and sets"
 	next "Reflect.@"
+

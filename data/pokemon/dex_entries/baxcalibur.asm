@@ -8,3 +8,4 @@
 	page "Lowers foes"
 	next "Sp.Atk. Regens"
 	next "HP in Hail.@"
+

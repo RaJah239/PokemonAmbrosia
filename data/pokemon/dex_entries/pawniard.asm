@@ -1,4 +1,4 @@
-	db "SHARP BLADE@" ; species name
+	db "Sharp Blade@" ; species name
 	dw 108, 225 ; height, weight
 
 	db   "Blades comprise"
@@ -6,3 +6,4 @@
 
 	page "Makes weaker"
 	next "moves stronger.@"
+

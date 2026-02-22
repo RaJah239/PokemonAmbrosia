@@ -1,4 +1,4 @@
-	db "FLAME@" ; species name
+	db "Flame@" ; species name
 	dw 507, 3000 ; height, weight
 
 	db   "A powerful and"
@@ -8,3 +8,4 @@
 	page "Summons sun on"
 	next "switch. Sp.Atk"
 	next "boost on KO.@"
+

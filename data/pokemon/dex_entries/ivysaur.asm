@@ -1,4 +1,4 @@
-	db "SEED@" ; species name
+	db "Seed@" ; species name
 	dw 303, 290 ; height, weight
 
 	db   "The bulb on its"
@@ -7,3 +7,4 @@
 
 	page "Makes weaker"
 	next "moves stronger.@"
+

@@ -1,4 +1,4 @@
-	db "ENDURANCE@" ; species name
+	db "Endurance@" ; species name
 	dw 307, 2436 ; height, weight
 
 	db   "Attacks bounce"
@@ -8,3 +8,4 @@
 	page "Takes no"
 	next "recoil damage"
 	next "from attacks.@"
+

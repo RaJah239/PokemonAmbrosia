@@ -1,4 +1,4 @@
-	db "JUBILEE@" ; species name
+	db "Jubilee@" ; species name
 	dw 411, 838 ; height, weight
 
 	db   "It brings peace"
@@ -8,3 +8,4 @@
 	page "Move effects are"
 	next "more likely. Heals"
 	next "status on switch.@"
+

@@ -1,4 +1,4 @@
-	db "GOD@" ; species name
+	db "God@" ; species name
 	dw 1000, 10000 ; height, weight
 
 	db   "The original one."
@@ -8,3 +8,4 @@
 	page "Immune to all"
 	next "status and"
 	next "enemy effects.@"
+

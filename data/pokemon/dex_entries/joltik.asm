@@ -1,4 +1,4 @@
-	db "SYPHON@" ; species name
+	db "Syphon@" ; species name
 	dw 004, 13 ; height, weight
 
 	db   "Likes to live in"
@@ -7,3 +7,4 @@
 
 	page "Thunder will"
 	next "always hit.@"
+

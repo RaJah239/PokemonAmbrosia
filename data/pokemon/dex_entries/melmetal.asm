@@ -8,3 +8,4 @@
 	page "Boosted punches."
 	next "Immune to stat"
 	next "drops.@"
+

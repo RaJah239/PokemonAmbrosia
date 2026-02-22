@@ -1,4 +1,4 @@
-	db "RAINBOW@" ; species name
+	db "Rainbow@" ; species name
 	dw 1206, 13900 ; height, weight
 
 	db   "The phoenix king"
@@ -7,3 +7,4 @@
 
 	page "Regenerates"
 	next "HP every turn.@"
+
