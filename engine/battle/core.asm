@@ -1794,7 +1794,7 @@ HandleDefrost:
 	ret nz
 
 	call BattleRandom
-	cp 20 percent
+	cp 33 percent
 	ret nc
 	xor a
 	ld [wBattleMonStatus], a
