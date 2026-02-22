@@ -3970,9 +3970,9 @@ AI_Smart_Burn:
     cp SYLVEON
     jr z, .discourage
 
-; strongly encourage if enemy is physical
+; strongly encourage if enemy is physical, discourage if special
     Call IsPlayerPhysicalOrSpecial
-    ret nc
+    jr nc, .discourage
 
     dec [hl]
     dec [hl]

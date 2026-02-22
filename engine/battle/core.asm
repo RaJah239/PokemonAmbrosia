@@ -1280,8 +1280,6 @@ Core_SpikesImmunePokemon: ; magic guard + levitate
     db -1
 
 Core_RegeneratorPokemon:
-    db SLOWPOKE
-    db SLOWBRO
     db TENTACOOL
     db TENTACRUEL
     db HO_OH
@@ -4877,6 +4875,8 @@ SwitchInEffects:
     jp z, .celebi
 
     cp CLEFABLE
+    jp z, .spDefUp
+    cp SLOWPOKE
     jp z, .spDefUp
     cp SLOWBRO
     jp z, .spDefUp
