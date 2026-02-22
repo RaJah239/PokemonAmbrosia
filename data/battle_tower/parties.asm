@@ -5921,9 +5921,9 @@ BattleTowerMons:
     bigdw 228
 	db "RANTA-N@@@@"
 
-	db PORYGON2
-	db EVIOLITE
-	db SWIFT, SHADOW_BALL, CALM_MIND, RECOVER
+	db MIMIKYU
+	db LEFTOVERS
+	db PLAY_ROUGH, SHADOW_PUNCH, DRAIN_PUNCH, THUNDER_WAVE
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -5933,18 +5933,18 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 32, 24, 24, 10 ; PP
+	db 24, 24, 24, 32 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-    bigdw 373
-    bigdw 373
-    bigdw 258
-    bigdw 278
-    bigdw 218
-    bigdw 298
-    bigdw 288
+	bigdw 313
+	bigdw 313
+	bigdw 298
+	bigdw 258
+	bigdw 290
+	bigdw 198
+	bigdw 308
 	db "RANTA-N@@@@"
 
 	db GARDEVOIR
