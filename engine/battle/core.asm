@@ -1306,9 +1306,6 @@ Core_GrimPokemon:
     db CHARMANDER
     db CHARMELEON
     db CHARIZARD
-    db DEINO
-    db ZWEILOUS
-    db HYDREIGON
     db -1
 
 Core_GutsPokemon:
@@ -4795,13 +4792,17 @@ SwitchInEffects:
     jp z, .umbreon
     cp MISMAGIUS
     jp z, .taunt
+    cp DEINO
+    jp z, .taunt
+    cp ZWEILOUS
+    jp z, .taunt
     cp HYDREIGON
     jp z, .taunt
 
     cp GENESECT
     jp z, .spAtkUp
     cp ESPEON
-    jp z, .spAtkUp
+    jp z, .espeon
     cp RAICHU
     jp z, .spAtkUp
     cp HOUNDOOM
@@ -5034,6 +5035,9 @@ SwitchInEffects:
 .taunt
     farcall TauntSwitch
     ret
+.espeon
+    farcall SafeguardSwitch
+    ; fallthrough
 .spAtkUp
     farcall SpecialAttackUpSwitch
 	ret

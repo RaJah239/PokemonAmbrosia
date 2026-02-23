@@ -5,5 +5,5 @@
 	next "learn about their"
 	next "surroundings."
 
-	page "Sp.Atk boost on"
-	next "defeating foe.@"
+	page "Boosted Accuracy."
+	next "Taunts foe.@"

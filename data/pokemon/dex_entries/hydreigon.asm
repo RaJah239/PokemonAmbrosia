@@ -5,6 +5,6 @@
 	next "kill and eat"
 	next "all that moves."
 
-	page "Sp.Atk boost on"
-	next "KO. Taunts foe."
-	next "Ground immune.@"
+	page "Boosted Accuracy."
+	next "Immune to Ground."
+	next "Taunts foe.@"

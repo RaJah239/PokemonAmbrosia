@@ -208,6 +208,20 @@ IronFistPokemon:
     db INFERNAPE
     db -1
 
+CompoundEyesPokemon:
+    db FROAKIE
+    db FROGADIER
+    db GRENINJA
+    db YANMEGA
+    db STARYU
+    db STARMIE
+    db HOOTHOOT
+    db NOCTOWL
+    db DEINO
+    db ZWEILOUS
+    db HYDREIGON
+    db -1
+
 UberImmunePokemon:
     db ARCEUS
     db MEWTWO

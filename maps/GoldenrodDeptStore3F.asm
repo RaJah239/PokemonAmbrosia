@@ -28,24 +28,17 @@ GoldenrodDeptStore3FElevatorButton:
 	jumpstd ElevatorButtonScript
 
 GoldenrodDeptStore3FSuperNerdText:
-	text "I just..."
-
-	para "can't decide!"
-
-	para "My Kirlia can"
-	line "become a cool"
-	cont "sword master"
-	cont "via Sun Stone."
-
-	para "Or a beautiful"
-	line "mystic sorceress"
-	cont "via Moon Stone."
-
-	para "Which do I pick!?"
-
-	para "And don't get me"
-	line "started on my"
-	cont "Eevee."
+	text "There are several"
+	line "#mon that can"
+	cont "evolve in"
+	cont "different ways via"
+	cont "Sun Stone or Moon"
+	cont "Stone."
+	para "They are..."
+	para "Kirlia."
+	para "Sneasel."
+	para "Scyther."
+	para "Ursaring."
 	done
 
 GoldenrodDeptStore3FRockerText:

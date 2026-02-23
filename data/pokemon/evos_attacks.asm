@@ -3140,7 +3140,9 @@ HydreigonEvosAttacks:
 	db 35, DRAGON_CLAW
 	db 40, DRAGON_PULSE
 	db 45, FIRE_BLAST
-	db 50, NASTY_PLOT
+	db 50, THUNDER
+	db 55, BLIZZARD
+	db 60, NASTY_PLOT
 	db 70, DRACO_METEOR
 	db 0 ; no more level-up moves
 

@@ -7658,23 +7658,18 @@ BattleCommand_CheckStatusImmunity:
 ; ======= Compound Eyes ==========
 ; ================================
 CompoundEyes:
-    cp YANMEGA
-    call z, IncrementB
-    cp STARYU
-    call z, IncrementB
-    cp STARMIE
-    call z, IncrementB
-    cp HOOTHOOT
-    call z, IncrementB
-    cp NOCTOWL
-    call z, IncrementB
-    cp FROAKIE
-    call z, IncrementB
-    cp FROGADIER
-    call z, IncrementB
-    cp GRENINJA
-    call z, IncrementB
-    ret
+	push bc
+	push de
+	push hl
+	ld hl, CompoundEyesPokemon
+	ld de, 1
+	call IsInArray
+	pop hl
+	pop de
+	pop bc
+	ret nc
+	call IncrementB
+	ret
 
 BattleCommand_Endure:
 BattleCommand_Present:

@@ -2506,8 +2506,8 @@ BattleTowerMons:
 	db "RANTA-N@@@@"
 
 	db HYDREIGON
-	db DRAGON_SCALE
-	db DRACO_METEOR, FIRE_BLAST, SLUDGE_BOMB, NASTY_PLOT
+	db EXPERT_BELT
+	db DRACO_METEOR, FIRE_BLAST, THUNDER, BLIZZARD
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -2517,7 +2517,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 16, 16, 24, 32 ; PP
+	db 10, 10, 10, 10 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 63 ; Level
@@ -3447,7 +3447,7 @@ BattleTowerMons:
 
 	db HYDREIGON
 	db DRAGON_SCALE
-	db DRACO_METEOR, FIRE_BLAST, SLUDGE_BOMB, NASTY_PLOT
+	db DRACO_METEOR, FIRE_BLAST, THUNDER, NASTY_PLOT
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -3457,7 +3457,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 16, 16, 24, 32 ; PP
+	db 16, 16, 16, 32 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 83 ; Level
@@ -4621,7 +4621,7 @@ BattleTowerMons:
 
 	db HYDREIGON
 	db DRAGON_SCALE
-	db DRACO_METEOR, SLUDGE_BOMB, FIRE_BLAST, NASTY_PLOT
+	db DRACO_METEOR, THUNDER, FIRE_BLAST, NASTY_PLOT
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -4631,7 +4631,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 16, 24, 16, 32 ; PP
+	db 16, 16, 16, 32 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
