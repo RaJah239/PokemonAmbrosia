@@ -1026,11 +1026,13 @@ BellsproutEvosAttacks:
 	db 15, RAZOR_LEAF
 	db 18, SLEEP_POWDER
 	db 22, SLUDGE
-	db 24, SLASH
+	db 24, NIGHT_SLASH
 	db 26, STUN_SPORE
 	db 30, CROSS_POISON
 	db 35, SLUDGE_BOMB
 	db 40, LEAF_BLADE
+	db 45, AGILITY
+	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 MimikyuEvosAttacks:
@@ -1048,18 +1050,18 @@ MimikyuEvosAttacks:
 
 VictreebelEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, VINE_WHIP
-	db 1, ACID
 	db 6, GROWTH
 	db 11, POISON_STING
 	db 15, RAZOR_LEAF
 	db 18, SLEEP_POWDER
 	db 21, SLUDGE
-	db 24, SLASH
+	db 24, NIGHT_SLASH
 	db 26, STUN_SPORE
 	db 30, CROSS_POISON
 	db 35, SLUDGE_BOMB
 	db 40, LEAF_BLADE
+	db 45, AGILITY
+	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 TentacoolEvosAttacks:

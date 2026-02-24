@@ -5,7 +5,7 @@
 	next "always ready"
 	next "to fight."
 
-	page "Status boosts"
-	next "Attack. Dynamic"
-	next "Punch hits.@"
+	page "Boosted punches."
+	next "Status boosts Atk."
+	next "Dynamicpunch hits.@"
 

@@ -5,7 +5,6 @@
 	next "lifting rocks in"
 	next "the mountains."
 
-	page "Boosted damage"
-	next "when afflicted by"
-	next "a status.@"
+	page "Boosted punches."
+	next "Status boosts Atk.@"
 
