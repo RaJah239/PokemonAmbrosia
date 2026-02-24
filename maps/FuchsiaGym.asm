@@ -42,6 +42,10 @@ FuchsiaGymJanineScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_SOULBADGE
+	writetext JanineText_ApplyMyself
+	waitbutton
+    closetext
+    end
 .FightDone:
 	writetext JanineText_ApplyMyself
 	waitbutton

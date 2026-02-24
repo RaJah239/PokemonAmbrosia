@@ -40,6 +40,10 @@ CeladonGymErikaScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_RAINBOWBADGE
+	writetext ErikaAfterBattleText
+	waitbutton
+    closetext
+    end
 .FightDone:
 	writetext ErikaAfterBattleText
 	waitbutton
