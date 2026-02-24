@@ -331,7 +331,7 @@ endr
 	ret
 
 .DrawMenuClockTextBox:
-	jr ._DrawMenuClockTextBox
+	jp ._DrawMenuClockTextBox
 
 .PrintMenuClock:
     call .IsMenuClockOn
@@ -356,6 +356,9 @@ endr
 	cp WEATHER_SANDSTORM
 	jr z, .PrintSandstorm
 
+	cp WEATHER_HAIL
+	jr z, .PrintHail
+
     cp WEATHER_NONE
 	jr z, .PrintClearSkies
 	ret
@@ -378,6 +381,12 @@ endr
 	call PlaceString
 	ret
 
+.PrintHail:
+	hlcoord 1, 16
+	ld de, .HailStr
+	call PlaceString
+	ret
+
 .PrintClearSkies:
 	hlcoord 1, 16
 	ld de, .ClearStr
@@ -390,6 +399,8 @@ endr
  	db "Sunny@"
 .SandstormStr:
  	db "Sandstorm@"
+.HailStr:
+ 	db "Hail@"
 .ClearStr:
 	db "Clear@"
 
