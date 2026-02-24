@@ -198,6 +198,8 @@ SolidRockPokemon:
 IronFistPokemon:
     db MELTAN
     db MELMETAL
+    db METANG
+    db METAGROSS
     db TIMBURR
     db GURDURR
     db CONKELDURR

@@ -5,7 +5,7 @@
 	next "its forked tail"
 	next "quivers."
 
-	page "Special Attack"
-	next "increases upon"
-	next "entering battle.@"
+	page "Sp.Atk boost and"
+	next "raises Safeguard"
+	next "upon switch in.@"
 

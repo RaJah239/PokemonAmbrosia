@@ -5,7 +5,7 @@
 	next "machine with four"
 	next "super brains."
 
-	page "Immune to stat"
-	next "drops. Resists"
-	next "type weaknesses.@"
+	page "Boosted Punches."
+	next "Resists weaknesses"
+	next "and stat drops.@"
 

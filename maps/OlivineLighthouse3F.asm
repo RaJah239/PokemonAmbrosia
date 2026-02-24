@@ -76,7 +76,7 @@ SailorTerrellSeenText:
 	cont "everyday."
 
 	para "We are both"
-	line "going to BULK UP."
+	line "going to Bulk Up."
 	done
 
 SailorTerrellBeatenText:
