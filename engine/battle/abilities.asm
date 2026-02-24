@@ -200,6 +200,9 @@ IronFistPokemon:
     db MELMETAL
     db METANG
     db METAGROSS
+    db MACHOP
+    db MACHOKE
+    db MACHAMP
     db TIMBURR
     db GURDURR
     db CONKELDURR
