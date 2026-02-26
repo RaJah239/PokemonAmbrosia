@@ -57,7 +57,7 @@ TrainerJoyScript:
 	opentext
 	writetext NurseJoyOfferFightText
 	waitbutton
-	nooryes
+	yesorno
 	iffalse .refused
 	closetext
 .skipRequest
@@ -97,7 +97,7 @@ TrainerJoyScript:
     closetext
 	opentext
 	writetext RematchTextNurseJoy
-	nooryes
+	yesorno
 	iftrue .fight
 .refused
 	writetext RematchRefuseTextNurseJoy
