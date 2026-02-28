@@ -36,7 +36,6 @@ GoldenrodPokecenter1F_GSBallSceneLeft:
 	waitbutton
 	verbosegiveitem GS_BALL
 	setevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
-	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
 	writetext GoldenrodPokeCenter1FLinkReceptionistPleaseDoComeAgainText
 	waitbutton
 	closetext

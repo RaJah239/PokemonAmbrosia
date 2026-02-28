@@ -575,7 +575,7 @@ MasterRedSeenText:
     cont "that now than"
     cont "ever."
 
-    para "Out battle"
+    para "Our battle"
     line "will help us"
     cont "both reach"
     cont "our goals."

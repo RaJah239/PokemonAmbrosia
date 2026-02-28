@@ -219,7 +219,7 @@ AncientRuinsPresentFieldMon2Script:
     end
 
 AncientRuinsPresentFieldMon3Script:
-	trainer RHYPERIOR, FIELD_MON, EVENT_FIELD_MON_3, AncientRuinsPresentPokemonAttacksText, 72, 0, .script
+	trainer AERODACTYL, FIELD_MON, EVENT_FIELD_MON_3, AncientRuinsPresentPokemonAttacksText, 50, 0, .script
 .script
     disappear ANCIENTRUINPRESENT_FIELDMON_3
     end
