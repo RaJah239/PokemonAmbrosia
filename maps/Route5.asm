@@ -97,7 +97,7 @@ TrainerJoyScript:
     closetext
 	opentext
 	writetext RematchTextNurseJoy
-	nooryes
+	yesorno
 	iftrue .fight
 .refused
 	writetext RematchRefuseTextNurseJoy
