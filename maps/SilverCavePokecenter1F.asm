@@ -51,19 +51,11 @@ SilverCavePokecenter1FBobRossScript:
 	end
 
 SilverCavePokecenter1FBobRossText:
-	text "It's hard to see"
-	line "things when you"
-	cont "are too close."
-	para "Take a step back"
-	line "and look."
-	para "This is a"
-	line "beautiful"
-	cont "mountain."
-	para "I keep painting"
-	line "it."
-	para "A cloud here."
+	text "I keep painting"
+	line "this mountain."
+	para "A tree here."
 	para "A happy little"
-	line "tree there."
+	line "cloud there."
 	para "You can do"
 	line "anything you want."
 	para "This is your"
@@ -75,10 +67,7 @@ SilverCavePokecenter1FBobRossText:
 	done
 
 SilverCavePokecenter1FShinyOfferText:
-	text "Sometimes the"
-	line "light hits just"
-	cont "right."
-	para "Shall I paint one"
+	text "Shall I paint one"
 	line "of your #mon?"
 	done
 
