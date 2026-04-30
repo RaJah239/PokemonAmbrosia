@@ -2250,6 +2250,21 @@ _FlyMap:
 	ret
 
 .HandleDPad:
+	ld hl, hJoyLast
+	ld a, [hl]
+	and PAD_LEFT | PAD_RIGHT
+	ld b, a
+	ld hl, hJoyPressed
+	ld a, [hl]
+	and PAD_LEFT | PAD_RIGHT
+	or b
+	ld b, a
+	ld a, b
+	and PAD_RIGHT
+	jr nz, .ToggleRight
+	ld a, b
+	and PAD_LEFT
+	jr nz, .ToggleLeft
 	ld a, [wStartFlypoint]
 	ld e, a
 	ld a, [wEndFlypoint]
@@ -2294,6 +2309,24 @@ _FlyMap:
 	call WaitBGMap
 	xor a
 	ldh [hBGMapMode], a
+	ret
+
+.ToggleRight:
+	ld a, [wPokegearMapRegion]
+	and a
+	ret nz
+	call HasAnyKantoFlypoint
+	ret z
+	ld a, KANTO_REGION
+	call FlyMap_SetRegion
+	ret
+
+.ToggleLeft:
+	ld a, [wPokegearMapRegion]
+	and a
+	ret z
+	xor a ; JOHTO_REGION
+	call FlyMap_SetRegion
 	ret
 
 TownMapBubble:
@@ -2427,87 +2460,185 @@ FlyMap:
 	ld c, a
 	call GetWorldMapLocation
 .CheckRegion:
-; The first 46 locations are part of Johto. The rest are in Kanto.
+	ld [wTownMapCursorLandmark], a
+; The first landmarks are part of Johto. The rest are in Kanto.
 	cp KANTO_LANDMARK
 	jr nc, .KantoFlyMap
-; Johto fly map
-; Note that .NoKanto should be modified in tandem with this branch
-	push af
-	ld a, JOHTO_FLYPOINT ; first Johto flypoint
-	ld [wTownMapPlayerIconLandmark], a ; first one is default (New Bark Town)
-	ld [wStartFlypoint], a
-	ld a, KANTO_FLYPOINT - 1 ; last Johto flypoint
-	ld [wEndFlypoint], a
-; Fill out the map
-	call FillJohtoMap
-	call .MapHud
-	pop af
-	call TownMapPlayerIcon
+	xor a ; JOHTO_REGION
+	call FlyMap_SetRegion
 	ret
 
-; DevNote - Fly - Kanto map not available until Indigo Plateau OR Saffron has been visited
 .KantoFlyMap:
-; The event that there are no flypoints enabled in a map is not
-; accounted for. As a result, if you attempt to select a flypoint
-; when there are none enabled, the game will crash. Additionally,
-; the flypoint selection has a default starting point that
-; can be flown to even if none are enabled.
-; To prevent both of these things from happening when the player
-; enters Kanto, fly access is restricted until Indigo Plateau or Saffron is
-; visited and its flypoint enabled.
-	push af
-	ld c, SPAWN_INDIGO
-	call HasVisitedSpawn
-	and a
-	jr nz, .DoKantoIndigo
-	ld c, SPAWN_SAFFRON
-	call HasVisitedSpawn
-	and a
-	jr nz, .DoKantoSaffron
-	jr .NoKanto
-.DoKantoIndigo
-; Kanto's map is only loaded if we've visited Indigo Plateau or Saffron
-	ld a, KANTO_FLYPOINT ; first Kanto flypoint
-	ld [wStartFlypoint], a
-	ld a, NUM_FLYPOINTS - 1 ; last Kanto flypoint
-	ld [wEndFlypoint], a
-	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
-	jr .FillKantoMap
-.DoKantoSaffron
-; Kanto's map is only loaded if we've visited Indigo Plateau or Saffron
-	ld a, KANTO_FLYPOINT ; first Kanto flypoint
-	ld [wStartFlypoint], a
-	ld a, NUM_FLYPOINTS - 1 ; last Kanto flypoint
-	ld [wEndFlypoint], a
-	ld a, FLY_SAFFRON
-	ld [wTownMapPlayerIconLandmark], a ; first one is default (Saffron)
-.FillKantoMap
-; Fill out the map
-	call FillKantoMap
-	call .MapHud
-	pop af
-	call TownMapPlayerIcon
+	call HasAnyKantoFlypoint
+	jr z, .NoKanto
+	ld a, KANTO_REGION
+	call FlyMap_SetRegion
 	ret
 
 .NoKanto:
-; If Indigo Plateau hasn't been visited, we use Johto's map instead
-	ld a, JOHTO_FLYPOINT ; first Johto flypoint
-	ld [wTownMapPlayerIconLandmark], a ; first one is default (New Bark Town)
+	xor a ; JOHTO_REGION
+	call FlyMap_SetRegion
+	ret
+
+FlyMap_SetRegion:
+	ld [wPokegearMapRegion], a
+	call SetFlypointRangeForRegion
+	call GetDefaultFlypointForRegion
+	ld [wTownMapPlayerIconLandmark], a
+	jp RefreshFlyMap
+
+SetFlypointRangeForRegion:
+	and a
+	jr nz, .Kanto
+	ld a, JOHTO_FLYPOINT
 	ld [wStartFlypoint], a
-	ld a, KANTO_FLYPOINT - 1 ; last Johto flypoint
+	ld a, KANTO_FLYPOINT - 1
 	ld [wEndFlypoint], a
+	ret
+
+.Kanto:
+	ld a, KANTO_FLYPOINT
+	ld [wStartFlypoint], a
+	ld a, NUM_FLYPOINTS - 1
+	ld [wEndFlypoint], a
+	ret
+
+HasAnyKantoFlypoint:
+	ld hl, .KantoFlypointFlags
+.loop
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+	ld a, d
+	or e
+	jr z, .none
+	push hl
+	call CheckEngineFlag
+	pop hl
+	jr nc, .found
+	jr .loop
+.found
+	ld a, 1
+	ret
+.none
+	xor a
+	ret
+
+.KantoFlypointFlags:
+	dw ENGINE_FLYPOINT_PALLET
+	dw ENGINE_FLYPOINT_VIRIDIAN
+	dw ENGINE_FLYPOINT_PEWTER
+	dw ENGINE_FLYPOINT_CERULEAN
+	dw ENGINE_FLYPOINT_VERMILION
+	dw ENGINE_FLYPOINT_ROCK_TUNNEL
+	dw ENGINE_FLYPOINT_LAVENDER
+	dw ENGINE_FLYPOINT_CELADON
+	dw ENGINE_FLYPOINT_SAFFRON
+	dw ENGINE_FLYPOINT_FUCHSIA
+	dw ENGINE_FLYPOINT_CINNABAR
+	dw ENGINE_FLYPOINT_INDIGO_PLATEAU
+	dw 0
+
+FindFirstVisitedFlypointInRange:
+	ld a, [wStartFlypoint]
+	ld e, a
+	ld a, [wEndFlypoint]
+	ld d, a
+.loop
+	push de
+	ld l, e
+	ld h, 0
+	add hl, hl
+	ld de, Flypoints + 1
+	add hl, de
+	ld c, [hl]
+	call HasVisitedSpawn
+	pop de
+	and a
+	jr nz, .found
+	ld a, e
+	cp d
+	jr z, .fallback
+	inc e
+	jr .loop
+
+.found
+	ld a, e
+	ret
+
+.fallback
+	ld a, [wStartFlypoint]
+	ret
+
+GetDefaultFlypointForRegion:
+	ld a, [wPokegearMapRegion]
+	and a
+	jr z, .Johto
+	ld c, SPAWN_SAFFRON
+	call HasVisitedSpawn
+	and a
+	jr nz, .Saffron
+	ld c, SPAWN_INDIGO
+	call HasVisitedSpawn
+	and a
+	jr nz, .Indigo
+	call FindFirstVisitedFlypointInRange
+	ret
+
+.Johto:
+	ld a, JOHTO_FLYPOINT
+	ret
+
+.Saffron:
+	ld a, FLY_SAFFRON
+	ret
+
+.Indigo:
+	ld a, FLY_INDIGO
+	ret
+
+RefreshFlyMap:
+	ld a, [wPokegearMapRegion]
+	and a
+	jr nz, .Kanto
 	call FillJohtoMap
-	pop af
+	jr .MapHud
+
+.Kanto:
+	call FillKantoMap
 .MapHud:
 	call TownMapBubble
 	call TownMapPals
 	hlbgcoord 0, 0 ; BG Map 0
 	call TownMapBGUpdate
+	farcall ClearSpriteAnims
 	call TownMapMon
 	ld a, c
 	ld [wTownMapCursorCoordinates], a
 	ld a, b
 	ld [wTownMapCursorCoordinates + 1], a
+	ld a, [wTownMapCursorLandmark]
+	cp KANTO_LANDMARK
+	ld a, [wPokegearMapRegion]
+	jr c, .PlayerInJohto
+	and a
+	jr z, .SkipPlayerIcon
+	ld a, [wTownMapCursorLandmark]
+	call TownMapPlayerIcon
+	jr .Done
+
+.PlayerInJohto:
+	and a
+	jr nz, .SkipPlayerIcon
+	ld a, [wTownMapCursorLandmark]
+	call TownMapPlayerIcon
+	jr .Done
+
+.SkipPlayerIcon:
+	call ClearSprites
+.Done:
+	call GetMapCursorCoordinates
 	ret
 
 Pokedex_GetArea:
