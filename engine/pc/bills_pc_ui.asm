@@ -638,7 +638,7 @@ PCIconLoop:
 	cp c
 	jr z, .blank
 .not_holding
-	call GetStorageBoxMon
+	call BillsPC_GetStorageBoxMonIconData
 	jr z, .blank
 	ld a, [wBufferMonAltSpecies]
 	ld [wCurIcon], a
@@ -667,6 +667,63 @@ PCIconLoop:
 	dec d
 	jr nz, PCIconLoop
 	ret
+
+BillsPC_GetStorageBoxMonIconData:
+; Lightweight variant for icon rendering.
+; For box mons, read just encoded DVs and AltSpecies directly from storage.
+; Party mons still use the full path.
+	xor a
+	ld [wBufferMonSlot], a
+	ld a, b
+	ld [wBufferMonBox], a
+	and $7f
+	jr z, .full_read
+
+	push hl
+	push de
+	push bc
+	call GetStorageBoxPointer
+	call IsStorageUsed
+	jr z, .empty
+
+	call OpenPokeDB
+	ld a, [hl]
+	ld d, a
+	ld bc, SAVEMON_DVS
+	add hl, bc
+	ld de, wBufferMonDVs
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hli]
+	ld [de], a
+	ld bc, SAVEMON_ALTSPECIES - SAVEMON_DVS - 2
+	add hl, bc
+	ld a, [hl]
+	and a
+	jr nz, .got_species
+	ld a, d
+.got_species
+	ld [wBufferMonAltSpecies], a
+	call CloseSRAM
+
+	pop bc
+	pop de
+	pop hl
+	ld a, c
+	ld [wBufferMonSlot], a
+	ld a, 1
+	ret
+
+.empty
+	pop bc
+	pop de
+	pop hl
+	xor a
+	ret
+
+.full_read
+	jp GetStorageBoxMon
 
 BillsPC_GetMonIconAddr:
 	push de
