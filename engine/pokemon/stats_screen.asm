@@ -521,7 +521,7 @@ StatsScreen_PlaceVerticalDivider: ; unreferenced
 StatsScreen_PlaceHorizontalDivider:
 	hlcoord 0, 7
 	ld b, SCREEN_WIDTH
-	ld a, $62 ; horizontal divider (empty HP/exp bar)
+	ld a, $76 ; thin horizontal divider tile already loaded for stats pages
 .loop
 	ld [hli], a
 	dec b
