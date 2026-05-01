@@ -1219,8 +1219,8 @@ MoonlightDescription:
 	line "(varies by time).@"
 
 HiddenPowerDescription:
-	db   "The power varies"
-	line "with the #mon.@"
+	db   "May freeze; hits"
+	line "Water super eff.@"
 
 SeedFlareDescription:
 	db   "Powerful flare,"

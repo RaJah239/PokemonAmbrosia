@@ -119,7 +119,7 @@ AcademyBlackboard:
 	db "PAR@"
 	db "SLP@"
 	db "BRN@"
-	db "FRZ@"
+	db "FBT@"
 	db "Quit@"
 
 AcademyNotebook:
@@ -349,13 +349,15 @@ AcademyBurnText:
 
 AcademyFreezeText:
 	text "If your #mon is"
-	line "frozen, it can't"
-	cont "do a thing."
+	line "frostbitten, its"
+	cont "special attacks"
+	cont "weaken."
 
-	para "It remains frozen"
-	line "after battle."
+	para "It remains"
+	line "frostbitten after"
+	cont "battle."
 
-	para "Thaw it out with"
+	para "Heal it with"
 	line "an Ice Heal."
 	done
 

@@ -2639,7 +2639,7 @@ BattleTowerMons:
 
     db CLOYSTER
 	db NEVERMELTICE
-	db SHELL_SMASH, HYDRO_PUMP, AVALANCHE, WATERFALL
+	db SHELL_SMASH, HYDRO_PUMP, AVALANCHE, FREEZE_DRY
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -2649,7 +2649,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 10, 10, 10, 15 ; PP
+	db 10, 10, 10, 10 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 63 ; Level
@@ -4257,7 +4257,7 @@ BattleTowerMons:
 
     db KYOGRE
 	db LEFTOVERS
-	db SURF, ICE_BEAM, THUNDER, CALM_MIND
+	db SURF, FREEZE_DRY, THUNDER, CALM_MIND
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -4267,7 +4267,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 24, 24, 16, 24 ; PP
+	db 24, 16, 16, 24 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
@@ -4647,7 +4647,7 @@ BattleTowerMons:
 
     db CLOYSTER
 	db NEVERMELTICE
-	db SHELL_SMASH, HYDRO_PUMP, AVALANCHE, WATERFALL
+	db SHELL_SMASH, HYDRO_PUMP, AVALANCHE, FREEZE_DRY
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -4657,7 +4657,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 16, 16, 16, 24 ; PP
+	db 16, 16, 16, 16 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
@@ -4725,7 +4725,7 @@ BattleTowerMons:
 
 	db SUICUNE
 	db LEFTOVERS
-	db SCALD, ICE_BEAM, CALM_MIND, REST
+	db SCALD, FREEZE_DRY, CALM_MIND, REST
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -4735,7 +4735,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 24, 24, 24, 5 ; PP
+	db 24, 16, 24, 5 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
@@ -5585,7 +5585,7 @@ BattleTowerMons:
 
 	db ARTICUNO
 	db LEFTOVERS
-	db BLIZZARD, AIR_SLASH, CALM_MIND, ROOST
+	db BLIZZARD, FREEZE_DRY, CALM_MIND, ROOST
 	dw 0 ; OT ID
 	dt 0 ; Exp
 	; Stat exp
@@ -5595,7 +5595,7 @@ BattleTowerMons:
 	bigdw 65500
 	bigdw 65500
 	dn 15, 15, 15, 15 ; DVs
-	db 16, 24, 24, 10 ; PP
+	db 16, 16, 24, 10 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level

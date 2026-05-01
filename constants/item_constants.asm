@@ -228,7 +228,7 @@ DEF TM01 EQU const_value
 	add_tm BODY_SLAM    ; c6
 	add_tm ROCK_SMASH   ; c7
 	add_tm ROOST        ; c8
-	add_tm HIDDEN_POWER ; c9
+	add_tm ANCIENTPOWER ; c9
 	add_tm SUNNY_DAY    ; ca
 	add_tm SELFDESTRUCT ; cb
 	add_tm EXPLOSION    ; cc

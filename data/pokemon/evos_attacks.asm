@@ -664,7 +664,7 @@ ArctozoltEvosAttacks:
 	db 30, ICE_PUNCH
 	db 35, HAIL
 	db 40, THUNDERBOLT
-	db 42, ICE_BEAM
+	db 42, FREEZE_DRY
 	db 45, AVALANCHE
 	db 50, BOLT_BEAK
 	db 0 ; no more level-up moves
@@ -710,7 +710,7 @@ AbomasnowEvosAttacks:
 	db 35, LEAF_BLADE
 	db 40, HAIL
 	db 40, GIGA_DRAIN
-	db 45, ICE_BEAM
+	db 45, FREEZE_DRY
 	db 50, AVALANCHE
 	db 55, BLIZZARD
 	db 0 ; no more level-up moves
@@ -1131,7 +1131,7 @@ CloysterEvosAttacks:
 	db 22, BUBBLEBEAM
 	db 30, CLAMP
 	db 35, WATERFALL
-	db 40, ICE_BEAM
+	db 40, FREEZE_DRY
 	db 50, HYDRO_PUMP
 	db 55, AVALANCHE
 	db 60, SHELL_SMASH
@@ -1481,7 +1481,7 @@ JynxEvosAttacks:
 	db 26, AURORA_BEAM
 	db 30, MEAN_LOOK
 	db 36, PSYCHIC_M
-	db 40, ICE_BEAM
+	db 40, FREEZE_DRY
 	db 45, PERISH_SONG
 	db 50, BLIZZARD
 	db 60, QUIVER_DANCE
@@ -1554,7 +1554,7 @@ LaprasEvosAttacks:
 	db 25, HAIL
 	db 30, PERISH_SONG
 	db 35, WATERFALL
-	db 40, ICE_BEAM
+	db 40, FREEZE_DRY
 	db 45, HYDRO_PUMP
 	db 50, AVALANCHE
 	db 55, CALM_MIND
@@ -1735,7 +1735,7 @@ ArticunoEvosAttacks:
 	db 37, HAIL
 	db 40, AIR_SLASH
 	db 45, ROOST
-	db 50, ICE_BEAM
+	db 50, FREEZE_DRY
 	db 55, HURRICANE
 	db 60, BLIZZARD
 	db 65, BRAVE_BIRD
@@ -2050,7 +2050,7 @@ FrigibaxEvosAttacks:
 	db 31, ICE_PUNCH
 	db 35, DRAGON_CLAW
 	db 40, CRUNCH
-	db 45, ICE_BEAM
+	db 45, FREEZE_DRY
 	db 50, AVALANCHE
     db 55, DRAGON_DANCE
 	db 60, DRACO_IMPACT
@@ -2070,7 +2070,7 @@ BaxcaliburEvosAttacks:
 	db 30, ICE_PUNCH
 	db 35, DRAGON_CLAW
 	db 40, CRUNCH
-	db 45, ICE_BEAM
+	db 45, FREEZE_DRY
 	db 50, AVALANCHE
     db 55, DRAGON_DANCE
 	db 60, DRACO_IMPACT
@@ -2152,8 +2152,8 @@ NinetalesAEvosAttacks:
 	db 25, HYPNOSIS
 	db 25, AURORA_BEAM
 	db 30, HAIL
-	db 36, ICE_BEAM
-	db 40, MOON_BLAST
+	db 36, MOON_BLAST
+	db 40, FREEZE_DRY
 	db 45, BLIZZARD
 	db 50, NASTY_PLOT
 	db 0 ; no more level-up moves
@@ -2225,7 +2225,6 @@ PorygonEvosAttacks:
 	db 24, DEFENSE_CURL
 	db 31, SWIFT
 	db 33, FEINT_ATTACK
-	db 36, LOCK_ON
 	db 36, ZAP_CANNON
 	db 38, TRICK_ROOM
 	db 40, TRI_ATTACK
@@ -2243,7 +2242,6 @@ PorygonzEvosAttacks:
 	db 24, DEFENSE_CURL
 	db 30, SWIFT
 	db 33, FEINT_ATTACK
-	db 36, LOCK_ON
 	db 36, ZAP_CANNON
 	db 38, TRICK_ROOM
 	db 40, TRI_ATTACK
@@ -2634,9 +2632,9 @@ UnownEvosAttacks:
     db EVOLVE_LEVEL, 30, NOWN
 NownEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HIDDEN_POWER
+	db 1, OMINOUS_WIND
 	db 6, GLARE
-	db 12, OMINOUS_WIND
+	db 12, ANCIENTPOWER
 	db 18, WILL_O_WISP
 	db 24, DESTINY_BOND
 	db 31, SHADOW_BALL
@@ -2682,7 +2680,7 @@ KyogreEvosAttacks:
 	db 40, REST
 	db 50, DOUBLE_EDGE
 	db 60, CALM_MIND
-	db 70, ICE_BEAM
+	db 70, FREEZE_DRY
 	db 80, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2931,8 +2929,8 @@ SuicuneEvosAttacks:
 	db 11, BUBBLEBEAM
 	db 21, RAIN_DANCE
 	db 31, GUST
-	db 41, AURORA_BEAM
-	db 45, MIRROR_COAT
+	db 41, MIRROR_COAT
+	db 45, FREEZE_DRY
 	db 50, SCALD
 	db 55, HYDRO_PUMP
 	db 60, CALM_MIND

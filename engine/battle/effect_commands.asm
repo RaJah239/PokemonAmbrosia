@@ -193,28 +193,6 @@ BattleCommand_CheckTurn:
 
 .not_asleep
 
-	ld hl, wBattleMonStatus
-	bit FRZ, [hl]
-	jr z, .not_frozen
-
-	; Flame Wheel and Sacred Fire thaw the user.
-	ld a, [wCurPlayerMove]
-	cp FLAME_WHEEL
-	jr z, .not_frozen
-	cp SACRED_FIRE
-	jr z, .not_frozen
-
-    call CheckIfFastBattlesIsOn
-    jr nz, .skipFrozenText
-	ld hl, FrozenSolidText
-	call StdBattleTextbox
-.skipFrozenText
-
-	call CantMove
-	jp EndTurn
-
-.not_frozen
-
 	ld hl, wPlayerSubStatus3
 	bit SUBSTATUS_FLINCHED, [hl]
 	jr z, .not_flinched
@@ -463,27 +441,6 @@ CheckEnemyTurn:
 	jp EndTurn
 
 .not_asleep
-
-	ld hl, wEnemyMonStatus
-	bit FRZ, [hl]
-	jr z, .not_frozen
-
-	; Flame Wheel and Sacred Fire thaw the user.
-	ld a, [wCurEnemyMove]
-	cp FLAME_WHEEL
-	jr z, .not_frozen
-	cp SACRED_FIRE
-	jr z, .not_frozen
-
-    call CheckIfFastBattlesIsOn
-    jr nz, .skipFrozenText2
-	ld hl, FrozenSolidText
-	call StdBattleTextbox
-.skipFrozenText2
-	call CantMove
-	jp EndTurn
-
-.not_frozen
 
 	ld hl, wEnemySubStatus3
 	bit SUBSTATUS_FLINCHED, [hl]
@@ -1405,12 +1362,17 @@ BattleCommand_Stab:
 .GotMatchup: ; here we know the attacking type b and the defending type d/e
 	push hl
 	push bc
+	call FreezeDryOverrideMatchedType
+	jr c, .GotFreezeDryMultiplier
 	inc hl
+	ld a, [hl]
+.GotFreezeDryMultiplier
+	ld b, a
 	ld a, [wTypeModifier]
 	and STAB_DAMAGE
-	ld b, a
+	ld c, a
 ; If the target is immune to the move, treat it as a miss and calculate the damage as 0
-	ld a, [hl]
+	ld a, b
 	and a ; looks like a is the matchup multiplier, 0 for immune
 	jr nz, .NotImmune
 	inc a
@@ -1418,7 +1380,7 @@ BattleCommand_Stab:
 	xor a
 .NotImmune:
 	ldh [hMultiplier], a ; hMultiplier is now type multiplier
-	add b
+	add c
 	ld [wTypeModifier], a
 
 	xor a
@@ -1468,14 +1430,10 @@ BattleCommand_Stab:
 	jp .TypesLoop
 
 .end
-	call BattleCheckTypeMatchup
-	call ApplyFinalSuperEffectiveDamageModifiers
-	ld a, [wTypeMatchup]
-	ld b, a
 	ld a, [wTypeModifier]
-	and STAB_DAMAGE
-	or b
-	ld [wTypeModifier], a
+	and EFFECTIVENESS_MASK
+	ld [wTypeMatchup], a
+	call ApplyFinalSuperEffectiveDamageModifiers
 	ret
 
 ApplyFinalSuperEffectiveDamageModifiers:
@@ -1596,11 +1554,22 @@ CheckTypeMatchup:
 	jr .TypesLoop
 
 .Yup:
+	call FreezeDryOverrideMatchedType
+	jr c, .GotFreezeDryTypeMatchup
 	xor a
 	ldh [hDividend + 0], a
 	ldh [hMultiplicand + 0], a
 	ldh [hMultiplicand + 1], a
 	ld a, [hli]
+	jr .HaveTypeMatchupMultiplier
+
+.GotFreezeDryTypeMatchup:
+	inc hl
+	xor a
+	ldh [hDividend + 0], a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+.HaveTypeMatchupMultiplier:
 	ldh [hMultiplicand + 2], a
 	ld a, [wTypeMatchup]
 	ldh [hMultiplier], a
@@ -4511,6 +4480,8 @@ Defrost:
 	xor a
 	ld [hl], a
 	call UpdateOpponentInParty
+	call RecalcOpponentStatsAfterStatusCure
+	call RefreshBattleHuds
 
 	ld hl, DefrostedOpponentText
 	jp StdBattleTextbox
@@ -4549,6 +4520,8 @@ BattleCommand_FreezeTarget:
 	call GetBattleVarAddr
 	set FRZ, [hl]
 	call UpdateOpponentInParty
+	ld hl, ApplyFrzEffectOnSpclAtk
+	call CallBattleCore
 	ld de, ANIM_FRZ
 	call PlayOpponentBattleAnim
 	call RefreshBattleHuds
@@ -4557,17 +4530,6 @@ BattleCommand_FreezeTarget:
 	call StdBattleTextbox
 
 	farcall UseHeldStatusHealingItem
-	ret nz
-
-	call OpponentCantMove
-	call EndRechargeOpp
-	ld hl, wEnemyJustGotFrozen
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .finish
-	ld hl, wPlayerJustGotFrozen
-.finish
-	ld [hl], $1
 	ret
 
 BattleCommand_ParalyzeTarget:
@@ -5328,6 +5290,9 @@ CalcPlayerStats:
 	ld hl, ApplyBrnEffectOnAttack
 	call CallBattleCore
 
+	ld hl, ApplyFrzEffectOnSpclAtk
+	call CallBattleCore
+
 	jp BattleCommand_SwitchTurn
 
 CalcEnemyStats:
@@ -5344,6 +5309,9 @@ CalcEnemyStats:
 	call CallBattleCore
 
 	ld hl, ApplyBrnEffectOnAttack
+	call CallBattleCore
+
+	ld hl, ApplyFrzEffectOnSpclAtk
 	call CallBattleCore
 
 	jp BattleCommand_SwitchTurn
@@ -6965,7 +6933,7 @@ INCLUDE "engine/battle/move_effects/selfdestruct.asm"
 
 INCLUDE "engine/battle/move_effects/mirror_move.asm" ; not used
 
-INCLUDE "engine/battle/move_effects/metronome.asm"
+INCLUDE "engine/battle/move_effects/metronome.asm" ; not used
 
 CheckUserMove:
 ; Return z if the user has move a.
@@ -7005,7 +6973,7 @@ ResetTurn:
 	call DoMove
 	jp EndMoveEffect
 
-INCLUDE "engine/battle/move_effects/thief.asm"
+INCLUDE "engine/battle/move_effects/thief.asm" ; not used
 
 BattleCommand_ArenaTrap:
 ; arenatrap
@@ -7062,9 +7030,34 @@ BattleCommand_Defrost:
 	res FRZ, [hl]
 
 .done
+	call RecalcUserStatsAfterStatusCure
 	call RefreshBattleHuds
 	ld hl, WasDefrostedText
 	jp StdBattleTextbox
+
+RecalcUserStatsAfterStatusCure:
+	ld hl, CalcPlayerStats
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .got_user_pointer
+	ld hl, CalcEnemyStats
+.got_user_pointer
+	call BattleCommand_SwitchTurn
+	ld a, BANK(CalcPlayerStats)
+	rst FarCall
+	jp BattleCommand_SwitchTurn
+
+RecalcOpponentStatsAfterStatusCure:
+	ld hl, CalcEnemyStats
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .got_opp_pointer
+	ld hl, CalcPlayerStats
+.got_opp_pointer
+	call BattleCommand_SwitchTurn
+	ld a, BANK(CalcPlayerStats)
+	rst FarCall
+	jp BattleCommand_SwitchTurn
 
 INCLUDE "engine/battle/move_effects/curse.asm"
 
@@ -7245,7 +7238,7 @@ BattleCommand_TimeBasedHealContinue:
 	dw GetHalfMaxHP
 	dw GetMaxHP
 
-INCLUDE "engine/battle/move_effects/hidden_power.asm"
+INCLUDE "engine/battle/move_effects/freeze_dry.asm"
 
 INCLUDE "engine/battle/move_effects/rain_dance.asm"
 

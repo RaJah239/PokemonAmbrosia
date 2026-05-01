@@ -112,7 +112,7 @@ BattleCommandPointers:
 	dw BattleCommand_HealMorn
 	dw BattleCommand_HealDay
 	dw BattleCommand_HealNite
-	dw BattleCommand_HiddenPower
+	dw BattleCommand_FreezeDry
 	dw BattleCommand_StartRain
 	dw BattleCommand_StartSun
 	dw BattleCommand_AttackUp

@@ -312,7 +312,6 @@ HandleBetweenTurnEffects:
 .NoMoreFaintingConditions:
     call HandleRegenerator
 	call HandleLeftovers
-	call HandleDefrost
 	call HandleSafeguard
 	call HandleScreens
 	call HandleTrickRoom
@@ -1464,15 +1463,22 @@ ResidualDamage:
 
 	ld a, BATTLE_VARS_STATUS
 	call GetBattleVar
-	and 1 << PSN | 1 << BRN
+	and 1 << PSN | 1 << BRN | 1 << FRZ
 	jr z, .did_psn_brn
 
 	ld hl, HurtByPoisonText
 	ld de, ANIM_PSN
-	and 1 << BRN
-	jr z, .got_anim
+	bit BRN, a
+	jr z, .check_frostbite
 	ld hl, HurtByBurnText
 	ld de, ANIM_BRN
+	jr .got_anim
+
+.check_frostbite
+	bit FRZ, a
+	jr z, .got_anim
+	ld hl, HurtByFrostbiteText
+	ld de, ANIM_FRZ
 .got_anim
 
 	call CheckIfFastBattlesIsOn
@@ -7779,7 +7785,8 @@ ApplyStatusEffectOnEnemyStats:
 ApplyStatusEffectOnStats:
 	ldh [hBattleTurn], a
 	call ApplyPrzEffectOnSpeed
-	jp ApplyBrnEffectOnAttack
+	call ApplyBrnEffectOnAttack
+	jp ApplyFrzEffectOnSpclAtk
 
 ApplyPrzEffectOnSpeed:
 	ldh a, [hBattleTurn]
@@ -7871,6 +7878,48 @@ ApplyBrnEffectOnAttack:
 	or b
 	jr nz, .enemy_ok
 	ld b, $1 ; min attack
+
+.enemy_ok
+	ld [hl], b
+	ret
+
+ApplyFrzEffectOnSpclAtk:
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .enemy
+
+	ld a, [wBattleMonStatus]
+	and 1 << FRZ
+	ret z
+	ld hl, wBattleMonSpclAtk + 1
+	ld a, [hld]
+	ld b, a
+	ld a, [hl]
+	srl a
+	rr b
+	ld [hli], a
+	or b
+	jr nz, .player_ok
+	ld b, $1 ; min special attack
+
+.player_ok
+	ld [hl], b
+	ret
+
+.enemy
+	ld a, [wEnemyMonStatus]
+	and 1 << FRZ
+	ret z
+	ld hl, wEnemyMonSpclAtk + 1
+	ld a, [hld]
+	ld b, a
+	ld a, [hl]
+	srl a
+	rr b
+	ld [hli], a
+	or b
+	jr nz, .enemy_ok
+	ld b, $1 ; min special attack
 
 .enemy_ok
 	ld [hl], b

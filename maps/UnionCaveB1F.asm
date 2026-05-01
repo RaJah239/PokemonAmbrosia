@@ -76,7 +76,7 @@ TrainerHikerLeonard:
 	end
 
 UnionCaveB1FTMSwift:
-	itemball TM_HIDDEN_POWER
+	itemball TM_ANCIENTPOWER
 
 UnionCaveB1FXDefend:
 	itemball MUSCLE_BAND

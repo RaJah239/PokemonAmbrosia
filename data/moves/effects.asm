@@ -1754,16 +1754,17 @@ Moonlight:
 	healnite
 	endmove
 
-HiddenPower:
+FreezeDry:
 	checkobedience
 	usedmovetext
 	doturn
 	critical
-	hiddenpower
+	freezedry
 	damagecalc
 	stab
 	damagevariation
 	checkhit
+	effectchance
 	moveanim
 	failuretext
 	applydamage
@@ -1771,7 +1772,8 @@ HiddenPower:
 	supereffectivetext
 	checkfaint
 	buildopponentrage
-	kingsrock
+	checkstatusimmunity
+	freezetarget
 	endmove
 
 RainDance:

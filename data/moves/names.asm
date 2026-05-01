@@ -236,7 +236,7 @@ MoveNames::
     li "Morning Sun"
     li "Synthesis"
     li "Moonlight"
-    li "Hidden Power"
+    li "Freeze Dry"
     li "Seed Flare"
     li "Draco Meteor"
     li "Rain Dance"

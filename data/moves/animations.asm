@@ -238,7 +238,7 @@ BattleAnimations::
 	dw BattleAnim_MorningSun
 	dw BattleAnim_Synthesis
 	dw BattleAnim_Moonlight
-	dw BattleAnim_HiddenPower
+	dw BattleAnim_FreezeDry
 	dw BattleAnim_SeedFlare
 	dw BattleAnim_DracoMeteor
 	dw BattleAnim_RainDance
@@ -3523,6 +3523,7 @@ BattleAnim_PerishSong:
 	anim_ret
 
 BattleAnim_OminousWind:
+BattleAnim_FreezeDry:
 BattleAnim_IcyWind:
 	anim_1gfx BATTLE_ANIM_GFX_SPEED
 	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0

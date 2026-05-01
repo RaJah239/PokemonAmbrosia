@@ -134,7 +134,7 @@ MoveEffectsPointers:
 	dw MorningSun
 	dw Synthesis
 	dw Moonlight
-	dw HiddenPower
+	dw FreezeDry
 	dw RainDance
 	dw SunnyDay
 	dw DefenseUpHit

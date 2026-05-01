@@ -20,7 +20,6 @@ MoveGrammar:
 	db SPIKES
 	db ROLLOUT
 	db SLEEP_TALK
-	db HIDDEN_POWER
 	db PSYCH_UP
 	db EXTREMESPEED
 	db 0 ; end set

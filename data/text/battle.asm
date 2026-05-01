@@ -64,6 +64,12 @@ HurtByBurnText:
 	line "hurt by its burn!"
 	prompt
 
+HurtByFrostbiteText:
+	text "<USER>"
+	line "is hurt by"
+	cont "frostbite!"
+	prompt
+
 LeechSeedSapsText:
 	text "Leech Seed saps"
 	line "<USER>!"
@@ -397,7 +403,7 @@ WokeUpText:
 
 FrozenSolidText:
 	text "<USER>"
-	line "is frozen solid!"
+	line "has frostbite!"
 	prompt
 
 FlinchedText:
@@ -771,8 +777,8 @@ AlreadyAsleepText:
 	prompt
 
 AlreadyFrozenText:
-	text "<TARGET>'s"
-	line "already frozen!"
+	text "<TARGET>"
+	line "is frostbitten!"
 	prompt
 
 WasPoisonedText:
@@ -802,12 +808,12 @@ WasBurnedText:
 
 DefrostedOpponentText:
 	text "<TARGET>"
-	line "was defrosted!"
+	line "thawed out!"
 	prompt
 
 WasFrozenText:
 	text "<TARGET>"
-	line "was frozen solid!"
+	line "was frostbitten!"
 	prompt
 
 JudgementText:
@@ -1074,7 +1080,7 @@ StartedNightmareText:
 
 WasDefrostedText:
 	text "<USER>"
-	line "was defrosted!"
+	line "thawed out!"
 	prompt
 
 PutACurseText:

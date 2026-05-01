@@ -204,7 +204,7 @@
 	const ICY_WIND     ; c4
 	const LEAF_BLADE   ; c5
 	const PSYCHO_SLASH ; c6
-	const LOCK_ON      ; c7
+	const LOCK_ON      ; c7 - not used
 	const OUTRAGE      ; c8
 	const SANDSTORM    ; c9
 	const GIGA_DRAIN   ; ca
@@ -242,7 +242,7 @@
 	const MORNING_SUN  ; ea
 	const SYNTHESIS    ; eb
 	const MOONLIGHT    ; ec
-	const HIDDEN_POWER ; ed
+	const FREEZE_DRY   ; ed
 	const SEED_FLARE   ; ee
 	const DRACO_METEOR ; ef
 	const RAIN_DANCE   ; f0
