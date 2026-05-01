@@ -6885,27 +6885,20 @@ MoveInfoBox:
 
 	ld a, [wPlayerMoveStruct + MOVE_ANIM]
 	ld b, a
-	farcall GetMoveCategoryName
-	hlcoord 1, 8 ; Category coordinates
-	ld de, wStringBuffer1
-	call PlaceString
-
-	ld a, [wPlayerMoveStruct + MOVE_ANIM]
-	ld b, a
-	hlcoord 2, 9
+	hlcoord 2, 8
 	predef PrintMoveType
 
 ; print "pp"
 	ld de, .pp_string ; "p"
-	hlcoord 2, 11
+	hlcoord 2, 10
 	call PlaceString
 
 ; print move BP (Base Power)
 	ld de, .power_string ; "p/"
-	hlcoord 4, 10
+	hlcoord 4, 9
 	call PlaceString
 
-	hlcoord 1, 10
+	hlcoord 1, 9
 	ld a, [wPlayerMoveStruct + MOVE_POWER]
 	cp 2
 	jr c, .nopower
@@ -6939,10 +6932,13 @@ MoveInfoBox:
 	ld [wBuffer1], a
 	ld de, wBuffer1
 	lb bc, 1, 3
-	hlcoord 6, 10
+	hlcoord 6, 9
 	call PrintNum
 	ld [hl], "<%>"
-	hlcoord 9, 9
+	ld de, .damage_string
+	hlcoord 1, 11
+	call PlaceString
+	call .PrintDamage
 .done
 	ret
 
@@ -6954,11 +6950,13 @@ MoveInfoBox:
 	db "p/@"
 .pp_string:
 	db "pp@"
+.damage_string:
+	db "dmg:@"
 .Disabled:
 	db "Disabled!@"
 
 .PrintPP:
-	hlcoord 5, 11
+	hlcoord 5, 10
 	push hl
 	ld de, wStringBuffer1
 	lb bc, 1, 2
@@ -6971,6 +6969,61 @@ MoveInfoBox:
 	ld de, wNamedObjectIndex
 	lb bc, 1, 2
 	call PrintNum
+	ret
+
+.PrintDamage:
+	ld a, [wCurDamage]
+	ld h, a
+	ld a, [wCurDamage + 1]
+	ld l, a
+	push hl
+
+	ld a, [wTypeModifier]
+	push af
+	ld a, [wTypeMatchup]
+	push af
+	ld a, [wCurType]
+	push af
+	ld a, [wAttackMissed]
+	push af
+	ld a, [wCriticalHit]
+	push af
+	ld a, [wHalfDamage]
+	push af
+
+	xor a
+	ld [wTypeModifier], a
+	ld [wAttackMissed], a
+	ld [wCriticalHit], a
+	ld [wHalfDamage], a
+
+	callfar PlayerAttackDamage
+	callfar BattleCommand_DamageCalc
+	callfar BattleCommand_Stab
+
+	hlcoord 6, 11
+	ld de, wCurDamage
+	lb bc, 2, 3
+	call PrintNum
+
+	pop af
+	ld [wHalfDamage], a
+	pop af
+	ld [wCriticalHit], a
+	pop af
+	ld [wAttackMissed], a
+	pop af
+	ld [wCurType], a
+	pop af
+	ld [wTypeMatchup], a
+	pop af
+	ld [wTypeModifier], a
+
+	pop hl
+	ld a, h
+	ld [wCurDamage], a
+	ld a, l
+	ld [wCurDamage + 1], a
 	ret
 
 ; This converts values out of 256 into a value
